@@ -3,7 +3,7 @@
     import { Mesh, MeshBasicMaterial, PerspectiveCamera, Scene, SphereGeometry, WebGLRenderer } from "three"
     import { CSS2DRenderer, CSS2DObject } from 'three/addons/renderers/CSS2DRenderer.js';
 
-    const app = ref(null)
+    const canvas = ref(null)
 
     // scene where everything takes place
     const scene = new Scene()
@@ -45,7 +45,7 @@
     onMounted(() => {
         // set renderer to render the scene
         const renderer = new WebGLRenderer({
-            canvas: app.value,
+            canvas: canvas.value,
             antialias: true
         });
 
@@ -65,7 +65,7 @@
 </script>
 
 <template>
-    <canvas ref="app" />
+    <canvas ref="canvas" />
 </template>
 
 <style>
