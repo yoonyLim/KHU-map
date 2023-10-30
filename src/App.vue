@@ -1,6 +1,6 @@
 <script setup>
     import { computed, onMounted, onUnmounted, ref, watch } from "vue";
-    import { Mesh, MeshBasicMaterial, PerspectiveCamera, Scene, WebGLRenderer, DirectionalLight, AxesHelper, BoxGeometry } from "three"
+    import { Mesh, MeshBasicMaterial, PerspectiveCamera, Scene, WebGLRenderer, DirectionalLight, AxesHelper, BoxGeometry, SphereGeometry, Clock } from "three"
     import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
     import { CSS2DRenderer, CSS2DObject } from 'three/addons/renderers/CSS2DRenderer.js';
 
@@ -39,13 +39,21 @@
 
     // mesh
     const cube = new Mesh(
-        new BoxGeometry(1, 1, 1, 32, 32),
+        new BoxGeometry(1, 1, 1),
         new MeshBasicMaterial({
             color: 0x008080
         })
     );
 
+    const sphere = new Mesh(
+        new SphereGeometry(0.2, 16, 16),
+        new MeshBasicMaterial({
+            color: 0x008080
+        })
+    )
+
     scene.add(cube);
+    scene.add(sphere);
 
     // labels for mesh
     const cubeDiv = document.createElement('div');
@@ -59,6 +67,8 @@
     cube.add(cubeLabel);
     cubeLabel.layers.set(1);
 
+    const clock = new Clock();
+
     const loop = () => {
         renderer.render(scene, camera);
         controls.update();
@@ -66,6 +76,8 @@
         // rotate animation
         cube.rotation.y += 0.01;
         cube.rotation.x += 0.01;
+        const elapsed = clock.getElapsedTime();
+        sphere.position.set( Math.sin( elapsed ) * 3, 0, Math.cos( elapsed ) * 3 );
         requestAnimationFrame(loop);
     }
     
