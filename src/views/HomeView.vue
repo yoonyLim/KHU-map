@@ -1,9 +1,15 @@
 <script setup>
-import MainPage from '../components/MainPage.vue';
+  import MainMap from '../components/MainMap.vue';
 </script>
 
 <template>
   <main>
-    <MainPage />
+    <div class="relative flex opacity-0 z-20">
+      <input class="absolute" type="text" placeholder="장소를 검색하세요!">
+      <MainMap />
+    </div>
   </main>
 </template>
+
+<style>
+</style>
