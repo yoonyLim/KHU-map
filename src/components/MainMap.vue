@@ -1,8 +1,18 @@
 <script setup>
-    import { computed, onMounted, onUnmounted, ref, watch } from "vue";
+    import { computed, onMounted, onUnmounted, ref, toRefs, watch } from "vue";
     import { Mesh, MeshBasicMaterial, PerspectiveCamera, Scene, WebGLRenderer, DirectionalLight, AxesHelper, BoxGeometry, SphereGeometry, Clock, Color } from "three"
     import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
     import { CSS2DRenderer, CSS2DObject } from 'three/addons/renderers/CSS2DRenderer.js';
+
+    const props = defineProps({
+        query: String
+    })
+
+    // to use props value as local variable
+    const query = toRefs(props).query;
+    watch(query, () => {
+        console.log(query.value)
+    });
 
     const canvas = ref(null)
 
@@ -129,7 +139,6 @@
 
         renderer.setSize(window.innerWidth, window.innerHeight);
         renderer.setPixelRatio(window.devicePixelRatio);
-        console.log(window.innerWidth);
 
         // set label renderer to render label
         labelRenderer.setSize(window.innerWidth, window.innerHeight);
