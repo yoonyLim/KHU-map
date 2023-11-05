@@ -25,7 +25,7 @@
     <input 
       @keypress.enter.exact="search"
       @focus="isTyping = true"
-      @focusout="isTyping = false"
+      @blur="isTyping = false"
       v-model="query"
       class="w-full h-12 px-6 py-2 rounded-full border-2 hover:border-[#da9fa1] focus:border-[#a40f16] shadow-sm focus:outline-none" type="text" placeholder="장소를 검색하세요!"
     />
@@ -36,19 +36,19 @@
       </button>
     </div>
     <!--검색 결과 오버레이-->
-    <div v-if="isTyping" class="absolute top-12 left-5 right-20 z-50">
-      <div v-for="bldg in list.bldgs" :key="bldg.id">
-        <div v-if="matchedBldgs(bldg.bldgName)" class="bg-white p-2 border-l-4 border-l-[#a40f16] border-b-8 border-b-white">
-          {{ bldg.bldgName }}
+    <div v-if="isTyping" class="absolute top-12 left-5 right-20 z-50 max-h-80 overflow-scroll">
+      <div v-for="bldg in list.bldgs" :key="bldg.id" class="bg-white">
+        <div v-if="matchedBldgs(bldg.bldgName)" class="py-2">
+          <span class="mt-2 p-2 border-l-2 border-l-[#a40f16]">{{ bldg.bldgName }}</span>
         </div>
         <div v-for="name in bldg.alias" :key="name.id">
-          <div v-if="matchedBldgs(name)" class="bg-white p-2 border-l-4 border-l-[#a40f16] border-b-8 border-b-white">
-            {{ bldg.bldgName }}({{ name }})
+          <div v-if="matchedBldgs(name)" class="py-2">
+            <span class="p-2 border-l-2 border-l-[#a40f16]">{{ bldg.bldgName }}({{ name }})</span>
           </div>
         </div>
         <div v-for="name in bldg.classes" :key="name.id">
-          <div v-if="matchedBldgs(name)" class="bg-white pl-8 py-2 border-l-2 border-l-[#0d326f] border-b-8 border-b-white">
-            {{ bldg.bldgName }} > {{ name }}
+          <div v-if="matchedBldgs(name)" class="py-2">
+            <span class="bg-white pl-4 py-2 border-l-2 border-l-[#0d326f]">{{ bldg.bldgName }} > {{ name }}</span>
           </div>
         </div>
       </div>
