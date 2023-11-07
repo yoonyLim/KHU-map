@@ -10,6 +10,7 @@
 
     // to use props value as local variable
     const query = toRefs(props).query;
+    
     watch(query, () => {
         console.log(query.value)
     });
