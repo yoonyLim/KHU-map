@@ -1,49 +1,51 @@
 <script setup>
-    import { ref, watch } from 'vue';
-    import list from '../assets/bldgList.json';
+  import { ref, watch } from 'vue';
+  import list from '../assets/bldgList.json';
 
-    const query = ref("");
-    const isTyping = ref(false);
+  const query = ref("");
+  const isTyping = ref(false);
 
-    const emit = defineEmits(["searchQuery"]);
+  const emit = defineEmits(["searchQuery"]);
 
-    function search(value) {
-      if (value) {
-        emit("searchQuery", value);
-        query.value = "";
-      } else {
-        emit("searchQuery", query.value);
-        query.value = "";
-      }
+  function search(value) {
+    if (value) {
+      emit("searchQuery", value);
+      query.value = "";
+      isTyping.value = false;
+    } else {
+      emit("searchQuery", query.value);
+      query.value = "";
+      isTyping.value = false;
     }
+  }
 
-    function isQryMatched(name) {
-      if (name.search(query.value) != -1) {
-        return 1;
-      }
+  function isQryMatched(name) {
+    if (name.search(query.value) != -1) {
+      return 1;
     }
+  }
 
-    // v-if로 인해 overlay는 v-if="false"일 시 null로 존재
-    // watch로 overlay 값 변경 시 overlay에서 마우스가 떠나 다른 곳 클릭 시 isTyping false로 만듬
-    const overlay = ref(null);
-    const searchbar = ref(null);
-    const mouseOnOverlay = ref(false)
+  // v-if로 인해 overlay는 v-if="false"일 시 null로 존재
+  // watch로 overlay 값 변경 시 overlay에서 마우스가 떠나 다른 곳 클릭 시 isTyping false로 만듬
+  const overlay = ref(null);
+  const searchbar = ref(null);
+  const mouseOnOverlay = ref(false)
 
-    watch(overlay, () => {
-      if (overlay.value) {
-        searchbar.value.addEventListener("focusout", () => {
-          if (!mouseOnOverlay.value) {
-            isTyping.value = false;
-          }
-        })
-        overlay.value.addEventListener("mouseover", () => {
-          mouseOnOverlay.value = true;
-        })
-        overlay.value.addEventListener("mouseleave", () => {
-          mouseOnOverlay.value = false;
-        })
-      }
-    })
+  watch(overlay, () => {
+    if (overlay.value) {
+      searchbar.value.addEventListener("focusout", () => {
+        if (!mouseOnOverlay.value) {
+          isTyping.value = false;
+        }
+      })
+      overlay.value.addEventListener("mouseover", () => {
+        mouseOnOverlay.value = true;
+      })
+      overlay.value.addEventListener("mouseleave", () => {
+        mouseOnOverlay.value = false;
+      })
+    }
+  })
 </script>
 
 <template>
@@ -67,7 +69,7 @@
     ref="overlay"
     tabindex="1"
     @focusout="isTyping = false"
-    class="absolute top-12 left-5 right-20 z-50 max-h-80 overflow-scroll">
+    class="absolute top-12 left-5 right-20 z-50 max-h-80 overflow-y-scroll">
       <div v-for="bldg in list.bldgs" :key="bldg.id" class="bg-white">
         <div 
         v-if="isQryMatched(bldg.bldgName)" 
@@ -107,6 +109,3 @@
     </div>
   </div>
 </template>
-
-<style>
-</style>

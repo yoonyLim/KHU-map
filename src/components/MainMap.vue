@@ -1,6 +1,7 @@
 <script setup>
     import { computed, onMounted, onUnmounted, ref, toRefs, watch } from "vue";
     import { Mesh, MeshBasicMaterial, PerspectiveCamera, Scene, WebGLRenderer, DirectionalLight, AxesHelper, BoxGeometry, SphereGeometry, Clock, Color } from "three"
+    import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
     import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
     import { CSS2DRenderer, CSS2DObject } from 'three/addons/renderers/CSS2DRenderer.js';
 
@@ -36,7 +37,7 @@
         0.1, 
         1000
     );
-    camera.position.z = 5;
+    camera.position.set(0, 50, -40);
     // camera.layers.enableAll();
     scene.add(camera)
 
@@ -49,6 +50,18 @@
     const axesHelper = new AxesHelper( 5 );
     axesHelper.layers.enableAll();
     scene.add(axesHelper);
+
+    // ground
+    const ground = new Mesh(
+        new BoxGeometry(1000, 10, 1000),
+        new MeshBasicMaterial({
+            color: 0xffffff
+        })
+    );
+
+    ground.position.set(0, -5.1, 200);
+
+    scene.add(ground);
 
     // mesh
     const cube = new Mesh(
@@ -63,10 +76,16 @@
         new MeshBasicMaterial({
             color: 0x008080
         })
-    )
+    );
 
     scene.add(cube);
     scene.add(sphere);
+
+    // add gltf map to the scene
+    const gltfLoader = new GLTFLoader();
+    gltfLoader.load("src/assets/models/KHU.gltf", (model) => {
+        scene.add(model.scene);
+    });
 
     // labels for mesh
     const cubeDiv = document.createElement('div');
@@ -123,7 +142,7 @@
         controls = new OrbitControls(camera, renderer.domElement);
         controls.enableDamping = true;
         controls.minDistance = 3;
-        controls.maxDistance = 50;
+        controls.maxDistance = 200;
 
         // constantly render by frame to keep ratio constant
         loop();
