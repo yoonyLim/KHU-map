@@ -1,6 +1,6 @@
 <script setup>
     import { computed, onMounted, onUnmounted, ref, toRefs, watch } from "vue";
-    import { Mesh, MeshBasicMaterial, PerspectiveCamera, Scene, WebGLRenderer, DirectionalLight, AxesHelper, BoxGeometry, SphereGeometry, Clock, Color } from "three"
+    import { Mesh, MeshBasicMaterial, PerspectiveCamera, Scene, WebGLRenderer, DirectionalLight, AxesHelper, BoxGeometry, SphereGeometry, Clock, Color, MeshPhongMaterial } from "three"
     import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
     import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
     import { CSS2DRenderer, CSS2DObject } from 'three/addons/renderers/CSS2DRenderer.js';
@@ -59,7 +59,7 @@
         })
     );
 
-    ground.position.set(0, -5.1, 200);
+    ground.position.set(0, -5.2, 200);
 
     scene.add(ground);
 
@@ -84,6 +84,16 @@
     // add gltf map to the scene
     const gltfLoader = new GLTFLoader();
     gltfLoader.load("src/assets/models/KHU.gltf", (model) => {
+        let bldgMesh = model.scene.getObjectByName("Line001");
+
+        if (bldgMesh.material) {
+            bldgMesh.material = bldgMesh.material.clone();
+            bldgMesh.material.color.setHex(0xfee9da);
+        } else {
+            console.log("No material");
+            bldgMesh.material = new MeshPhongMaterial({ color: 0xfee9da, flatShading: false });
+        }
+
         scene.add(model.scene);
     });
 
@@ -96,9 +106,6 @@
     const cubeLabel = new CSS2DObject(cubeDiv);
     cube.add(cubeLabel);
     cubeLabel.position.set(1, 0, 0);
-    // cubeLabel.center.set(0, 1);
-    // cube.add(cubeLabel);
-    // cubeLabel.layers.set(1);
 
     const sphereDiv = document.createElement('div');
     sphereDiv.className = "label";
@@ -143,6 +150,7 @@
         controls.enableDamping = true;
         controls.minDistance = 3;
         controls.maxDistance = 200;
+        controls.maxPolarAngle = (Math.PI / 2) - 0.1;
 
         // constantly render by frame to keep ratio constant
         loop();
