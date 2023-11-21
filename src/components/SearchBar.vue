@@ -1,6 +1,6 @@
 <script setup>
   import { ref, watch } from 'vue';
-  import list from '../assets/bldgList.json';
+  import bldgList from '../assets/bldgList.json';
 
   const query = ref("");
   const isTyping = ref(false);
@@ -49,7 +49,7 @@
 </script>
 
 <template>
-  <div class="flex justify-center top-0">
+  <div class="flex justify-center top-0 z-50">
     <!--검색창-->
     <input 
     ref="searchbar"
@@ -70,7 +70,8 @@
     tabindex="1"
     @focusout="isTyping = false"
     class="absolute top-12 left-5 right-20 z-50 max-h-80 overflow-y-scroll">
-      <div v-for="bldg in list.bldgs" :key="bldg.id" class="bg-white">
+    <!--건물 결과-->
+      <div v-for="bldg in bldgList.bldgs" :key="bldg.id" class="bg-white">
         <div 
         v-if="isQryMatched(bldg.bldgName)" 
         @click="search(bldg.bldgName)"
@@ -81,9 +82,10 @@
             <span>{{ bldg.bldgName.substring(bldg.bldgName.indexOf(query) + query.length) }}</span>
           </div>
         </div>
+        <!--건물 별칭 결과-->
         <div v-for="name in bldg.alias" :key="name.id">
           <div 
-          v-if="isQryMatched(name)" 
+          v-if="isQryMatched(name) && query != ''" 
           @click="search(bldg.bldgName)"
           class="py-1 hover:bg-gray-100 cursor-pointer">
             <div class="py-1 pl-2 border-l-2 border-l-[#a40f16]">
@@ -93,9 +95,11 @@
             </div>
           </div>
         </div>
+
+        <!--건물 내부 강의실 결과-->
         <div v-for="name in bldg.classes" :key="name.id">
           <div 
-          v-if="isQryMatched(name)" 
+          v-if="isQryMatched(name) && query != ''" 
           @click="search(bldg.bldgName)"
           class="py-1 hover:bg-gray-100 cursor-pointer">
             <div class="py-1 pl-2 border-l-2 border-l-[#0d326f]">

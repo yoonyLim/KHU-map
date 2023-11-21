@@ -1,7 +1,57 @@
 {
     "bldgs" : [
         {
-            "bldgName": "응용과학대학관/전자정보대학관",
+            "bldgName": "애지원",
+            "alias": [],
+            "classes": []
+        },
+        {
+            "bldgName": "우정원",
+            "alias": [],
+            "classes": []
+        },
+        {
+            "bldgName": "공학관",
+            "alias": [],
+            "classes": []
+        },
+        {
+            "bldgName": "공학실험동-원자로센터",
+            "alias": [],
+            "classes": []
+        },
+        {
+            "bldgName": "체육대학관",
+            "alias": [],
+            "classes": []
+        },
+        {
+            "bldgName": "생명과학대학관",
+            "alias": [],
+            "classes": []
+        },
+        {
+            "bldgName": "원예생명공학-온실",
+            "alias": [],
+            "classes": []
+        },
+        {
+            "bldgName": "중앙도서관",
+            "alias": [],
+            "classes": []
+        },
+        {
+            "bldgName": "한방재료가공-경희보감",
+            "alias": [],
+            "classes": []
+        },
+        {
+            "bldgName": "한방재료가공-경희보감1",
+            "alias": [],
+            "classes": []
+        },
+        {
+            "bldgName": "전자정보-응용과학대학관",
             "alias": [
                 "전정대",
                 "자대",
@@ -10,6 +60,21 @@
             "classes" : [
             
             ]
+        },
+        {
+            "bldgName": "선승관",
+            "alias": [],
+            "classes": []
+        },
+        {
+            "bldgName": "정문",
+            "alias": [],
+            "classes": []
+        },
+        {
+            "bldgName": "국제-경영대학관",
+            "alias": [],
+            "classes": []
         },
         {
             "bldgName": "학생회관",
@@ -35,7 +100,27 @@
             ]
         },
         {
-            "bldgName": "멀티미디어관",
+            "bldgName": "실험연구동",
+            "alias": [],
+            "classes": []
+        },
+        {
+            "bldgName": "국제학관",
+            "alias": [],
+            "classes": []
+        },
+        {
+            "bldgName": "제2기숙사-남자동",
+            "alias": [],
+            "classes": []
+        },
+        {
+            "bldgName": "제2기숙사-여자동",
+            "alias": [],
+            "classes": []
+        },
+        {
+            "bldgName": "멀티미디어관-글로벌관",
             "alias": [
                 "멀관",
                 "멀티관"
@@ -45,6 +130,21 @@
                 "102",
                 "103"
             ]
+        },
+        {
+            "bldgName": "외국어대학관",
+            "alias": [],
+            "classes": []
+        },
+        {
+            "bldgName": "예술-디자인대학관",
+            "alias": [],
+            "classes": []
+        },
+        {
+            "bldgName": "도예관",
+            "alias": [],
+            "classes": []
         }
     ]
 }

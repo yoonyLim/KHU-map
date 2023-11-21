@@ -1,9 +1,10 @@
 <script setup>
     import { computed, onMounted, onUnmounted, ref, toRefs, watch } from "vue";
-    import { Mesh, MeshBasicMaterial, PerspectiveCamera, Scene, WebGLRenderer, DirectionalLight, AxesHelper, BoxGeometry, SphereGeometry, Clock, Color, MeshPhongMaterial } from "three"
+    import { Mesh, MeshBasicMaterial, PerspectiveCamera, Scene, WebGLRenderer, DirectionalLight, AxesHelper, BoxGeometry, SphereGeometry, Clock, Color, AmbientLight, Vector2, Raycaster, Group } from "three"
     import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
     import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
     import { CSS2DRenderer, CSS2DObject } from 'three/addons/renderers/CSS2DRenderer.js';
+    import bldgList from '../assets/bldgList.json';
 
     const props = defineProps({
         query: String
@@ -38,13 +39,16 @@
         1000
     );
     camera.position.set(0, 50, -40);
-    // camera.layers.enableAll();
+
     scene.add(camera)
 
-    const dirLight = new DirectionalLight( 0xffffff, 3 );
-    dirLight.position.set( 0, 0, 1 );
-    dirLight.layers.enableAll();
+    const dirLight = new DirectionalLight( 0xffffff, 3.0 );
+    dirLight.position.set( 50, 50, 1 );
     scene.add(dirLight);
+
+    const ambLight = new AmbientLight( 0xffffff, 0.5 );
+    ambLight.position.set( 50, 50, 2);
+    scene.add(ambLight);
 
     // axes for positioning
     const axesHelper = new AxesHelper( 5 );
@@ -63,71 +67,63 @@
 
     scene.add(ground);
 
-    // mesh
-    const cube = new Mesh(
-        new BoxGeometry(1, 1, 1),
-        new MeshBasicMaterial({
-            color: 0x008080
-        })
-    );
+    // group to hold all the object meshes in glb model
+    const group = new Group();
 
-    const sphere = new Mesh(
-        new SphereGeometry(0.2, 16, 16),
-        new MeshBasicMaterial({
-            color: 0x008080
-        })
-    );
-
-    scene.add(cube);
-    scene.add(sphere);
-
-    // add gltf map to the scene
+    // add glb map to the scene
     const gltfLoader = new GLTFLoader();
-    gltfLoader.load("src/assets/models/KHU.gltf", (model) => {
-        let bldgMesh = model.scene.getObjectByName("Line001");
+    gltfLoader.load("src/assets/models/KHU.glb", (model) => {
+        // change material color and add label for each building
+        for (var bldg of bldgList.bldgs) {
+            let bldgMesh = model.scene.getObjectByName(bldg.bldgName);
 
-        if (bldgMesh.material) {
-            bldgMesh.material = bldgMesh.material.clone();
-            bldgMesh.material.color.setHex(0xfee9da);
-        } else {
-            console.log("No material");
-            bldgMesh.material = new MeshPhongMaterial({ color: 0xfee9da, flatShading: false });
+            console.log(bldg.bldgName + "'s position: (" + bldgMesh.position.x + ", " + bldgMesh.position.y + ", " + bldgMesh.position.z + ")");
+
+            if (bldgMesh.material) {
+                bldgMesh.material = bldgMesh.material.clone(); // make individual material for each building
+                bldgMesh.material.color.setHex(0xfee9da);
+            }
+
+            group.add(bldgMesh);
         }
 
+        scene.add(group);
         scene.add(model.scene);
     });
 
-    // labels for mesh
-    const cubeDiv = document.createElement('div');
-    cubeDiv.className = "label";
-    cubeDiv.textContent = "Cube";
-    cubeDiv.style.backgroundColor = "transparent";
+    // create p tag where each bldg's name will be shown
+    const p = document.createElement('p');
+    p.className = "label";
+    const pContainer = document.createElement("div");
+    pContainer.appendChild(p);
+    const bldgLabel = new CSS2DObject(pContainer);
+    scene.add(bldgLabel);
 
-    const cubeLabel = new CSS2DObject(cubeDiv);
-    cube.add(cubeLabel);
-    cubeLabel.position.set(1, 0, 0);
+    const mousePos = new Vector2();
+    const raycaster = new Raycaster();
 
-    const sphereDiv = document.createElement('div');
-    sphereDiv.className = "label";
-    sphereDiv.textContent = "Sphere";
-    sphereDiv.style.backgroundColor = "transparent";
+    window.addEventListener("mousemove", (event) => {
+        mousePos.x = (event.clientX / window.innerWidth) * 2 - 1;
+        mousePos.y = -(event.clientY / window.innerHeight) * 2 + 1;
 
-    const sphereLabel = new CSS2DObject(sphereDiv);
-    sphere.add(sphereLabel);
-    sphereLabel.position.set(1, 0, 0);
+        raycaster.setFromCamera(mousePos, camera);
+        const intersects = raycaster.intersectObject(group);
 
-    const clock = new Clock();
+        if (intersects.length > 0) {
+            // console.log(intersects[0].object);
+            p.className = "label show";
+            p.textContent = intersects[0].object.name
+            bldgLabel.position.set(intersects[0].object.position.x, intersects[0].object.position.y + 20, intersects[0].object.position.z);
+        } else {
+            p.className = "label hide";
+        }
+    })
 
     const loop = () => {
         renderer.render(scene, camera);
         labelRenderer.render(scene, camera);
         controls.update();
 
-        // rotate animation
-        cube.rotation.y += 0.01;
-        cube.rotation.x += 0.01;
-        const elapsed = clock.getElapsedTime();
-        sphere.position.set( Math.sin( elapsed ) * 3, 0, Math.cos( elapsed ) * 3 );
         requestAnimationFrame(loop);
     }
     
@@ -148,6 +144,9 @@
         // labelRenderer가 canvas 위에 덮이기 때문에 labelRenderer를 통해서 컨트롤 가능
         controls = new OrbitControls(camera, renderer.domElement);
         controls.enableDamping = true;
+        controls.dampingFactor = 0.03;
+        controls.rotateSpeed = 2;
+        controls.panSpeed = 2;
         controls.minDistance = 3;
         controls.maxDistance = 200;
         controls.maxPolarAngle = (Math.PI / 2) - 0.1;
@@ -172,7 +171,7 @@
         labelRenderer.setSize(window.innerWidth, window.innerHeight);
         labelRenderer.domElement.style.position = "absolute";
         labelRenderer.domElement.style.top = "0px";
-        labelRenderer.domElement.style.pointerEvents = "none";
+        labelRenderer.domElement.style.pointerEvents = "none"; // since labelRendere is on top of canvas, it needs to have no event to be able to orbit control
         document.body.appendChild(labelRenderer.domElement);
     }
 
@@ -185,4 +184,36 @@
 </template>
 
 <style>
+.label {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    position: relative;
+    transform: translateY(-10px);
+    opacity: 0;
+    transition-duration: 0.2s;
+    transition-property: opacity, transform;
+}
+
+.label::after {
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    top: 90%;
+    left: 50%;
+    transform: rotateZ(45deg) translateX(-50%);
+    z-index: -1;
+}
+
+.hide {
+    opacity: 0;
+    transform: translateY(-10px);
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0px);
+}
 </style>
