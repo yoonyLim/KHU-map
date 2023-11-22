@@ -1,9 +1,10 @@
 <script setup>
     import { computed, onMounted, onUnmounted, ref, toRefs, watch } from "vue";
-    import { Mesh, MeshBasicMaterial, PerspectiveCamera, Scene, WebGLRenderer, DirectionalLight, AxesHelper, BoxGeometry, SphereGeometry, Clock, Color, AmbientLight, Vector2, Raycaster, Group } from "three"
+    import { Mesh, MeshBasicMaterial, PerspectiveCamera, Scene, WebGLRenderer, DirectionalLight, AxesHelper, BoxGeometry, Color, AmbientLight, Vector2, Raycaster, Group, Vector3 } from "three"
     import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
     import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
     import { CSS2DRenderer, CSS2DObject } from 'three/addons/renderers/CSS2DRenderer.js';
+    import gsap from 'gsap';
     import bldgList from '../assets/bldgList.json';
 
     const props = defineProps({
@@ -24,6 +25,8 @@
     let renderer;
     let camera;
     let controls;
+    const idleColor = 0xfee9da;
+    const selectedColor = 0xff964f;
 
     // scene where everything takes place
     const scene = new Scene();
@@ -77,11 +80,9 @@
         for (var bldg of bldgList.bldgs) {
             let bldgMesh = model.scene.getObjectByName(bldg.bldgName);
 
-            console.log(bldg.bldgName + "'s position: (" + bldgMesh.position.x + ", " + bldgMesh.position.y + ", " + bldgMesh.position.z + ")");
-
             if (bldgMesh.material) {
                 bldgMesh.material = bldgMesh.material.clone(); // make individual material for each building
-                bldgMesh.material.color.setHex(0xfee9da);
+                bldgMesh.material.color.setHex(idleColor);
             }
 
             group.add(bldgMesh);
@@ -102,6 +103,7 @@
     const mousePos = new Vector2();
     const raycaster = new Raycaster();
 
+    // if mouse is hovered onto a bldg, show label and change color
     window.addEventListener("mousemove", (event) => {
         mousePos.x = (event.clientX / window.innerWidth) * 2 - 1;
         mousePos.y = -(event.clientY / window.innerHeight) * 2 + 1;
@@ -109,15 +111,35 @@
         raycaster.setFromCamera(mousePos, camera);
         const intersects = raycaster.intersectObject(group);
 
-        if (intersects.length > 0) {
-            // console.log(intersects[0].object);
+        if (intersects.length == 1) {
+            p.textContent = intersects[0].object.name;
             p.className = "label show";
-            p.textContent = intersects[0].object.name
+            intersects[0].object.material.color.setHex(selectedColor);
+            bldgLabel.position.set(intersects[0].object.position.x, intersects[0].object.position.y + 20, intersects[0].object.position.z);
+        } else if (intersects.length > 1) {
+            for (var bldgMesh of group.children) {
+                bldgMesh.material.color.setHex(idleColor);
+            }
+            intersects[0].object.material.color.setHex(selectedColor);
+            p.textContent = intersects[0].object.name;
+            p.className = "label show";
             bldgLabel.position.set(intersects[0].object.position.x, intersects[0].object.position.y + 20, intersects[0].object.position.z);
         } else {
+            for (bldgMesh of group.children) {
+                bldgMesh.material.color.setHex(idleColor);
+            }
             p.className = "label hide";
         }
-    })
+    });
+
+    window.addEventListener("mouseup", (event) => {
+        gsap.to(camera.position, {
+            x: (event.clientX / window.innerWidth) * 2 - 1,
+            y: -(event.clientY / window.innerHeight) * 2 + 1,
+            z: 5,
+            duration: 3
+        });
+    });
 
     const loop = () => {
         renderer.render(scene, camera);
