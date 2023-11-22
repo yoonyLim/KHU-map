@@ -7,15 +7,49 @@
 
   const emit = defineEmits(["searchQuery"]);
 
-  function search(value) {
-    if (value) {
+  function searchQuery(value) {
+    if (value) { // 오버레이에서 search 호출 시
+      console.log("enter pressed");
       emit("searchQuery", value);
       query.value = "";
       isTyping.value = false;
-    } else {
-      emit("searchQuery", query.value);
-      query.value = "";
-      isTyping.value = false;
+    } else { // 검색창 엔터나 버튼으로 search 호출 시
+      for (var bldg of bldgList.bldgs) {
+        if (bldg.bldgName.search(query.value) != -1) {
+          emit("searchQuery", bldg.bldgName);
+          query.value = "";
+          isTyping.value = false;
+          break;
+        } else {
+          var isQueryFound = false;
+
+          for (var alias of bldg.alias) {
+            if (alias.search(query.value) != -1) {
+              isQueryFound = true;
+              emit("searchQuery", bldg.bldgName);
+              query.value = "";
+              isTyping.value = false;
+              break;
+            }
+          }
+
+          if (isQueryFound) { break; }
+
+          for (var floor of bldg.floors) {
+            for (var name of floor.classes) {
+              if (name.search(query.value) != -1) {
+                isQueryFound = true;
+                emit("searchQuery", bldg.bldgName);
+                query.value = "";
+                isTyping.value = false;
+                break;
+              }
+            }
+
+            if (isQueryFound) { break; }
+          }
+        }
+      }
     }
   }
 
@@ -54,12 +88,12 @@
     <input 
     ref="searchbar"
     @focusin="isTyping = true"
-    @keypress.enter.exact="search"
+    @keypress.enter.exact="searchQuery()"
     v-model="query"
     class="w-full h-12 px-6 py-2 rounded-full border-2 hover:border-[#da9fa1] focus:border-[#a40f16] shadow-sm focus:outline-none" type="text" placeholder="장소를 검색하세요!"/>
     <!--검색 버튼-->
     <div class="ml-4">
-      <button @click="search" class="flex w-12 h-12 justify-center items-center rounded-full border-2 bg-white hover:border-[#da9fa1] active:bg-[#da9fa1] shadow-sm">
+      <button @click="searchQuery()" class="flex w-12 h-12 justify-center items-center rounded-full border-2 bg-white hover:border-[#da9fa1] active:bg-[#da9fa1] shadow-sm">
         <img src="src\assets\icons\search.svg" alt="search" />
       </button>
     </div>
@@ -74,7 +108,7 @@
       <div v-for="bldg in bldgList.bldgs" :key="bldg.id" class="bg-white">
         <div 
         v-if="isQryMatched(bldg.bldgName)" 
-        @click="search(bldg.bldgName)"
+        @click="searchQuery(bldg.bldgName)"
         class="py-1 hover:bg-gray-100 cursor-pointer">
           <div class="py-1 pl-2 border-l-2 border-l-[#a40f16]">
             <span>{{ bldg.bldgName.substring(0, bldg.bldgName.indexOf(query)) }}</span>
@@ -86,7 +120,7 @@
         <div v-for="name in bldg.alias" :key="name.id">
           <div 
           v-if="isQryMatched(name) && query != ''" 
-          @click="search(bldg.bldgName)"
+          @click="searchQuery(bldg.bldgName)"
           class="py-1 hover:bg-gray-100 cursor-pointer">
             <div class="py-1 pl-2 border-l-2 border-l-[#a40f16]">
               <span>{{ (bldg.bldgName + " (" + name + ")").substring(0, (bldg.bldgName + " (" + name + ")").indexOf(query)) }}</span>
@@ -95,17 +129,18 @@
             </div>
           </div>
         </div>
-
         <!--건물 내부 강의실 결과-->
-        <div v-for="name in bldg.classes" :key="name.id">
-          <div 
-          v-if="isQryMatched(name) && query != ''" 
-          @click="search(bldg.bldgName)"
-          class="py-1 hover:bg-gray-100 cursor-pointer">
-            <div class="py-1 pl-2 border-l-2 border-l-[#0d326f]">
-              <span>{{ (bldg.bldgName + " > " + name).substring(0, (bldg.bldgName + " > " + name).indexOf(query)) }}</span>
-              <span class="bg-[#fbf719] underline">{{ (bldg.bldgName + " > " + name).substring((bldg.bldgName + " > " + name).indexOf(query), (bldg.bldgName + " > " + name).indexOf(query) + query.length) }}</span>
-              <span>{{ (bldg.bldgName + " > " + name).substring((bldg.bldgName + " > " + name).indexOf(query) + query.length) }}</span>
+        <div v-for="floor in bldg.floors" :key="floor.id">
+          <div v-for="className in floor.classes" :key="className.id">
+            <div 
+            v-if="isQryMatched(className) && query != ''" 
+            @click="searchQuery(bldg.bldgName)"
+            class="py-1 hover:bg-gray-100 cursor-pointer">
+              <div class="py-1 pl-2 border-l-2 border-l-[#0d326f]">
+                <span>{{ (bldg.bldgName + " > " + className).substring(0, (bldg.bldgName + " > " + className).indexOf(query)) }}</span>
+                <span class="bg-[#fbf719] underline">{{ (bldg.bldgName + " > " + className).substring((bldg.bldgName + " > " + className).indexOf(query), (bldg.bldgName + " > " + className).indexOf(query) + query.length) }}</span>
+                <span>{{ (bldg.bldgName + " > " + className).substring((bldg.bldgName + " > " + className).indexOf(query) + query.length) }}</span>
+              </div>
             </div>
           </div>
         </div>

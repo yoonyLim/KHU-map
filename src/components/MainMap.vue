@@ -16,6 +16,12 @@
     
     watch(query, () => {
         console.log(query.value)
+        for (var bldgMesh of group.children) {
+            if (bldgMesh.name == query.value) {
+                moveCamera(bldgMesh);
+                break;
+            }
+        }
     });
 
     const canvas = ref(null)
@@ -141,28 +147,32 @@
         const intersects = raycaster.intersectObject(group);
 
         if (intersects.length > 0) {
-            const boundBox = new Box3().setFromObject( intersects[0].object );
-            const objCenter = boundBox.getCenter( new Vector3() );
-            const objSize = boundBox.getSize( new Vector3() );
-
-            gsap.to(camera.position, {
-                x: objCenter.x + 10,
-                y: objCenter.y + 20,
-                z: objCenter.z + objSize.z + 20,
-                duration: 1.5,
-                ease: "power3.out"
-            });
-
-            gsap.to(controls.target, {
-                x: objCenter.x,
-                y: objCenter.y,
-                z: objCenter.z,
-                duration: 1.5,
-                ease: "power3.out",
-                onComplete: () => { controls.enabled = true }
-            });
+            moveCamera(intersects[0].object);
         }
     });
+
+    function moveCamera(obj) {
+        const boundBox = new Box3().setFromObject( obj );
+        const objCenter = boundBox.getCenter( new Vector3() );
+        const objSize = boundBox.getSize( new Vector3() );
+
+        gsap.to(camera.position, {
+            x: objCenter.x + 10,
+            y: objCenter.y + 20,
+            z: objCenter.z + objSize.z + 20,
+            duration: 2,
+            ease: "power3.out"
+        });
+
+        gsap.to(controls.target, {
+            x: objCenter.x,
+            y: objCenter.y,
+            z: objCenter.z,
+            duration: 2,
+            ease: "power3.out",
+            onComplete: () => { controls.enabled = true }
+        });
+    }
 
     const loop = () => {
         renderer.render(scene, camera);
