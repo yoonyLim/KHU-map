@@ -1,6 +1,6 @@
 <script setup>
     import { computed, onMounted, onUnmounted, ref, toRefs, watch } from "vue";
-    import { Mesh, MeshBasicMaterial, PerspectiveCamera, Scene, WebGLRenderer, DirectionalLight, AxesHelper, BoxGeometry, Color, AmbientLight, Vector2, Raycaster, Group, Vector3 } from "three"
+    import { Mesh, MeshBasicMaterial, PerspectiveCamera, Scene, WebGLRenderer, DirectionalLight, AxesHelper, BoxGeometry, Color, AmbientLight, Vector2, Raycaster, Group, Box3, Vector3 } from "three"
     import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
     import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
     import { CSS2DRenderer, CSS2DObject } from 'three/addons/renderers/CSS2DRenderer.js';
@@ -132,13 +132,36 @@
         }
     });
 
-    window.addEventListener("mouseup", (event) => {
-        gsap.to(camera.position, {
-            x: (event.clientX / window.innerWidth) * 2 - 1,
-            y: -(event.clientY / window.innerHeight) * 2 + 1,
-            z: 5,
-            duration: 3
-        });
+    // move camera to the selected bldg
+    window.addEventListener("click", (event) => {
+        mousePos.x = (event.clientX / window.innerWidth) * 2 - 1;
+        mousePos.y = -(event.clientY / window.innerHeight) * 2 + 1;
+
+        raycaster.setFromCamera(mousePos, camera);
+        const intersects = raycaster.intersectObject(group);
+
+        if (intersects.length > 0) {
+            const boundBox = new Box3().setFromObject( intersects[0].object );
+            const objCenter = boundBox.getCenter( new Vector3() );
+            const objSize = boundBox.getSize( new Vector3() );
+
+            gsap.to(camera.position, {
+                x: objCenter.x + 10,
+                y: objCenter.y + 20,
+                z: objCenter.z + objSize.z + 20,
+                duration: 1.5,
+                ease: "power3.out"
+            });
+
+            gsap.to(controls.target, {
+                x: objCenter.x,
+                y: objCenter.y,
+                z: objCenter.z,
+                duration: 1.5,
+                ease: "power3.out",
+                onComplete: () => { controls.enabled = true }
+            });
+        }
     });
 
     const loop = () => {
@@ -166,7 +189,7 @@
         // labelRenderer가 canvas 위에 덮이기 때문에 labelRenderer를 통해서 컨트롤 가능
         controls = new OrbitControls(camera, renderer.domElement);
         controls.enableDamping = true;
-        controls.dampingFactor = 0.03;
+        controls.dampingFactor = 0.5;
         controls.rotateSpeed = 2;
         controls.panSpeed = 2;
         controls.minDistance = 3;
