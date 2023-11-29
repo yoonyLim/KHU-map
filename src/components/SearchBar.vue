@@ -99,52 +99,66 @@
     </div>
     <!--검색 결과 오버레이-->
     <!--오버레이 div의 focusout 사용 위해 tabindex 사용-->
-    <div v-if="isTyping" 
-    ref="overlay"
-    tabindex="1"
-    @focusout="isTyping = false"
-    class="absolute top-12 left-5 right-20 z-50 max-h-80 overflow-y-scroll">
-    <!--건물 결과-->
-      <div v-for="bldg in bldgList.bldgs" :key="bldg.id" class="bg-white">
-        <div 
-        v-if="isQryMatched(bldg.bldgName)" 
-        @click="searchQuery(bldg.bldgName)"
-        class="py-1 hover:bg-gray-100 cursor-pointer">
-          <div class="py-1 pl-2 border-l-2 border-l-[#a40f16]">
-            <span>{{ bldg.bldgName.substring(0, bldg.bldgName.indexOf(query)) }}</span>
-            <span class="bg-[#fbf719] underline">{{ bldg.bldgName.substring(bldg.bldgName.indexOf(query), bldg.bldgName.indexOf(query) + query.length) }}</span>
-            <span>{{ bldg.bldgName.substring(bldg.bldgName.indexOf(query) + query.length) }}</span>
-          </div>
-        </div>
-        <!--건물 별칭 결과-->
-        <div v-for="name in bldg.alias" :key="name.id">
+    <Transition>
+      <div v-if="isTyping" 
+      ref="overlay"
+      tabindex="1"
+      @focusout="isTyping = false"
+      class="absolute top-12 left-5 right-20 z-50 max-h-80 overflow-y-scroll">
+      <!--건물 결과-->
+        <div v-for="bldg in bldgList.bldgs" :key="bldg.id" class="bg-white">
           <div 
-          v-if="isQryMatched(name) && query != ''" 
+          v-if="isQryMatched(bldg.bldgName)" 
           @click="searchQuery(bldg.bldgName)"
           class="py-1 hover:bg-gray-100 cursor-pointer">
             <div class="py-1 pl-2 border-l-2 border-l-[#a40f16]">
-              <span>{{ (bldg.bldgName + " (" + name + ")").substring(0, (bldg.bldgName + " (" + name + ")").indexOf(query)) }}</span>
-              <span class="bg-[#fbf719] underline">{{ (bldg.bldgName + " (" + name + ")").substring((bldg.bldgName + " (" + name + ")").indexOf(query), (bldg.bldgName + " (" + name + ")").indexOf(query) + query.length) }}</span>
-              <span>{{ (bldg.bldgName + " (" + name + ")").substring((bldg.bldgName + " (" + name + ")").indexOf(query) + query.length) }}</span>
+              <span>{{ bldg.bldgName.substring(0, bldg.bldgName.indexOf(query)) }}</span>
+              <span class="bg-[#fbf719] underline">{{ bldg.bldgName.substring(bldg.bldgName.indexOf(query), bldg.bldgName.indexOf(query) + query.length) }}</span>
+              <span>{{ bldg.bldgName.substring(bldg.bldgName.indexOf(query) + query.length) }}</span>
             </div>
           </div>
-        </div>
-        <!--건물 내부 강의실 결과-->
-        <div v-for="floor in bldg.floors" :key="floor.id">
-          <div v-for="className in floor.classes" :key="className.id">
+          <!--건물 별칭 결과-->
+          <div v-for="name in bldg.alias" :key="name.id">
             <div 
-            v-if="isQryMatched(className) && query != ''" 
+            v-if="isQryMatched(name) && query != ''" 
             @click="searchQuery(bldg.bldgName)"
             class="py-1 hover:bg-gray-100 cursor-pointer">
-              <div class="py-1 pl-2 border-l-2 border-l-[#0d326f]">
-                <span>{{ (bldg.bldgName + " > " + className).substring(0, (bldg.bldgName + " > " + className).indexOf(query)) }}</span>
-                <span class="bg-[#fbf719] underline">{{ (bldg.bldgName + " > " + className).substring((bldg.bldgName + " > " + className).indexOf(query), (bldg.bldgName + " > " + className).indexOf(query) + query.length) }}</span>
-                <span>{{ (bldg.bldgName + " > " + className).substring((bldg.bldgName + " > " + className).indexOf(query) + query.length) }}</span>
+              <div class="py-1 pl-2 border-l-2 border-l-[#a40f16]">
+                <span>{{ (bldg.bldgName + " (" + name + ")").substring(0, (bldg.bldgName + " (" + name + ")").indexOf(query)) }}</span>
+                <span class="bg-[#fbf719] underline">{{ (bldg.bldgName + " (" + name + ")").substring((bldg.bldgName + " (" + name + ")").indexOf(query), (bldg.bldgName + " (" + name + ")").indexOf(query) + query.length) }}</span>
+                <span>{{ (bldg.bldgName + " (" + name + ")").substring((bldg.bldgName + " (" + name + ")").indexOf(query) + query.length) }}</span>
+              </div>
+            </div>
+          </div>
+          <!--건물 내부 강의실 결과-->
+          <div v-for="floor in bldg.floors" :key="floor.id">
+            <div v-for="className in floor.classes" :key="className.id">
+              <div 
+              v-if="isQryMatched(className) && query != ''" 
+              @click="searchQuery(bldg.bldgName)"
+              class="py-1 hover:bg-gray-100 cursor-pointer">
+                <div class="py-1 pl-2 border-l-2 border-l-[#0d326f]">
+                  <span>{{ (bldg.bldgName + " > " + className).substring(0, (bldg.bldgName + " > " + className).indexOf(query)) }}</span>
+                  <span class="bg-[#fbf719] underline">{{ (bldg.bldgName + " > " + className).substring((bldg.bldgName + " > " + className).indexOf(query), (bldg.bldgName + " > " + className).indexOf(query) + query.length) }}</span>
+                  <span>{{ (bldg.bldgName + " > " + className).substring((bldg.bldgName + " > " + className).indexOf(query) + query.length) }}</span>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </Transition>
   </div>
 </template>
+
+<style>
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+}
+</style>

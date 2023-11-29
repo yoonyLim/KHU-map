@@ -1,5 +1,6 @@
 <script setup>
     import { computed, onMounted, onUnmounted, ref, toRefs, watch } from "vue";
+    import { useRouter } from "vue-router";
     import { Mesh, MeshBasicMaterial, PerspectiveCamera, Scene, WebGLRenderer, DirectionalLight, AxesHelper, BoxGeometry, Color, AmbientLight, Vector2, Raycaster, Group, Box3, Vector3 } from "three"
     import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
     import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
@@ -141,7 +142,10 @@
         }
     });
 
-    // move camera to the selected bldg
+    // emit to parent to hide search bar when bldg selected/deselected
+    const emit = defineEmits(["searchQuery", "isBldgSelected"]);
+
+    // move camera to the selected bldg and emit
     window.addEventListener("mousedown", (event) => {
         mousePos.x = (event.clientX / window.innerWidth) * 2 - 1;
         mousePos.y = -(event.clientY / window.innerHeight) * 2 + 1;
@@ -153,8 +157,7 @@
             moveCamera(intersects[0].object);
             isBldgClicked.value = true;
             selectedBldg.value = intersects[0].object;
-        } else {
-            isBldgClicked.value = false;
+            emit("isBldgSelected", true);
         }
     });
 
@@ -203,8 +206,28 @@
             z: objCenter.z,
             duration: 2,
             ease: "power3.out",
+            onStart: () => { controls.enabled = false },
             onComplete: () => { controls.enabled = true }
         });
+    }
+
+    // toggle on and off the sidebar
+    const sidebar = ref("");
+
+    watch(sidebar, () => {
+        if (sidebar.value) {
+            sidebar.value.addEventListener("focusout", () => {
+                isBldgClicked.value = false;
+                emit("isBldgSelected", false);
+            })
+        }
+    });
+
+    // route to next
+    const router = useRouter();
+
+    function pushPath(bldgName) {
+        router.push({ path: "/map/" + bldgName });
     }
 
     const loop = () => {
@@ -259,6 +282,7 @@
         labelRenderer.setSize(window.innerWidth, window.innerHeight);
         labelRenderer.domElement.style.position = "absolute";
         labelRenderer.domElement.style.top = "0px";
+        labelRenderer.domElement.style.zIndex = "10";
         labelRenderer.domElement.style.pointerEvents = "none"; // since labelRendere is on top of canvas, it needs to have no event to be able to orbit control
         document.body.appendChild(labelRenderer.domElement);
     }
@@ -270,21 +294,27 @@
 <template>
     <canvas ref="canvas" />
     <!--sidebar start-->
-    <div class="absolute right-0 backdrop-blur-xl w-1/3 h-full p-8 z-200">
-        <div class="felx-col justify-start">
-            <div class="w-full flex justify-end">
-                <button @click="isBldgClicked = false" class="flex w-18 h-18 justify-center items-center">
-                    <img src="src\assets\icons\close.svg" alt="close" />
-                </button>
-            </div>
-            <div v-if="isBldgClicked" class="text-2xl font-bold mt-8">{{ selectedBldg.name }}</div>
-            <div class="w-full mt-8">
-                <button class="w-full bg-black text-white py-4">
-                    건물 내부 지도 확인
-                </button>
+    <Transition>
+        <div 
+        ref="sidebar"
+        tabindex="0"
+        v-if="isBldgClicked" 
+        class="absolute right-0 backdrop-blur-xl w-1/3 h-full p-8 z-50">
+            <div class="felx-col justify-start">
+                <div class="w-full flex justify-end">
+                    <button @click="isBldgClicked = false;" class="flex w-18 h-18 justify-center items-center">
+                        <img src="src\assets\icons\close.svg" alt="close" />
+                    </button>
+                </div>
+                <div class="text-2xl font-bold mt-8">{{ selectedBldg.name }}</div>
+                <div class="w-full mt-8">
+                    <button @click="pushPath(selectedBldg.name);" class="w-full bg-black text-white py-4">
+                        건물 내부 지도 확인
+                    </button>
+                </div>
             </div>
         </div>
-    </div>
+    </Transition>
     <!--sidebar end-->
 </template>
 
@@ -294,7 +324,7 @@
     color: white;
     padding: 10px;
     position: relative;
-    transform: translateY(-10px);
+    transform: translateY(0px);
     opacity: 0;
     transition-duration: 0.2s;
     transition-property: opacity, transform;
@@ -308,7 +338,7 @@
     background-color: black;
     top: 90%;
     left: 50%;
-    transform: rotateZ(45deg) translateX(-50%);
+    transform: rotateZ(45deg) translateX(-70%);
     z-index: -1;
 }
 
@@ -320,6 +350,15 @@
 .show {
     opacity: 1;
     transform: translateY(0px);
-    z-index: 50;
+}
+
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
 }
 </style>

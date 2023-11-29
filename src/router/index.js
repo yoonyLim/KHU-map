@@ -8,6 +8,11 @@ const router = createRouter({
       path: '/',
       name: 'home',
       component: HomeView
+    },
+    {
+      path: '/map/:bldg',
+      name: 'bldg-map',
+      component: () => import("@/views/BldgMap.vue")
     }
   ]
 })
