@@ -24,6 +24,9 @@
         }
     });
 
+    const isBldgClicked = ref(false);
+    const selectedBldg = ref(null);
+
     const canvas = ref(null)
 
     // declaration for universal usage
@@ -139,7 +142,7 @@
     });
 
     // move camera to the selected bldg
-    window.addEventListener("click", (event) => {
+    window.addEventListener("mousedown", (event) => {
         mousePos.x = (event.clientX / window.innerWidth) * 2 - 1;
         mousePos.y = -(event.clientY / window.innerHeight) * 2 + 1;
 
@@ -148,6 +151,10 @@
 
         if (intersects.length > 0) {
             moveCamera(intersects[0].object);
+            isBldgClicked.value = true;
+            selectedBldg.value = intersects[0].object;
+        } else {
+            isBldgClicked.value = false;
         }
     });
 
@@ -156,13 +163,39 @@
         const objCenter = boundBox.getCenter( new Vector3() );
         const objSize = boundBox.getSize( new Vector3() );
 
-        gsap.to(camera.position, {
-            x: objCenter.x + 10,
-            y: objCenter.y + 20,
-            z: objCenter.z + objSize.z + 20,
-            duration: 2,
-            ease: "power3.out"
-        });
+        if (["애지원", "외국어대학관", "국제-경영대학관", "학생회관", "예술-디자인대학관", "한방재료가공-경희보감", "한방재료가공-경희보감1"].includes(obj.name)) {
+            gsap.to(camera.position, {
+                x: objCenter.x + 20,
+                y: objCenter.y + 20,
+                z: objCenter.z + objSize.z + 20,
+                duration: 2,
+                ease: "power3.out"
+            });
+        } else if (["정문", "도예관", "국제학관", "전자정보-응용과학대학관"].includes(obj.name)) {
+            gsap.to(camera.position, {
+                x: objCenter.x + 20,
+                y: objCenter.y + 20,
+                z: objCenter.z - objSize.z - 20,
+                duration: 2,
+                ease: "power3.out"
+            });
+        } else if (["우정원", "멀티미디어관-글로벌관", "제2기숙사-여자동", "제2기숙사-남자동", "선승관", "중앙도서관"].includes(obj.name)) {
+            gsap.to(camera.position, {
+                x: objCenter.x + 50,
+                y: objCenter.y + 20,
+                z: objCenter.z,
+                duration: 2,
+                ease: "power3.out"
+            });
+        } else {
+            gsap.to(camera.position, {
+                x: objCenter.x - 50,
+                y: objCenter.y + 20,
+                z: objCenter.z,
+                duration: 2,
+                ease: "power3.out"
+            });
+        }
 
         gsap.to(controls.target, {
             x: objCenter.x,
@@ -236,6 +269,23 @@
 
 <template>
     <canvas ref="canvas" />
+    <!--sidebar start-->
+    <div class="absolute right-0 backdrop-blur-xl w-1/3 h-full p-8 z-200">
+        <div class="felx-col justify-start">
+            <div class="w-full flex justify-end">
+                <button @click="isBldgClicked = false" class="flex w-18 h-18 justify-center items-center">
+                    <img src="src\assets\icons\close.svg" alt="close" />
+                </button>
+            </div>
+            <div v-if="isBldgClicked" class="text-2xl font-bold mt-8">{{ selectedBldg.name }}</div>
+            <div class="w-full mt-8">
+                <button class="w-full bg-black text-white py-4">
+                    건물 내부 지도 확인
+                </button>
+            </div>
+        </div>
+    </div>
+    <!--sidebar end-->
 </template>
 
 <style>
@@ -270,5 +320,6 @@
 .show {
     opacity: 1;
     transform: translateY(0px);
+    z-index: 50;
 }
 </style>
