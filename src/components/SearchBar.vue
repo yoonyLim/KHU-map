@@ -132,15 +132,25 @@
           </div>
           <!--건물 내부 강의실 결과-->
           <div v-for="floor in bldg.floors" :key="floor.id">
-            <div v-for="className in floor.classes" :key="className.id">
+            <div v-for="roomNumber in floor.rooms" :key="roomNumber.id">
               <div 
-              v-if="isQryMatched(className) && query != ''" 
+              v-if="isQryMatched(roomNumber) && query != ''" 
               @click="searchQuery(bldg.bldgName)"
               class="py-1 hover:bg-gray-100 cursor-pointer">
                 <div class="py-1 pl-2 border-l-2 border-l-[#0d326f]">
-                  <span>{{ (bldg.bldgName + " > " + className).substring(0, (bldg.bldgName + " > " + className).indexOf(query)) }}</span>
-                  <span class="bg-[#fbf719] underline">{{ (bldg.bldgName + " > " + className).substring((bldg.bldgName + " > " + className).indexOf(query), (bldg.bldgName + " > " + className).indexOf(query) + query.length) }}</span>
-                  <span>{{ (bldg.bldgName + " > " + className).substring((bldg.bldgName + " > " + className).indexOf(query) + query.length) }}</span>
+                  <span>{{ (bldg.bldgName + " > " + roomNumber).substring(0, (bldg.bldgName + " > " + roomNumber).indexOf(query)) }}</span>
+                  <span class="bg-[#fbf719] underline">{{ (bldg.bldgName + " > " + roomNumber).substring((bldg.bldgName + " > " + roomNumber).indexOf(query), (bldg.bldgName + " > " + roomNumber).indexOf(query) + query.length) }}</span>
+                  <span>{{ (bldg.bldgName + " > " + roomNumber).substring((bldg.bldgName + " > " + roomNumber).indexOf(query) + query.length) }}</span>
+                </div>
+              </div>
+              <div 
+              v-if="isQryMatched(roomNumber) && query != ''" 
+              @click="searchQuery(bldg.bldgName)"
+              class="py-1 hover:bg-gray-100 cursor-pointer">
+                <div class="py-1 pl-2 border-l-2 border-l-[#0d326f]">
+                  <span>{{ (bldg.bldgName + " > " + roomNumber).substring(0, (bldg.bldgName + " > " + roomNumber).indexOf(query)) }}</span>
+                  <span class="bg-[#fbf719] underline">{{ (bldg.bldgName + " > " + roomNumber).substring((bldg.bldgName + " > " + roomNumber).indexOf(query), (bldg.bldgName + " > " + roomNumber).indexOf(query) + query.length) }}</span>
+                  <span>{{ (bldg.bldgName + " > " + roomNumber).substring((bldg.bldgName + " > " + roomNumber).indexOf(query) + query.length) }}</span>
                 </div>
               </div>
             </div>

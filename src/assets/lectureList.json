@@ -1,0 +1,29 @@
+{
+    "bldgs": [
+        {
+            "bldgName": "전자정보-응용과학대학관",
+            "floors": [
+                {
+                    "floor": "B1",
+                    "rooms": [
+                        {
+                            "roomNumber": "301",
+                            "classes": [
+                                {
+                                    "lectureName": "디자인적 사고",
+                                    "Professor": "",
+                                    "days": [],
+                                    "timeStart": "",
+                                    "timeEnd": ""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            
+        }
+    ]
+}
