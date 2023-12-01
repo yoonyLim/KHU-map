@@ -67,14 +67,89 @@
                                 {
                                     "lectureName": "SW스타트업프로젝트",
                                     "Professor": "서상원",
-                                    "days": [""],
-                                    "timeStart": "",
-                                    "timeEnd": ""
+                                    "days": ["월"],
+                                    "timeStart": "09:00",
+                                    "timeEnd": "11:50"
+                                },
+                                {
+                                    "lectureName": "게임엔진기초",
+                                    "Professor": "강형엽",
+                                    "days": ["화"],
+                                    "timeStart": "13:00",
+                                    "timeEnd": "16:50"
+                                },
+                                {
+                                    "lectureName": "디자인적사고",
+                                    "Professor": "서상원",
+                                    "days": ["수"],
+                                    "timeStart": "13:00",
+                                    "timeEnd": "16:50"
+                                },
+                                {
+                                    "lectureName": "클라우드프로젝트",
+                                    "Professor": "김재홍",
+                                    "days": ["목"],
+                                    "timeStart": "09:00",
+                                    "timeEnd": "11:50"
+                                },
+                                {
+                                    "lectureName": "딥러닝",
+                                    "Professor": "Chaoning Zhang",
+                                    "days": ["금"],
+                                    "timeStart": "09:00",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "데이터분석캡스톤디자인",
+                                    "Professor": "이대호",
+                                    "days": ["금"],
+                                    "timeStart": "12:00",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "소프트웨어융합캡스톤디자인",
+                                    "Professor": "이대호",
+                                    "days": ["금"],
+                                    "timeStart": "15:00",
+                                    "timeEnd": "17:45"
                                 }
                             ]
                         },
                         "B03",
-                        "B05",
+                        {
+                            "roomNumber": "B05",
+                            "classes": [
+                                {
+                                    "lectureName": "객체지향프로그래밍및실습",
+                                    "alias": "객프",
+                                    "Professor": "김정근",
+                                    "days": ["월", "수"],
+                                    "timeStart": "13:00",
+                                    "timeEnd": "14:50"
+                                },
+                                {
+                                    "lectureName": "로봇제어공학",
+                                    "Professor": "김동한",
+                                    "days": ["화", "목"],
+                                    "timeStart": "10:30",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "데이터사이언스및시각화",
+                                    "Professor": "이원희",
+                                    "days": ["화", "목"],
+                                    "timeStart": "13:00",
+                                    "timeEnd": "14:50"
+                                },
+                                {
+                                    "lectureName": "모바일/웹서비스프로젝트",
+                                    "Professor": "안기옥",
+                                    "days": ["화"],
+                                    "timeStart": "15:00",
+                                    "timeEnd": "17:45"
+                                }
+                            ]
+                        },
                         "B05-1",
                         "B06",
                         "B07",

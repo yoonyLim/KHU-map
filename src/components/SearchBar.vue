@@ -134,7 +134,7 @@
           <div v-for="floor in bldg.floors" :key="floor.id">
             <div v-for="roomNumber in floor.rooms" :key="roomNumber.id">
               <div 
-              v-if="isQryMatched(roomNumber) && query != ''" 
+              v-if="typeof roomNumber != 'object' && isQryMatched(roomNumber) && query != ''" 
               @click="searchQuery(bldg.bldgName)"
               class="py-1 hover:bg-gray-100 cursor-pointer">
                 <div class="py-1 pl-2 border-l-2 border-l-[#0d326f]">
@@ -144,13 +144,13 @@
                 </div>
               </div>
               <div 
-              v-if="isQryMatched(roomNumber) && query != ''" 
+              v-if="typeof roomNumber == 'object' && isQryMatched(roomNumber.roomNumber) && query != ''" 
               @click="searchQuery(bldg.bldgName)"
               class="py-1 hover:bg-gray-100 cursor-pointer">
                 <div class="py-1 pl-2 border-l-2 border-l-[#0d326f]">
-                  <span>{{ (bldg.bldgName + " > " + roomNumber).substring(0, (bldg.bldgName + " > " + roomNumber).indexOf(query)) }}</span>
-                  <span class="bg-[#fbf719] underline">{{ (bldg.bldgName + " > " + roomNumber).substring((bldg.bldgName + " > " + roomNumber).indexOf(query), (bldg.bldgName + " > " + roomNumber).indexOf(query) + query.length) }}</span>
-                  <span>{{ (bldg.bldgName + " > " + roomNumber).substring((bldg.bldgName + " > " + roomNumber).indexOf(query) + query.length) }}</span>
+                  <span>{{ (bldg.bldgName + " > " + roomNumber.roomNumber).substring(0, (bldg.bldgName + " > " + roomNumber.roomNumber).indexOf(query)) }}</span>
+                  <span class="bg-[#fbf719] underline">{{ (bldg.bldgName + " > " + roomNumber.roomNumber).substring((bldg.bldgName + " > " + roomNumber.roomNumber).indexOf(query), (bldg.bldgName + " > " + roomNumber.roomNumber).indexOf(query) + query.length) }}</span>
+                  <span>{{ (bldg.bldgName + " > " + roomNumber.roomNumber).substring((bldg.bldgName + " > " + roomNumber.roomNumber).indexOf(query) + query.length) }}</span>
                 </div>
               </div>
             </div>
