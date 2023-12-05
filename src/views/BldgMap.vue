@@ -53,23 +53,25 @@
 </script>
 
 <template>
-    <div class="max-w-screen-xl px-8 w-full flex-col py-8">
-        <div class="w-full flex flex-col">
-            <span class="font-bold text-3xl">{{ bldgName }}</span>
-            <span class="mt-4 font-bold text-3xl text-gray-400">{{ curFloor }}F</span>
-        </div>
-        <div v-if="bldgInfo" class="w-full flex mt-4 py-4 border-b">
-            <div v-for="floor in bldgInfo.floors" :key="floor.id">
-                <button 
-                @click="changeFloor(floor.floor)"
-                :class="curFloor == floor.floor ? 'text-white bg-red-300' : 'bg-gray-300'"
-                class="px-4 py-2 mr-4 hover:bg-red-300 transition-bg-colors duration-300 ease-in-out">
-                    <span>{{ floor.floor }}</span>
-                </button>
+    <div class="px-8 w-full py-8 flex justify-center">
+        <div class="max-w-screen-xl w-full flex-col">
+            <div class="w-full flex flex-col">
+                <span class="font-bold text-3xl">{{ bldgName }}</span>
+                <span class="mt-4 font-bold text-3xl text-gray-400">{{ curFloor }}F</span>
             </div>
-        </div>
-        <div class="w-full h-full">
-            <component :query="selectedClass" :is="comp"></component>
+            <div v-if="bldgInfo" class="w-full flex mt-4 py-4 border-b">
+                <div v-for="floor in bldgInfo.floors" :key="floor.id">
+                    <button 
+                    @click="changeFloor(floor.floor)"
+                    :class="curFloor == floor.floor ? 'text-white bg-red-300' : 'bg-gray-300'"
+                    class="px-4 py-2 mr-4 hover:bg-red-300 transition-bg-colors duration-300 ease-in-out">
+                        <span>{{ floor.floor }}</span>
+                    </button>
+                </div>
+            </div>
+            <div class="w-full h-full">
+                <component :query="selectedClass" :is="comp"></component>
+            </div>
         </div>
     </div>
 </template>
