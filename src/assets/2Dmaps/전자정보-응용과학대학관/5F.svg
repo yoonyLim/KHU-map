@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1148.78 768">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        font-size: 16px;
+      }
+
+      .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7 {
+        font-family: AdobeMyungjoStd-Medium-KSCpc-EUC-H, 'Adobe Myungjo Std';
+        font-weight: 500;
+      }
+
+      .cls-3 {
+        font-size: 18px;
+      }
+
+      .cls-4 {
+        font-size: 19px;
+      }
+
+      .cls-5 {
+        font-size: 14px;
+      }
+
+      .cls-6 {
+        font-size: 7px;
+      }
+
+      .cls-7 {
+        font-size: 11px;
+      }
+    </style>
+  </defs>
+  <g id="_텍스트" data-name="텍스트">
+    <text class="cls-3" transform="translate(91.13 277)"><tspan x="0" y="0">567</tspan></text>
+    <text class="cls-3" transform="translate(78 350)"><tspan x="0" y="0">565-3</tspan></text>
+    <text class="cls-3" transform="translate(78 429)"><tspan x="0" y="0">565-2</tspan></text>
+    <text class="cls-3" transform="translate(78 502)"><tspan x="0" y="0">565-1</tspan></text>
+    <text class="cls-3" transform="translate(78 558)"><tspan x="0" y="0">563-1</tspan></text>
+    <text class="cls-3" transform="translate(91.13 617)"><tspan x="0" y="0">563</tspan></text>
+    <text class="cls-3" transform="translate(227.13 277)"><tspan x="0" y="0">570</tspan></text>
+    <text class="cls-3" transform="translate(227.13 350)"><tspan x="0" y="0">568</tspan></text>
+    <text class="cls-3" transform="translate(227.13 429)"><tspan x="0" y="0">566</tspan></text>
+    <text class="cls-3" transform="translate(226 497)"><tspan x="0" y="0">계단</tspan></text>
+    <text class="cls-3" transform="translate(317 598)"><tspan x="0" y="0">여자</tspan><tspan x="-9" y="21.6">화장실</tspan></text>
+    <text class="cls-3" transform="translate(252 598)"><tspan x="0" y="0">남자</tspan><tspan x="-9" y="21.6">화장실</tspan></text>
+    <text class="cls-5" transform="translate(843 202)"><tspan x="0" y="0">남자</tspan><tspan x="-7" y="16.8">화장실</tspan></text>
+    <text class="cls-5" transform="translate(887 202)"><tspan x="0" y="0">여자</tspan><tspan x="-7" y="16.8">화장실</tspan></text>
+    <text class="cls-2" transform="translate(228 540)"><tspan x="0" y="0">여자</tspan><tspan x="-8" y="19.2">샤워실</tspan></text>
+    <text class="cls-3" transform="translate(582 604)"><tspan x="0" y="0">계단</tspan></text>
+    <text class="cls-3" transform="translate(879 521)"><tspan x="0" y="0">계단</tspan></text>
+    <text class="cls-6" transform="translate(1030.33 515)"><tspan x="0" y="0">남자 화장실</tspan></text>
+    <text class="cls-6" transform="translate(1030.33 533)"><tspan x="0" y="0">여자 화장실</tspan></text>
+    <text class="cls-6" transform="translate(1045 552)"><tspan x="0" y="0">엘리</tspan><tspan x="-3.5" y="8.4">베이터</tspan></text>
+    <text class="cls-7" transform="translate(398 204)"><tspan x="0" y="0">엘리</tspan><tspan x="-5.5" y="13.2">베이터</tspan></text>
+    <text class="cls-3" transform="translate(791 213)"><tspan x="0" y="0">계단</tspan></text>
+    <text class="cls-3" transform="translate(317 213)"><tspan x="0" y="0">계단</tspan></text>
+    <text class="cls-3" transform="translate(111.13 719)"><tspan x="0" y="0">559</tspan></text>
+    <text class="cls-3" transform="translate(194.13 719)"><tspan x="0" y="0">557</tspan></text>
+    <text class="cls-3" transform="translate(242 719)"><tspan x="0" y="0">555-2</tspan></text>
+    <text class="cls-3" transform="translate(377.13 604)"><tspan x="0" y="0">554</tspan></text>
+    <text class="cls-2" transform="translate(419.34 604)"><tspan x="0" y="0">554-1</tspan></text>
+    <text class="cls-3" transform="translate(491.13 604)"><tspan x="0" y="0">552</tspan></text>
+    <text class="cls-3" transform="translate(677.13 604)"><tspan x="0" y="0">548</tspan></text>
+    <text class="cls-3" transform="translate(738.13 604)"><tspan x="0" y="0">546</tspan></text>
+    <text class="cls-3" transform="translate(800.13 604)"><tspan x="0" y="0">544</tspan></text>
+    <text class="cls-3" transform="translate(304 719)"><tspan x="0" y="0">555-1</tspan></text>
+    <text class="cls-4" transform="translate(376.19 719)"><tspan x="0" y="0">553</tspan></text>
+    <text class="cls-2" transform="translate(419.34 719)"><tspan x="0" y="0">553-1</tspan></text>
+    <text class="cls-3" transform="translate(513.13 719)"><tspan x="0" y="0">551</tspan></text>
+    <text class="cls-3" transform="translate(618.13 719)"><tspan x="0" y="0">549</tspan></text>
+    <text class="cls-2" transform="translate(687.34 719)"><tspan x="0" y="0">547-2</tspan></text>
+    <text class="cls-2" transform="translate(743.34 719)"><tspan x="0" y="0">547-1</tspan></text>
+    <text class="cls-3" transform="translate(825.13 719)"><tspan x="0" y="0">545</tspan></text>
+    <text class="cls-3" transform="translate(916.13 719)"><tspan x="0" y="0">543</tspan></text>
+    <text class="cls-3" transform="translate(1013.13 719)"><tspan x="0" y="0">541</tspan></text>
+    <text class="cls-3" transform="translate(1012.13 604)"><tspan x="0" y="0">539</tspan></text>
+    <text class="cls-3" transform="translate(869.13 604)"><tspan x="0" y="0">542</tspan></text>
+    <text class="cls-3" transform="translate(880.13 489)"><tspan x="0" y="0">536</tspan></text>
+    <text class="cls-3" transform="translate(880.13 464)"><tspan x="0" y="0">534</tspan></text>
+    <text class="cls-3" transform="translate(880.13 434)"><tspan x="0" y="0">532</tspan></text>
+    <text class="cls-3" transform="translate(880.13 401)"><tspan x="0" y="0">530</tspan></text>
+    <text class="cls-3" transform="translate(880.13 360)"><tspan x="0" y="0">528</tspan></text>
+    <text class="cls-3" transform="translate(880.13 307)"><tspan x="0" y="0">526</tspan></text>
+    <text class="cls-3" transform="translate(1024.13 307)"><tspan x="0" y="0">527</tspan></text>
+    <text class="cls-3" transform="translate(1024.13 366)"><tspan x="0" y="0">529</tspan></text>
+    <text class="cls-3" transform="translate(1024.13 413)"><tspan x="0" y="0">531</tspan></text>
+    <text class="cls-3" transform="translate(1024.13 443)"><tspan x="0" y="0">533</tspan></text>
+    <text class="cls-3" transform="translate(1024.13 471)"><tspan x="0" y="0">535</tspan></text>
+    <text class="cls-3" transform="translate(1024.13 497)"><tspan x="0" y="0">537</tspan></text>
+    <text class="cls-3" transform="translate(738.13 213)"><tspan x="0" y="0">520</tspan></text>
+    <text class="cls-3" transform="translate(679.13 213)"><tspan x="0" y="0">518</tspan></text>
+    <text class="cls-3" transform="translate(624.13 213)"><tspan x="0" y="0">516</tspan></text>
+    <text class="cls-3" transform="translate(574.13 213)"><tspan x="0" y="0">514</tspan></text>
+    <text class="cls-3" transform="translate(529.13 213)"><tspan x="0" y="0">512</tspan></text>
+    <text class="cls-3" transform="translate(480.13 213)"><tspan x="0" y="0">510</tspan></text>
+    <text class="cls-3" transform="translate(434.13 213)"><tspan x="0" y="0">508</tspan></text>
+    <text class="cls-3" transform="translate(214.13 88)"><tspan x="0" y="0">501</tspan></text>
+    <text class="cls-3" transform="translate(263.13 88)"><tspan x="0" y="0">503</tspan></text>
+    <text class="cls-3" transform="translate(320.13 88)"><tspan x="0" y="0">505</tspan></text>
+    <text class="cls-3" transform="translate(380.13 88)"><tspan x="0" y="0">507</tspan></text>
+    <text class="cls-3" transform="translate(457.13 88)"><tspan x="0" y="0">509</tspan></text>
+    <text class="cls-3" transform="translate(527.13 88)"><tspan x="0" y="0">511</tspan></text>
+    <text class="cls-3" transform="translate(573.13 88)"><tspan x="0" y="0">513</tspan></text>
+    <text class="cls-3" transform="translate(621.13 88)"><tspan x="0" y="0">515</tspan></text>
+    <text class="cls-3" transform="translate(677.13 88)"><tspan x="0" y="0">517</tspan></text>
+    <text class="cls-3" transform="translate(739.13 88)"><tspan x="0" y="0">519</tspan></text>
+    <text class="cls-3" transform="translate(800.13 88)"><tspan x="0" y="0">521</tspan></text>
+    <text class="cls-3" transform="translate(848.13 88)"><tspan x="0" y="0">523</tspan></text>
+    <text class="cls-3" transform="translate(887.13 88)"><tspan x="0" y="0">525</tspan></text>
+  </g>
+  <g id="_레이어_2" data-name="레이어 2">
+    <line class="cls-1" x1="76.5" y1="680" x2="76.5" y2="649"/>
+    <line class="cls-1" x1="1070" y1="634" x2="1070" y2="680"/>
+    <line class="cls-1" x1="1070" y1="542" x2="1070" y2="563"/>
+    <line class="cls-1" x1="1070" y1="109.5" x2="1070" y2="273"/>
+    <polyline class="cls-1" points="923 52.5 1070 52.5 1070 109.5"/>
+    <polyline class="cls-1" points="76.5 232 76.5 52.5 211 52.5"/>
+    <line class="cls-1" x1="923" y1="109.5" x2="1070" y2="109.5"/>
+    <polyline class="cls-1" points="139.5 232 139.5 109.5 211 109.5"/>
+    <line class="cls-1" x1="1012" y1="52.5" x2="1012" y2="273"/>
+    <line class="cls-1" x1="923" y1="273" x2="923" y2="232"/>
+    <line class="cls-1" x1="923" y1="529" x2="923" y2="495"/>
+    <line class="cls-1" x1="923" y1="563" x2="923" y2="529"/>
+    <line class="cls-1" x1="540" y1="634" x2="662" y2="634"/>
+    <line class="cls-1" x1="211" y1="464" x2="211" y2="521"/>
+    <polyline class="cls-1" points="276.5 177 211 177 211 232"/>
+    <line class="cls-1" x1="390" y1="177" x2="276.5" y2="177"/>
+    <line class="cls-1" x1="426" y1="177" x2="390" y2="177"/>
+    <line class="cls-1" x1="834" y1="177" x2="786" y2="177"/>
+    <line class="cls-1" x1="786" y1="232" x2="834" y2="232"/>
+    <line class="cls-1" x1="390" y1="232" x2="426" y2="232"/>
+    <line class="cls-1" x1="278" y1="232" x2="390" y2="232"/>
+    <line class="cls-1" x1="139.5" y1="232" x2="210.87" y2="232"/>
+    <line class="cls-1" x1="870.5" y1="529" x2="923" y2="529"/>
+    <line class="cls-1" x1="870.5" y1="529" x2="870.5" y2="495"/>
+    <line class="cls-1" x1="870.5" y1="563" x2="870.5" y2="529"/>
+    <line class="cls-1" x1="540" y1="563" x2="662" y2="563"/>
+    <line class="cls-1" x1="276.5" y1="464" x2="276.5" y2="521"/>
+    <line class="cls-1" x1="276.5" y1="177" x2="276.5" y2="232"/>
+    <line class="cls-1" x1="390" y1="177" x2="390" y2="232"/>
+    <line class="cls-1" x1="1036" y1="563" x2="1036" y2="542"/>
+  </g>
+  <g id="_508" data-name="508">
+    <rect class="cls-1" x="426" y="177" width="48" height="55"/>
+  </g>
+  <g id="_510" data-name="510">
+    <rect class="cls-1" x="474" y="177" width="47" height="55"/>
+  </g>
+  <g id="_512" data-name="512">
+    <rect class="cls-1" x="521" y="177" width="48" height="55"/>
+  </g>
+  <g id="_514" data-name="514">
+    <rect class="cls-1" x="569" y="177" width="45" height="55"/>
+  </g>
+  <g id="_516" data-name="516">
+    <rect class="cls-1" x="614" y="177" width="54" height="55"/>
+  </g>
+  <g id="_518" data-name="518">
+    <rect class="cls-1" x="668" y="177" width="57" height="55"/>
+  </g>
+  <g id="_520" data-name="520">
+    <rect class="cls-1" x="725" y="177" width="61" height="55"/>
+  </g>
+  <g id="_남자화장실3" data-name="남자화장실3">
+    <rect class="cls-1" x="834" y="177" width="45" height="55"/>
+  </g>
+  <g id="_여자화장실3" data-name="여자화장실3">
+    <rect class="cls-1" x="879" y="177" width="44" height="55"/>
+  </g>
+  <g id="_526" data-name="526">
+    <polygon class="cls-1" points="923 326 923 273 923 271.5 870.5 271.5 870.5 326 923 326"/>
+  </g>
+  <g id="_528" data-name="528">
+    <rect class="cls-1" x="870.5" y="326" width="52.5" height="48"/>
+  </g>
+  <g id="_530" data-name="530">
+    <rect class="cls-1" x="870.5" y="374" width="52.5" height="36"/>
+  </g>
+  <g id="_532" data-name="532">
+    <rect class="cls-1" x="870.5" y="410" width="52.5" height="35"/>
+  </g>
+  <g id="_534" data-name="534">
+    <rect class="cls-1" x="870.5" y="445" width="52.5" height="26"/>
+  </g>
+  <g id="_536" data-name="536">
+    <rect class="cls-1" x="870.5" y="471" width="52.5" height="24"/>
+  </g>
+  <g id="_542" data-name="542">
+    <polygon class="cls-1" points="847 634 923 634 923 563 870.5 563 847 563 847 634"/>
+  </g>
+  <g id="_544" data-name="544">
+    <rect class="cls-1" x="786" y="563" width="61" height="71"/>
+  </g>
+  <g id="_546" data-name="546">
+    <rect class="cls-1" x="725" y="563" width="61" height="71"/>
+  </g>
+  <g id="_548" data-name="548">
+    <rect class="cls-1" x="662" y="563" width="63" height="71"/>
+  </g>
+  <g id="_552" data-name="552">
+    <polygon class="cls-1" points="474 634 540 634 540 562.5 540 563 474 563 474 634"/>
+  </g>
+  <g id="_554-1" data-name="554-1">
+    <rect class="cls-1" x="417" y="563" width="57" height="71"/>
+  </g>
+  <g id="_554" data-name="554">
+    <rect class="cls-1" x="368" y="563" width="49" height="71"/>
+  </g>
+  <g id="_여자화장실" data-name="여자화장실">
+    <rect class="cls-1" x="302" y="563" width="66" height="71"/>
+  </g>
+  <g id="_남자화장실" data-name="남자화장실">
+    <polyline class="cls-1" points="302 634 238.5 634 238.5 563 276.5 563 302 563"/>
+  </g>
+  <g id="_여자샤워실" data-name="여자샤워실">
+    <polygon class="cls-1" points="276.5 563 238.5 562.5 238.5 634 211 634 211 521 276.5 521 276.5 563"/>
+  </g>
+  <g id="_566" data-name="566">
+    <rect class="cls-1" x="211" y="379.25" width="65.5" height="84.75"/>
+  </g>
+  <g id="_568" data-name="568">
+    <rect class="cls-1" x="211" y="303" width="65.5" height="76.25"/>
+  </g>
+  <g id="_570" data-name="570">
+    <polyline class="cls-1" points="276.5 232 276.5 303 211 303 211 232 210.87 232 278 232"/>
+  </g>
+  <g id="_501" data-name="501">
+    <rect class="cls-1" x="211" y="52.5" width="40" height="57"/>
+  </g>
+  <g id="_503" data-name="503">
+    <rect class="cls-1" x="251" y="52.5" width="57" height="57"/>
+  </g>
+  <g id="_505" data-name="505">
+    <rect class="cls-1" x="308" y="52.5" width="60" height="57"/>
+  </g>
+  <g id="_507" data-name="507">
+    <rect class="cls-1" x="368" y="52.5" width="58" height="57"/>
+  </g>
+  <g id="_509" data-name="509">
+    <rect class="cls-1" x="426" y="52.5" width="95" height="57"/>
+  </g>
+  <g id="_511" data-name="511">
+    <rect class="cls-1" x="521" y="52.5" width="48" height="57"/>
+  </g>
+  <g id="_513" data-name="513">
+    <rect class="cls-1" x="569" y="52.5" width="45" height="57"/>
+  </g>
+  <g id="_515" data-name="515">
+    <rect class="cls-1" x="614" y="52.5" width="48" height="57"/>
+  </g>
+  <g id="_517" data-name="517">
+    <rect class="cls-1" x="662" y="52.5" width="63" height="57"/>
+  </g>
+  <g id="_519" data-name="519">
+    <rect class="cls-1" x="725" y="52.5" width="61" height="57"/>
+  </g>
+  <g id="_521" data-name="521">
+    <rect class="cls-1" x="786" y="52.5" width="61" height="57"/>
+  </g>
+  <g id="_523" data-name="523">
+    <rect class="cls-1" x="847" y="52.5" width="39" height="57"/>
+  </g>
+  <g id="_525" data-name="525">
+    <rect class="cls-1" x="886" y="52.5" width="37" height="57"/>
+  </g>
+  <g id="_527" data-name="527">
+    <rect class="cls-1" x="1012" y="273" width="58" height="59.56"/>
+  </g>
+  <g id="_529" data-name="529">
+    <rect class="cls-1" x="1012" y="332.56" width="58" height="51.44"/>
+  </g>
+  <g id="_531" data-name="531">
+    <rect class="cls-1" x="1012" y="384" width="58" height="36.75"/>
+  </g>
+  <g id="_533" data-name="533">
+    <rect class="cls-1" x="1012" y="420.75" width="58" height="30.02"/>
+  </g>
+  <g id="_535" data-name="535">
+    <rect class="cls-1" x="1012" y="450.77" width="58" height="26.98"/>
+  </g>
+  <g id="_537" data-name="537">
+    <polygon class="cls-1" points="1070 502 1070 477.75 1012 477.75 1012 502 1028.75 502 1070 502"/>
+  </g>
+  <g id="_남자화장실2" data-name="남자화장실2">
+    <polygon class="cls-1" points="1070 521 1070 502 1028.75 502 1028.75 522 1070 521"/>
+  </g>
+  <g id="_여자화장실2" data-name="여자화장실2">
+    <polygon class="cls-1" points="1028.75 542 1070 542 1070 521 1028.75 522 1028.75 542"/>
+  </g>
+  <g id="_539" data-name="539">
+    <rect class="cls-1" x="987.5" y="563" width="82.5" height="71"/>
+  </g>
+  <g id="_541" data-name="541">
+    <rect class="cls-1" x="981" y="680" width="89" height="70"/>
+  </g>
+  <g id="_543" data-name="543">
+    <rect class="cls-1" x="886" y="680" width="95" height="70"/>
+  </g>
+  <g id="_545" data-name="545">
+    <rect class="cls-1" x="798" y="680" width="88" height="70"/>
+  </g>
+  <g id="_547-1" data-name="547-1">
+    <rect class="cls-1" x="743" y="680" width="55" height="70"/>
+  </g>
+  <g id="_547-2" data-name="547-2">
+    <rect class="cls-1" x="683" y="680" width="60" height="70"/>
+  </g>
+  <g id="_549" data-name="549">
+    <rect class="cls-1" x="585" y="680" width="98" height="70"/>
+  </g>
+  <g id="_551" data-name="551">
+    <rect class="cls-1" x="474" y="680" width="111" height="70"/>
+  </g>
+  <g id="_553-1" data-name="553-1">
+    <rect class="cls-1" x="417" y="680" width="57" height="70"/>
+  </g>
+  <g id="_553" data-name="553">
+    <rect class="cls-1" x="368" y="680" width="49" height="70"/>
+  </g>
+  <g id="_555-1" data-name="555-1">
+    <rect class="cls-1" x="302" y="680" width="66" height="70"/>
+  </g>
+  <g id="_555-2" data-name="555-2">
+    <rect class="cls-1" x="243.75" y="680" width="58.25" height="70"/>
+  </g>
+  <g id="_557" data-name="557">
+    <rect class="cls-1" x="178" y="680" width="65.75" height="70"/>
+  </g>
+  <g id="_559" data-name="559">
+    <rect class="cls-1" x="76.5" y="680" width="101.5" height="70"/>
+  </g>
+  <g id="_563" data-name="563">
+    <rect class="cls-1" x="76.5" y="576" width="63" height="73"/>
+  </g>
+  <g id="_563-1" data-name="563-1">
+    <rect class="cls-1" x="76.5" y="521" width="63" height="55"/>
+  </g>
+  <g id="_565-1" data-name="565-1">
+    <rect class="cls-1" x="76.5" y="464" width="63" height="57"/>
+  </g>
+  <g id="_565-2" data-name="565-2">
+    <rect class="cls-1" x="76.5" y="379.25" width="63" height="84.75"/>
+  </g>
+  <g id="_565-3" data-name="565-3">
+    <rect class="cls-1" x="76.5" y="303" width="63" height="76.25"/>
+  </g>
+  <g id="_567" data-name="567">
+    <rect class="cls-1" x="76.5" y="232" width="63" height="71"/>
+  </g>
+</svg>

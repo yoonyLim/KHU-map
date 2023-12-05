@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1314.51 603.04">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        font-size: 18px;
+      }
+
+      .cls-2, .cls-3 {
+        font-family: AdobeMyungjoStd-Medium-KSCpc-EUC-H, 'Adobe Myungjo Std';
+        font-weight: 500;
+      }
+
+      .cls-3 {
+        font-size: 25.07px;
+      }
+    </style>
+  </defs>
+  <g id="_레이어_2" data-name="레이어 2">
+    <polyline class="cls-1" points="152.57 489.13 78.07 489.13 78.07 281.13 97.57 281.13"/>
+    <polyline class="cls-1" points="1166.07 281.13 1228.07 281.13 1228.07 489.13 1166.07 489.13"/>
+    <text class="cls-3" transform="translate(179.57 427.13)"><tspan x="0" y="0">408</tspan></text>
+    <text class="cls-3" transform="translate(172.5 201.13)"><tspan x="0" y="0">여자</tspan><tspan x="-12.53" y="30.08">화장실</tspan></text>
+    <text class="cls-3" transform="translate(1099.5 201.13)"><tspan x="0" y="0">남자</tspan><tspan x="-12.53" y="30.08">화장실</tspan></text>
+    <text class="cls-3" transform="translate(1171.57 403.13)"><tspan x="0" y="0">계단</tspan></text>
+    <text class="cls-3" transform="translate(91.57 403.13)"><tspan x="0" y="0">계단</tspan></text>
+    <text class="cls-3" transform="translate(264.57 427.13)"><tspan x="0" y="0">407</tspan></text>
+    <text class="cls-3" transform="translate(349.57 427.13)"><tspan x="0" y="0">406</tspan></text>
+    <text class="cls-3" transform="translate(435.57 427.13)"><tspan x="0" y="0">405</tspan></text>
+    <text class="cls-3" transform="translate(564.57 427.13)"><tspan x="0" y="0">404</tspan></text>
+    <text class="cls-3" transform="translate(724.57 427.13)"><tspan x="0" y="0">403</tspan></text>
+    <text class="cls-3" transform="translate(889.57 427.13)"><tspan x="0" y="0">402</tspan></text>
+    <text class="cls-3" transform="translate(1049.57 427.13)"><tspan x="0" y="0">401</tspan></text>
+    <text class="cls-3" transform="translate(1033.57 222.13)"><tspan x="0" y="0">420</tspan></text>
+    <text class="cls-3" transform="translate(976.57 222.13)"><tspan x="0" y="0">419</tspan></text>
+    <text class="cls-3" transform="translate(929.57 222.13)"><tspan x="0" y="0">418</tspan></text>
+    <text class="cls-3" transform="translate(877.57 222.13)"><tspan x="0" y="0">417</tspan></text>
+    <text class="cls-3" transform="translate(830.57 222.13)"><tspan x="0" y="0">416</tspan></text>
+    <text class="cls-3" transform="translate(782.57 222.13)"><tspan x="0" y="0">415</tspan></text>
+    <text class="cls-3" transform="translate(732.57 222.13)"><tspan x="0" y="0">414</tspan></text>
+    <text class="cls-2" transform="translate(672.57 221.13)"><tspan x="0" y="0">413-1</tspan></text>
+    <text class="cls-3" transform="translate(604.57 222.13)"><tspan x="0" y="0">413</tspan></text>
+    <text class="cls-3" transform="translate(480.57 222.13)"><tspan x="0" y="0">412</tspan></text>
+    <text class="cls-3" transform="translate(330.57 222.13)"><tspan x="0" y="0">411-1</tspan></text>
+    <text class="cls-3" transform="translate(259.57 222.13)"><tspan x="0" y="0">411</tspan></text>
+  </g>
+  <g id="_408" data-name="408">
+    <polygon class="cls-1" points="241.57 489.13 152.57 489.13 152.57 344.13 158.07 344.13 175.57 344.13 241.57 344.13 241.57 489.13"/>
+  </g>
+  <g id="_407" data-name="407">
+    <polygon class="cls-1" points="331.07 489.13 241.57 489.13 241.57 344.13 302.57 344.13 322.57 344.13 331.07 344.13 331.07 489.13"/>
+  </g>
+  <g id="_406" data-name="406">
+    <polygon class="cls-1" points="416.79 489.13 331.07 489.13 331.07 344.13 339.57 344.13 349.57 344.13 416.57 344.13 416.79 489.13"/>
+  </g>
+  <g id="_405" data-name="405">
+    <polygon class="cls-1" points="500.07 489.13 416.79 489.13 416.57 344.13 474.57 344.13 493.57 344.13 500.07 344.13 500.07 489.13"/>
+  </g>
+  <g id="_404" data-name="404">
+    <polygon class="cls-1" points="668.57 489.13 500.07 489.13 500.07 344.13 506.57 344.13 525.57 344.13 646.57 344.13 659.32 344.13 668.57 344.13 668.57 489.13"/>
+  </g>
+  <g id="_403" data-name="403">
+    <polyline class="cls-1" points="830.57 344.13 823.57 344.13 812.57 344.13 690.57 344.13 673.57 344.13 668.57 344.13 668.57 489.13 831.57 489.13 831.07 344.63"/>
+  </g>
+  <g id="_402" data-name="402">
+    <polygon class="cls-1" points="990.32 489.13 831.57 489.13 831.07 344.13 837.07 344.13 850.57 344.13 976.57 344.13 983.07 344.13 990.32 344.13 990.32 489.13"/>
+  </g>
+  <g id="_401" data-name="401">
+    <polygon class="cls-1" points="1166.07 344.13 1166.07 489.13 990.32 489.13 990.32 344.13 997.57 344.13 1017.57 344.13 1137.57 344.13 1150.57 344.13 1166.07 344.13"/>
+  </g>
+  <g id="_레이어_16" data-name="레이어 16">
+    <polygon class="cls-1" points="1087.57 281.13 1106.57 281.13 1140.57 281.13 1166.07 281.13 1166.07 124.63 1087.57 124.63 1087.57 281.13"/>
+  </g>
+  <g id="_레이어_15" data-name="레이어 15">
+    <path class="cls-1" d="m1027.57,281.13h60c-1.5-5,0-156.5,0-156.5h-60v156.5Z"/>
+  </g>
+  <g id="_419" data-name="419">
+    <polygon class="cls-1" points="976.57 281.13 997.57 281.13 1017.57 281.13 1027.57 281.13 1027.57 124.63 976.57 124.63 976.57 281.13"/>
+  </g>
+  <g id="_418" data-name="418">
+    <polygon class="cls-1" points="930.07 281.13 953.57 281.13 976.57 281.13 976.57 124.63 930.07 124.63 930.07 281.13"/>
+  </g>
+  <g id="_417" data-name="417">
+    <polygon class="cls-1" points="930.07 124.63 930.07 281.13 906.57 281.13 889.57 281.13 877.57 281.13 877.57 124.63 930.07 124.63"/>
+  </g>
+  <g id="_416" data-name="416">
+    <polygon class="cls-1" points="831.57 281.13 850.57 281.13 865.57 281.13 877.57 281.13 877.57 124.63 831.57 124.63 831.57 281.13"/>
+  </g>
+  <g id="_415" data-name="415">
+    <polygon class="cls-1" points="782.57 281.13 806.57 281.13 823.57 281.13 831.57 281.13 831.57 124.63 782.57 124.63 782.57 281.13"/>
+  </g>
+  <g id="_414" data-name="414">
+    <polygon class="cls-1" points="732.57 281.13 754.57 281.13 773.57 281.13 782.57 281.13 782.57 124.63 732.57 124.63 732.57 281.13"/>
+  </g>
+  <g id="_413-1" data-name="413-1">
+    <polygon class="cls-1" points="668.57 281.13 706.57 281.13 724.57 281.13 732.57 281.13 732.57 124.63 668.57 124.63 668.57 281.13"/>
+  </g>
+  <g id="_413" data-name="413">
+    <polygon class="cls-1" points="585.07 281.13 592.57 281.13 609.57 281.13 668.57 281.13 668.57 124.63 585.07 124.63 585.07 281.13"/>
+  </g>
+  <g id="_412" data-name="412">
+    <polygon class="cls-1" points="416.57 281.13 557.57 281.13 577.57 281.13 585.07 281.13 585.07 124.63 416.57 124.63 416.57 281.13"/>
+  </g>
+  <g id="_411-1" data-name="411-1">
+    <path class="cls-1" d="m326.57,281.13h90c.5,0,0-156.5,0-156.5h-90v156.5Z"/>
+  </g>
+  <g id="_411" data-name="411">
+    <polyline class="cls-1" points="242.07 125.13 326.57 124.63 326.57 281.13 278.57 281.13 251.57 281.13 241.57 281.13 241.57 124.63"/>
+  </g>
+  <g id="_여자화장실" data-name="여자화장실">
+    <polyline class="cls-1" points="241.57 124.63 241.57 281.13 217.57 281.13 176.57 281.13 152.57 281.13 152.57 124.63 242.57 125.13"/>
+  </g>
+</svg>

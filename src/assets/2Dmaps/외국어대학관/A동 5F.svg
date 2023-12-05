@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1352.99 619">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        font-size: 28.7px;
+      }
+
+      .cls-2, .cls-3 {
+        font-family: AdobeMyungjoStd-Medium-KSCpc-EUC-H, 'Adobe Myungjo Std';
+        font-weight: 500;
+      }
+
+      .cls-3 {
+        font-size: 30.34px;
+      }
+    </style>
+  </defs>
+  <g id="_레이어_2" data-name="레이어 2">
+    <line class="cls-1" x1="1107.13" y1="176.79" x2="1106.71" y2="219.79"/>
+    <line class="cls-1" x1="1108.5" y1="37.5" x2="1107.13" y2="176.79"/>
+    <line class="cls-1" x1="1199" y1="37.5" x2="1108.5" y2="37.5"/>
+    <line class="cls-1" x1="1199" y1="176.79" x2="1199" y2="37.5"/>
+    <polyline class="cls-1" points="1199 542 1263.5 542 1263.5 237.5 1199 237.5 1199 176.79"/>
+    <polyline class="cls-1" points="187.81 238.51 74.5 237.5 74.5 542 132.82 542"/>
+    <polyline class="cls-1" points="1107.13 176.79 1144.52 176.79 1164.03 176.79 1199 176.79"/>
+    <line class="cls-1" x1="1199" y1="237.5" x2="1199" y2="340.32"/>
+    <polyline class="cls-1" points="232.52 176.79 232.52 215.84 232.52 219.79"/>
+    <line class="cls-1" x1="132.82" y1="328.5" x2="132.82" y2="176.79"/>
+    <line class="cls-1" x1="203.24" y1="237.5" x2="232.52" y2="237.5"/>
+    <polyline class="cls-1" points="177.13 184.5 146.5 237.5 146.5 184.5 177.13 184.5 177.13 237.5 146.5 184.5"/>
+    <polyline class="cls-1" points="1107 239.77 1126.63 239.77 1126.63 201 1107 201 1125.63 240"/>
+    <line class="cls-1" x1="1125.63" y1="200.97" x2="1107" y2="240"/>
+    <polygon class="cls-1" points="1171.5 204.5 1199 240 1171.09 240 1149.92 240 1149.92 204.5 1199 204.5 1171.09 240 1171.5 204.5"/>
+    <text class="cls-3" transform="translate(157.11 491.2)"><tspan x="0" y="0">512</tspan></text>
+    <text class="cls-3" transform="translate(250.11 491.2)"><tspan x="0" y="0">511</tspan></text>
+    <text class="cls-3" transform="translate(338.11 491.2)"><tspan x="0" y="0">510</tspan></text>
+    <text class="cls-3" transform="translate(423.11 491.2)"><tspan x="0" y="0">509</tspan></text>
+    <text class="cls-3" transform="translate(509.11 491.2)"><tspan x="0" y="0">508</tspan></text>
+    <text class="cls-3" transform="translate(594.11 491.2)"><tspan x="0" y="0">507</tspan></text>
+    <text class="cls-3" transform="translate(684.11 491.2)"><tspan x="0" y="0">506</tspan></text>
+    <text class="cls-3" transform="translate(769.11 491.2)"><tspan x="0" y="0">505</tspan></text>
+    <text class="cls-3" transform="translate(855.11 491.2)"><tspan x="0" y="0">504</tspan></text>
+    <text class="cls-3" transform="translate(941.11 491.2)"><tspan x="0" y="0">503</tspan></text>
+    <text class="cls-3" transform="translate(1030.11 491.2)"><tspan x="0" y="0">502</tspan></text>
+    <text class="cls-3" transform="translate(1117.11 491.2)"><tspan x="0" y="0">501</tspan></text>
+    <text class="cls-3" transform="translate(1033.11 290.2)"><tspan x="0" y="0">522</tspan></text>
+    <text class="cls-3" transform="translate(944.11 290.2)"><tspan x="0" y="0">521</tspan></text>
+    <text class="cls-3" transform="translate(858.11 290.2)"><tspan x="0" y="0">520</tspan></text>
+    <text class="cls-3" transform="translate(772.11 290.2)"><tspan x="0" y="0">519</tspan></text>
+    <text class="cls-3" transform="translate(687.11 290.2)"><tspan x="0" y="0">518</tspan></text>
+    <text class="cls-3" transform="translate(597.11 290.2)"><tspan x="0" y="0">517</tspan></text>
+    <text class="cls-3" transform="translate(512.11 290.2)"><tspan x="0" y="0">516</tspan></text>
+    <text class="cls-3" transform="translate(426.11 290.2)"><tspan x="0" y="0">515</tspan></text>
+    <text class="cls-3" transform="translate(341.11 290.2)"><tspan x="0" y="0">514</tspan></text>
+    <text class="cls-3" transform="translate(253.11 290.2)"><tspan x="0" y="0">513</tspan></text>
+    <text class="cls-3" transform="translate(153.11 116.2)"><tspan x="0" y="0">524</tspan></text>
+    <text class="cls-2" transform="translate(1112.11 116.75)"><tspan x="0" y="0">화장실</tspan></text>
+    <text class="cls-2" transform="translate(1199.11 400.75)"><tspan x="0" y="0">계단</tspan></text>
+    <text class="cls-2" transform="translate(80.11 400.75)"><tspan x="0" y="0">계단</tspan></text>
+  </g>
+  <g id="_512" data-name="512">
+    <polygon class="cls-1" points="232.82 542 132.82 542 132.82 422.5 217.88 422.5 232.82 422.5 232.82 542"/>
+  </g>
+  <g id="_511" data-name="511">
+    <polygon class="cls-1" points="319.82 542 232.82 542 232.82 422.5 304 422.5 319.82 422.5 319.82 542"/>
+  </g>
+  <g id="_510" data-name="510">
+    <polygon class="cls-1" points="406.82 542 319.82 542 319.82 422.5 391 422.5 406.82 422.5 406.82 542"/>
+  </g>
+  <g id="_509" data-name="509">
+    <polygon class="cls-1" points="493.82 542 406.82 542 406.82 422.5 478 422.5 493.82 422.5 493.82 542"/>
+  </g>
+  <g id="_508" data-name="508">
+    <polygon class="cls-1" points="578.82 542 493.82 542 493.82 422.5 565 422.5 578.82 422.5 578.82 542"/>
+  </g>
+  <g id="_507" data-name="507">
+    <polygon class="cls-1" points="666.82 542 578.82 542 578.82 422.5 650 422.5 666.82 422.5 666.82 542"/>
+  </g>
+  <g id="_506" data-name="506">
+    <polygon class="cls-1" points="751.82 542 666.82 542 666.82 422.5 738 422.5 751.82 422.5 751.82 542"/>
+  </g>
+  <g id="_505" data-name="505">
+    <polygon class="cls-1" points="838.82 542 751.82 542 751.82 422.5 823 422.5 838.82 422.5 838.82 542"/>
+  </g>
+  <g id="_504" data-name="504">
+    <polygon class="cls-1" points="923.82 542 838.82 542 838.82 422.5 910 422.5 923.82 422.5 923.82 542"/>
+  </g>
+  <g id="_503" data-name="503">
+    <polygon class="cls-1" points="1012.82 542 923.82 542 923.82 422.5 995 422.5 1012.82 422.5 1012.82 542"/>
+  </g>
+  <g id="_502" data-name="502">
+    <polygon class="cls-1" points="1099.82 542 1012.82 542 1012.82 422.5 1084 422.5 1099.82 422.5 1099.82 542"/>
+  </g>
+  <g id="_501" data-name="501">
+    <polygon class="cls-1" points="1199 542 1199 422.5 1185.92 422.5 1171 422.5 1099.82 422.5 1099.82 542 1199 542"/>
+  </g>
+  <g id="_522" data-name="522">
+    <polygon class="cls-1" points="1012.65 340.32 1035.5 339.5 1106.5 339.5 1106.5 241 1106.71 219.79 1106.52 219.79 1012.65 219.79 1012.65 340.32"/>
+  </g>
+  <g id="_521" data-name="521">
+    <polygon class="cls-1" points="927.99 340.32 946.19 340.32 1012.65 340.32 1012.65 220.87 1012.65 219.79 927.99 219.79 927.99 340.32"/>
+  </g>
+  <g id="_520" data-name="520">
+    <polygon class="cls-1" points="842.54 340.32 863.11 340.32 927.99 340.32 927.99 220.87 927.99 219.79 842.54 219.79 842.54 340.32"/>
+  </g>
+  <g id="_519" data-name="519">
+    <polygon class="cls-1" points="757.09 340.32 776.08 340.32 842.54 340.32 842.54 219.79 757.09 219.79 757.09 340.32"/>
+  </g>
+  <g id="_518" data-name="518">
+    <polygon class="cls-1" points="669 340.32 692.21 340.32 757.09 340.32 757.09 220.87 757.09 219.79 669.52 219.79 669 340.32"/>
+  </g>
+  <g id="_517" data-name="517">
+    <polygon class="cls-1" points="586.19 340.32 605.97 340.32 669 340.32 669.52 219.79 586.19 219.79 586.19 340.32"/>
+  </g>
+  <g id="_516" data-name="516">
+    <polygon class="cls-1" points="499.15 340.32 522.89 340.32 586.19 340.32 586.19 219.79 499.15 219.79 499.15 340.32"/>
+  </g>
+  <g id="_515" data-name="515">
+    <polygon class="cls-1" points="412.12 340.32 431.11 340.32 499.15 340.32 499.15 219.79 412.12 219.79 412.12 340.32"/>
+  </g>
+  <g id="_514" data-name="514">
+    <polygon class="cls-1" points="325.88 340.32 345.66 340.32 412.12 340.32 412.12 219.79 325.88 219.79 325.88 340.32"/>
+  </g>
+  <g id="_513" data-name="513">
+    <polygon class="cls-1" points="232.52 340.32 242.8 340.32 261.79 340.32 325.88 340.32 325.88 219.79 232.52 219.79 232.52 340.32"/>
+  </g>
+  <g id="_524" data-name="524">
+    <rect class="cls-1" x="132.82" y="37.5" width="99.69" height="139.29"/>
+  </g>
+</svg>

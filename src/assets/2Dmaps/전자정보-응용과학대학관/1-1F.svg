@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 819.56 768">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        font-size: 45.01px;
+      }
+
+      .cls-2, .cls-3 {
+        font-family: AdobeMyungjoStd-Medium-KSCpc-EUC-H, 'Adobe Myungjo Std';
+        font-weight: 500;
+      }
+
+      .cls-3 {
+        font-size: 17.5px;
+      }
+    </style>
+  </defs>
+  <g id="_레이어_2" data-name="레이어 2">
+    <path class="cls-1" d="m365.5,720h-206V60.5h204.5"/>
+    <polyline class="cls-1" points="159.5 409 194 409 194 476 159.5 476"/>
+    <text class="cls-3" transform="translate(159 450)"><tspan x="0" y="0">입구</tspan></text>
+    <text class="cls-2" transform="translate(458 195.21)"><tspan x="0" y="0">GS25</tspan></text>
+    <text class="cls-2" transform="translate(446.48 504.21)"><tspan x="0" y="0">열람실</tspan><tspan x="25.32" y="54.01">111</tspan></text>
+  </g>
+  <g id="_25" data-name="ㅎ25">
+    <path class="cls-1" d="m365.5,60.5v239.5h297.94c-.19-129.87-.44-239.5-.44-239.5h-299"/>
+  </g>
+  <g id="_111" data-name="111">
+    <path class="cls-1" d="m365.5,300s297.94,0,297.94,0c.28,188.65.45,420-.44,420h-297.5v-.5s0-419.5,0-419.5"/>
+  </g>
+</svg>

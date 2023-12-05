@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 755.32 768">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        font-family: AdobeMyungjoStd-Medium-KSCpc-EUC-H, 'Adobe Myungjo Std';
+        font-size: 28px;
+        font-weight: 500;
+      }
+    </style>
+  </defs>
+  <g id="_레이어_2" data-name="레이어 2">
+    <line class="cls-1" x1="112.5" y1="138" x2="112.5" y2="631"/>
+    <text class="cls-2" transform="translate(134 106.08)"><tspan x="0" y="0">휴게장소</tspan></text>
+    <text class="cls-2" transform="translate(135 690.08)"><tspan x="0" y="0">휴게장소</tspan></text>
+    <text class="cls-2" transform="translate(321 616.08)"><tspan x="0" y="0">211-2</tspan></text>
+    <text class="cls-2" transform="translate(321 128.08)"><tspan x="0" y="0">211-3</tspan></text>
+    <text class="cls-2" transform="translate(508 374.08)"><tspan x="0" y="0">211-1</tspan></text>
+  </g>
+  <g id="_211-1" data-name="211-1">
+    <polygon class="cls-1" points="470 43.5 635.5 43.5 635.5 724.5 470 724.5 470 474.5 470 198 470 43.5"/>
+  </g>
+  <g id="_211-2" data-name="211-2">
+    <polygon class="cls-1" points="263 724.5 470 724.5 470 725 470 474.5 263 474.5 263 631 263 724.5"/>
+  </g>
+  <g id="_휴게장소" data-name="휴게장소">
+    <polyline class="cls-1" points="113 631 263 631 263 725 263 724.5 112.5 724.5 112.5 631"/>
+  </g>
+  <g id="_211-3" data-name="211-3">
+    <polygon class="cls-1" points="262.5 43.5 470 43.5 470 198 262.5 198 262.5 138.5 262.5 43.5"/>
+  </g>
+  <g id="_휴게장소-2" data-name="휴게장소">
+    <g>
+      <line class="cls-1" x1="262.5" y1="43.5" x2="112.5" y2="43.5"/>
+      <line class="cls-1" x1="112.5" y1="43.5" x2="112.5" y2="138"/>
+      <line class="cls-1" x1="262.5" y1="138.5" x2="112.5" y2="138.5"/>
+      <line class="cls-1" x1="262.5" y1="43.5" x2="262.5" y2="138.5"/>
+    </g>
+  </g>
+</svg>

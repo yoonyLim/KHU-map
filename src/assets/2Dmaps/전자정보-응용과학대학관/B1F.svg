@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1315.16 768">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 36px;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        font-family: AdobeMyungjoStd-Medium-KSCpc-EUC-H, 'Adobe Myungjo Std';
+        font-weight: 500;
+      }
+
+      .cls-5 {
+        fill: none;
+        stroke: #000;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        font-size: 32px;
+      }
+
+      .cls-3 {
+        font-size: 18px;
+      }
+
+      .cls-4 {
+        font-size: 36.77px;
+      }
+    </style>
+  </defs>
+  <g id="_레이어_2" data-name="레이어 2">
+    <polyline class="cls-5" points="358 641.5 59.5 641.5 59.5 311"/>
+    <line class="cls-5" x1="920" y1="641.5" x2="817" y2="641.5"/>
+    <line class="cls-5" x1="1017" y1="641.5" x2="920" y2="641.5"/>
+    <line class="cls-5" x1="1280.5" y1="311" x2="1280.5" y2="522"/>
+    <line class="cls-5" x1="817" y1="522" x2="1017" y2="522"/>
+    <polyline class="cls-5" points="59.5 522 197 522 358 522"/>
+    <line class="cls-5" x1="196" y1="641.5" x2="196" y2="521.5"/>
+    <line class="cls-5" x1="304" y1="522" x2="304" y2="641.5"/>
+    <polyline class="cls-5" points="817 641.5 920 641.5 920 522"/>
+    <line class="cls-5" x1="817" y1="607" x2="920" y2="607"/>
+  </g>
+  <g id="_06" data-name="06">
+    <rect class="cls-5" x="358" y="522" width="240" height="119.5"/>
+  </g>
+  <g id="_08" data-name="08">
+    <rect class="cls-5" x="598" y="522" width="219" height="119.5"/>
+  </g>
+  <g id="_남자화장실" data-name="남자화장실">
+    <rect class="cls-5" x="1017" y="522" width="124" height="119.5"/>
+  </g>
+  <g id="_여자화장실" data-name="여자화장실">
+    <rect class="cls-5" x="1141" y="522" width="139.5" height="119.5"/>
+  </g>
+  <g id="_09" data-name="09">
+    <polygon class="cls-5" points="817 311 1280.5 311 1280.5 308 1280.5 12 817 12 817 311"/>
+  </g>
+  <g id="_07" data-name="07">
+    <polygon class="cls-5" points="598 311 817 311 817 12 598 12 598 31 598 311"/>
+  </g>
+  <g id="_휴게실" data-name="휴게실">
+    <polygon class="cls-5" points="474 311 598 311 598 157.26 474.75 157 474 311"/>
+  </g>
+  <g id="_05-_1" data-name="05-`1">
+    <polygon class="cls-5" points="474.48 156.52 598 157 598 31 474 31 474.48 156.52"/>
+  </g>
+  <g id="_05" data-name="05">
+    <polygon class="cls-5" points="370 311 474 311 474 31 370 31 370 200.5 370 311"/>
+  </g>
+  <g id="_03" data-name="03">
+    <rect class="cls-5" x="211" y="200.5" width="159" height="110.5"/>
+  </g>
+  <g id="B01">
+    <rect class="cls-5" x="59.5" y="200.5" width="151.5" height="110.5"/>
+  </g>
+  <g id="_텍스트" data-name="텍스트">
+    <text class="cls-3" transform="translate(851 630)"><tspan x="0" y="0">입구</tspan></text>
+    <text class="cls-3" transform="translate(849 544)"><tspan x="0" y="0">입구</tspan></text>
+    <text class="cls-4" transform="translate(676 599.52)"><tspan x="0" y="0">B08</tspan></text>
+    <text class="cls-4" transform="translate(439 599.52)"><tspan x="0" y="0">B06</tspan></text>
+    <text class="cls-4" transform="translate(99 268.52)"><tspan x="0" y="0">B01</tspan></text>
+    <text class="cls-4" transform="translate(260 268.52)"><tspan x="0" y="0">B03</tspan></text>
+    <text class="cls-4" transform="translate(385 170.52)"><tspan x="0" y="0">B05</tspan></text>
+    <text class="cls-4" transform="translate(670 160.52)"><tspan x="0" y="0">B07</tspan></text>
+    <text class="cls-4" transform="translate(481 254.52)"><tspan x="0" y="0">휴게실</tspan></text>
+    <text class="cls-1" transform="translate(1041 572.52)"><tspan x="0" y="0">남자</tspan><tspan x="-18" y="43.2">화장실</tspan></text>
+    <text class="cls-1" transform="translate(1173 572.52)"><tspan x="0" y="0">여자</tspan><tspan x="-18" y="43.2">화장실</tspan></text>
+    <text class="cls-4" transform="translate(1021 159.52)"><tspan x="0" y="0">B09</tspan></text>
+    <text class="cls-2" transform="translate(483 109.52)"><tspan x="0" y="0">B05-1</tspan></text>
+    <text class="cls-4" transform="translate(212 599.52)"><tspan x="0" y="0">계단</tspan></text>
+    <text class="cls-4" transform="translate(932 599.52)"><tspan x="0" y="0">계단</tspan></text>
+    <text class="cls-3" transform="translate(312 584.52)"><tspan x="0" y="0">엘리</tspan><tspan x="-9" y="21.6">베이터</tspan></text>
+  </g>
+</svg>

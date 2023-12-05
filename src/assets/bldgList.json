@@ -713,7 +713,35 @@
                         "B111",
                         "B112",
                         "B113",
-                        "B114"
+                        {
+                            "roomNumber": "B114",
+                            "classes": [
+                                {
+                                    "lectureName": "합창의재발결",
+                                    "alias": "합재",
+                                    "Professor": "유지훈",
+                                    "days":"화",
+                                    "timeStart":"12:00",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "명작에취하다:예술 감상법",
+                                    "alias": "명취",
+                                    "Professor": "김부용",
+                                    "days":"수",
+                                    "timeStart":"13:30",
+                                    "timeEnd": "16:15"
+                                },
+                                {
+                                    "lectureName": "전공탐색및기업가정신세미나",
+                                    "alias": "전탐기",
+                                    "Professor": "김소연",
+                                    "days":"목",
+                                    "timeStart":"18:00",
+                                    "timeEnd": "18:50"
+                                }
+                            ]
+                        }
                     ]
                 },
                 {
@@ -721,11 +749,384 @@
                     "rooms": [
                         "KHUfee 카페",
                         "도서관",
-                        "101",
+                        {
+                            "roomNumber": "101",
+                            "classes": [
+                                {
+                                    "lectureName": "주제연구",
+                                    "alias": "주제연구",
+                                    "Professor": "오승희",
+                                    "days":["월","수"],
+                                    "timeStart":"09:00",
+                                    "timeEnd": "10:15"
+                                },
+                                {
+                                    "lectureName": "주제연구",
+                                    "alias": "주제연구",
+                                    "Professor": "오승희",
+                                    "days":["월","수"],
+                                    "timeStart":"10:30",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "주제연구",
+                                    "alias": "주제연구",
+                                    "Professor": "이은영",
+                                    "days":["월","수"],
+                                    "timeStart":"13:30",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "주제연구",
+                                    "alias": "주제연구",
+                                    "Professor": "이은영",
+                                    "days":["월","수"],
+                                    "timeStart":"15:00",
+                                    "timeEnd": "16:15"
+                                },
+                                {
+                                    "lectureName": "주제연구",
+                                    "alias": "주제연구",
+                                    "Professor": "김기섭",
+                                    "days":["화","목"],
+                                    "timeStart":"09:00",
+                                    "timeEnd": "10:15"
+                                },
+                                {
+                                    "lectureName": "주제연구",
+                                    "alias": "주제연구",
+                                    "Professor": "김민정",
+                                    "days":["화","목"],
+                                    "timeStart":"10:30",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "주제연구",
+                                    "alias": "주제연구",
+                                    "Professor": "김민정",
+                                    "days":["화","목"],
+                                    "timeStart":"12:00",
+                                    "timeEnd": "13:15"
+                                },
+                                {
+                                    "lectureName": "주제연구",
+                                    "alias": "주제연구",
+                                    "Professor": "장성희",
+                                    "days":["화","목"],
+                                    "timeStart":"13:30",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "주제연구",
+                                    "alias": "주제연구",
+                                    "Professor": "김현철",
+                                    "days":"금",
+                                    "timeStart":"12:00",
+                                    "timeEnd": "14:45"
+                                }
+                            ]
+                        },
                         "102",
-                        "107",
-                        "108",
-                        "109",
+                        {
+                            "roomNumber": "103",
+                            "classes": [
+                                {
+                                    "lectureName": "기초유기화학",
+                                    "alias": "기유화",
+                                    "Professor": "안광현",
+                                    "days":["화","목"],
+                                    "timeStart":"10:30",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "취,창업스쿨(스포츠마케팅분야)",
+                                    "alias": "창업스쿨",
+                                    "Professor": "이해원",
+                                    "days":"월",
+                                    "timeStart":"14:00",
+                                    "timeEnd": "15:50"
+                                },
+                                {
+                                    "lectureName": "취,창업스쿨(자기개발과커리어전략)",
+                                    "alias": "창업스쿨",
+                                    "Professor": "고영재",
+                                    "days":"금",
+                                    "timeStart":"12:00",
+                                    "timeEnd": "13:50"
+                                },
+                                {
+                                    "lectureName": "취,창업스쿨(진로동기강화)",
+                                    "alias": "창업스쿨",
+                                    "Professor": "장윤정",
+                                    "days":"화",
+                                    "timeStart":"12:00",
+                                    "timeEnd": "13:50"
+                                },
+                                {
+                                    "lectureName": "취,창업스쿨(진로의사결정을통한목표설정)",
+                                    "alias": "창업스쿨",
+                                    "Professor": "이정아",
+                                    "days":"월",
+                                    "timeStart":"12:00",
+                                    "timeEnd": "13:50"
+                                },
+                                {
+                                    "lectureName": "취,창업스쿨(진로탐색과진로준비)",
+                                    "alias": "창업스쿨",
+                                    "Professor": "정유정",
+                                    "days":"목",
+                                    "timeStart":"12:00",
+                                    "timeEnd": "13:50"
+                                }
+                            ]
+                        },
+                        {
+                            "roomNumber": "107",
+                            "classes": [
+                                {
+                                    "lectureName": "고급미분적분학",
+                                    "alias": "고미적",
+                                    "Professor": "나광수",
+                                    "days":["화","목"],
+                                    "timeStart":"09:00",
+                                    "timeEnd": "10:15"
+                                },
+                                {
+                                    "lectureName": "고급미분적분학",
+                                    "alias": "고미적",
+                                    "Professor": "나광수",
+                                    "days":["화","목"],
+                                    "timeStart":"10:30",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "미분방정식",
+                                    "alias": "미방",
+                                    "Professor": "김현수",
+                                    "days":["월","수"],
+                                    "timeStart":"09:00",
+                                    "timeEnd": "10:15"
+                                },
+                                {
+                                    "lectureName": "미분방정식",
+                                    "alias": "미방",
+                                    "Professor": "김현수",
+                                    "days":["월","수"],
+                                    "timeStart":"10:30",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "통계학",
+                                    "alias": "통계",
+                                    "Professor": "백옥분",
+                                    "days":["월","수"],
+                                    "timeStart":"13:30",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "통계학",
+                                    "alias": "통계",
+                                    "Professor": "백옥분",
+                                    "days":["월","수"],
+                                    "timeStart":"15:00",
+                                    "timeEnd": "16:15"
+                                },
+                                {
+                                    "lectureName": "일반화학",
+                                    "alias": "일화",
+                                    "Professor": "이현주",
+                                    "days":["화","목"],
+                                    "timeStart":"15:00",
+                                    "timeEnd": "16:15"
+                                },
+                                {
+                                    "lectureName": "일반화학",
+                                    "alias": "일화",
+                                    "Professor": "이현주",
+                                    "days":["화","목"],
+                                    "timeStart":"16:30",
+                                    "timeEnd": "17:45"
+                                }
+                            ]
+                        },
+                        {
+                            "roomNumber": "108",
+                            "classes": [
+                                {
+                                    "lectureName": "성찰과표현",
+                                    "alias": "성표",
+                                    "Professor": "유재명",
+                                    "days":["월","수"],
+                                    "timeStart":"10:30",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "성찰과표현",
+                                    "alias": "성표",
+                                    "Professor": "박경희",
+                                    "days":["월","수"],
+                                    "timeStart":"13:30",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "성찰과표현",
+                                    "alias": "성표",
+                                    "Professor": "박경희",
+                                    "days":["월","수"],
+                                    "timeStart":"15:00",
+                                    "timeEnd": "16:15"
+                                },
+                                {
+                                    "lectureName": "성찰과표현",
+                                    "alias": "성표",
+                                    "Professor": "이승아",
+                                    "days":"금",
+                                    "timeStart":"12:00",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "성찰과표현",
+                                    "alias": "성표",
+                                    "Professor": "이승아",
+                                    "days":"금",
+                                    "timeStart":"15:00",
+                                    "timeEnd": "17:45"
+                                },
+                                {
+                                    "lectureName": "주제연구",
+                                    "alias": "주제연구",
+                                    "Professor": "엄상희",
+                                    "days":["화","목"],
+                                    "timeStart":"10:30",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "주제연구",
+                                    "alias": "주제연구",
+                                    "Professor": "엄상희",
+                                    "days":["화","목"],
+                                    "timeStart":"12:00",
+                                    "timeEnd": "13:15"
+                                },
+                                {
+                                    "lectureName": "주제연구",
+                                    "alias": "주제연구",
+                                    "Professor": "오태호",
+                                    "days":["화","목"],
+                                    "timeStart":"15:00",
+                                    "timeEnd": "16:15"
+                                },
+                                {
+                                    "lectureName": "주제연구",
+                                    "alias": "주제연구",
+                                    "Professor": "오태호",
+                                    "days":["화","목"],
+                                    "timeStart":"16:30",
+                                    "timeEnd": "17:45"
+                                },
+                                {
+                                    "lectureName": "후마니타스세미나",
+                                    "alias": "후마니타스세미나",
+                                    "Professor": "이진오",
+                                    "days":"목",
+                                    "timeStart":"14:00",
+                                    "timeEnd": "14:50"
+                                }
+                            ]
+                        },
+                        {
+                            "roomNumber": "109",
+                            "classes": [
+                                {
+                                    "lectureName": "성찰과표현",
+                                    "alias": "성표",
+                                    "Professor": "박상란",
+                                    "days":["월","수"],
+                                    "timeStart":"13:30",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "성찰과표현",
+                                    "alias": "성표",
+                                    "Professor": "박상란",
+                                    "days":["월","수"],
+                                    "timeStart":"15:00",
+                                    "timeEnd": "16:15"
+                                },
+                                {
+                                    "lectureName": "성찰과표현",
+                                    "alias": "성표",
+                                    "Professor": "김미선",
+                                    "days":["화","목"],
+                                    "timeStart":"12:00",
+                                    "timeEnd": "13:15"
+                                },
+                                {
+                                    "lectureName": "성찰과표현",
+                                    "alias": "성표",
+                                    "Professor": "김미선",
+                                    "days":["화","목"],
+                                    "timeStart":"13:30",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "성찰과표현",
+                                    "alias": "성표",
+                                    "Professor": "조운아",
+                                    "days":["화","목"],
+                                    "timeStart":"15:00",
+                                    "timeEnd": "16:15"
+                                },
+                                {
+                                    "lectureName": "성찰과표현",
+                                    "alias": "성표",
+                                    "Professor": "조운아",
+                                    "days":["화","목"],
+                                    "timeStart":"16:30",
+                                    "timeEnd": "17:45"
+                                },
+                                {
+                                    "lectureName": "주제연구",
+                                    "alias": "주제연구",
+                                    "Professor": "최윤희",
+                                    "days":["월","수"],
+                                    "timeStart":"10:30",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "주제연구",
+                                    "alias": "주제연구",
+                                    "Professor": "김영임",
+                                    "days":["화","목"],
+                                    "timeStart":"09:00",
+                                    "timeEnd": "10:15"
+                                },
+                                {
+                                    "lectureName": "주제연구",
+                                    "alias": "주제연구",
+                                    "Professor": "김영임",
+                                    "days":["화","목"],
+                                    "timeStart":"10:30",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "주제연구",
+                                    "alias": "주제연구",
+                                    "Professor": "전성희",
+                                    "days":"금",
+                                    "timeStart":"09:00",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "주제연구",
+                                    "alias": "주제연구",
+                                    "Professor": "전성희",
+                                    "days":"금",
+                                    "timeStart":"12:00",
+                                    "timeEnd": "14:45"
+                                }
+                            ]
+                        },
                         "110",
                         "112"
                     ]
@@ -733,49 +1134,1877 @@
                 {
                     "floor": "2",
                     "rooms": [
-                        "201",
-                        "202",
-                        "203",
-                        "204",
-                        "205",
-                        "206",
-                        "207",
-                        "208",
+                        {
+                            "roomNumber": "201",
+                            "classes": [
+                                {
+                                    "lectureName": "주제연구",
+                                    "alias": "주제연구",
+                                    "Professor": "박지용",
+                                    "days":["월","수"],
+                                    "timeStart":"10:30",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "주제연구",
+                                    "alias": "주제연구",
+                                    "Professor": "박지용",
+                                    "days":["월","수"],
+                                    "timeStart":"12:00",
+                                    "timeEnd": "13:15"
+                                },
+                                {
+                                    "lectureName": "주제연구",
+                                    "alias": "주제연구",
+                                    "Professor": "이은선",
+                                    "days":["화","목"],
+                                    "timeStart":"09:00",
+                                    "timeEnd": "10:15"
+                                },
+                                {
+                                    "lectureName": "주제연구",
+                                    "alias": "주제연구",
+                                    "Professor": "이은선",
+                                    "days":["화","목"],
+                                    "timeStart":"10:30",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "주제연구",
+                                    "alias": "주제연구",
+                                    "Professor": "진은경",
+                                    "days":"금",
+                                    "timeStart":"09:00",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "주제연구",
+                                    "alias": "주제연구",
+                                    "Professor": "진은경",
+                                    "days":"금",
+                                    "timeStart":"12:00",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "주제연구",
+                                    "alias": "주제연구",
+                                    "Professor": "진은진",
+                                    "days":["화","목"],
+                                    "timeStart":"12:00",
+                                    "timeEnd": "13:15"
+                                }
+                            ]
+                        },
+                        {
+                            "roomNumber": "202",
+                            "classes": [
+                                {
+                                    "lectureName": "아이디어를시각화하기",
+                                    "alias": "아이디어시각화",
+                                    "Professor": "이태훈",
+                                    "days":"월",
+                                    "timeStart":"13:00",
+                                    "timeEnd": "15:45"
+                                },
+                                {
+                                    "lectureName": "글로벌세미나",
+                                    "alias": "글로벌세미나",
+                                    "Professor": "이승관",
+                                    "days":"목",
+                                    "timeStart":"18:00",
+                                    "timeEnd": "19:50"
+                                },
+                                {
+                                    "lectureName": "새김과찍기:현대판화",
+                                    "alias": "새김과찍기",
+                                    "Professor": "박상아",
+                                    "days":"목",
+                                    "timeStart":"12:00",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "생활속의공예:미와쓰임새",
+                                    "alias": "생활속의공예",
+                                    "Professor": "김정아",
+                                    "days":"수",
+                                    "timeStart":"12:00",
+                                    "timeEnd": "14:45"
+                                }
+                            ]
+                        },
+                        {
+                            "roomNumber": "203",
+                            "classes": [
+                                {
+                                    "lectureName": "디지털사진촬영과표현",
+                                    "alias": "디표",
+                                    "Professor": "정경아",
+                                    "days":"목",
+                                    "timeStart":"15:00",
+                                    "timeEnd": "17:45"
+                                },
+                                {
+                                    "lectureName": "사운드와테크놀로지",
+                                    "alias": "사테",
+                                    "Professor": "이철희",
+                                    "days":"금",
+                                    "timeStart":"12:00",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "컴퓨터그래픽기초",
+                                    "alias": "컴기",
+                                    "Professor": "백수희",
+                                    "days":["월","수"],
+                                    "timeStart":"10:30",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "인간과생활속의로봇",
+                                    "alias": "인생로",
+                                    "Professor": "이승관",
+                                    "days":["화","목"],
+                                    "timeStart":"09:00",
+                                    "timeEnd": "10:15"
+                                },
+                                {
+                                    "lectureName": "인간과생활속의로봇",
+                                    "alias": "인생로",
+                                    "Professor": "이승관",
+                                    "days":["화","목"],
+                                    "timeStart":"10:30",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "소프트웨어개발자를위한C프로그래밍",
+                                    "alias": "C프밍",
+                                    "Professor": "박기서",
+                                    "days":["화","목"],
+                                    "timeStart":"12:00",
+                                    "timeEnd": "13:15"
+                                }
+                            ]
+                        },
+                        {
+                            "roomNumber": "204",
+                            "classes": [
+                                {
+                                    "lectureName": "Greek Mythology and Creative Writing",
+                                    "alias": "그리스",
+                                    "Professor": "이미선",
+                                    "days":["화","목"],
+                                    "timeStart":"12:00",
+                                    "timeEnd": "13:15"
+                                },
+                                {
+                                    "lectureName": "기초스페인어",
+                                    "alias": "기초스페인",
+                                    "Professor": "김찬기",
+                                    "days":["화","목"],
+                                    "timeStart":"13:30",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "영화와문학",
+                                    "alias": "영문",
+                                    "Professor": "김활란",
+                                    "days":["월","수"],
+                                    "timeStart":"12:00",
+                                    "timeEnd": "13:15"
+                                },
+                                {
+                                    "lectureName": "음식과문화:글로벌&로컬트렌드와이슈",
+                                    "alias": "음식문",
+                                    "Professor": "Cynthia SohYoung Yoo",
+                                    "days":["월","수"],
+                                    "timeStart":"15:00",
+                                    "timeEnd": "16:15"
+                                },
+                                {
+                                    "lectureName": "마음의탄생:뇌,의식,마음",
+                                    "alias": "마음탄생",
+                                    "Professor": "맹성호",
+                                    "days":"금",
+                                    "timeStart":"12:00",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "생명,영원한블루오션",
+                                    "alias": "생영",
+                                    "Professor": "이찬희",
+                                    "days":["화","목"],
+                                    "timeStart":"15:00",
+                                    "timeEnd": "16:15"
+                                },
+                                {
+                                    "lectureName": "우주:별을잊은그대에게",
+                                    "alias": "우주",
+                                    "Professor": "장민환",
+                                    "days":["월","수"],
+                                    "timeStart":"10:30",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "우주:별을잊은그대에게",
+                                    "alias": "우주",
+                                    "Professor": "장민환",
+                                    "days":["월","수"],
+                                    "timeStart":"13:30",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "언어와컴퓨터",
+                                    "alias": "언컴",
+                                    "Professor": "안상혁",
+                                    "days":"금",
+                                    "timeStart":"15:00",
+                                    "timeEnd": "17:45"
+                                },
+                                {
+                                    "lectureName": "컴퓨터게임개론:이론과기술",
+                                    "alias": "컴게",
+                                    "Professor": "우탁",
+                                    "days":"금",
+                                    "timeStart":"09:00",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "영화로보는스포츠문화",
+                                    "alias": "영화스포츠",
+                                    "Professor": "정명규",
+                                    "days":"화",
+                                    "timeStart":"18:00",
+                                    "timeEnd": "20:25"
+                                }
+                            ]
+                        },
+                        {
+                            "roomNumber": "205",
+                            "classes": [
+                                {
+                                    "lectureName": "성찰과표현",
+                                    "alias": "성표",
+                                    "Professor": "김광섭",
+                                    "days":["월","수"],
+                                    "timeStart":"09:00",
+                                    "timeEnd": "10:15"
+                                },
+                                {
+                                    "lectureName": "성찰과표현",
+                                    "alias": "성표",
+                                    "Professor": "김광섭",
+                                    "days":["월","수"],
+                                    "timeStart":"10:30",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "성찰과표현",
+                                    "alias": "성표",
+                                    "Professor": "유종현",
+                                    "days":["월","수"],
+                                    "timeStart":"12:00",
+                                    "timeEnd": "13:15"
+                                },
+                                {
+                                    "lectureName": "성찰과표현",
+                                    "alias": "성표",
+                                    "Professor": "유종현",
+                                    "days":["월","수"],
+                                    "timeStart":"13:30",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "성공과표현",
+                                    "alias": "성표",
+                                    "Professor": "김기섭",
+                                    "days":["화","목"],
+                                    "timeStart":"10:30",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "주제연구",
+                                    "alias": "주제연구",
+                                    "Professor": "진은진",
+                                    "days":["화","목"],
+                                    "timeStart":"09:00",
+                                    "timeEnd": "10:15"
+                                },
+                                {
+                                    "lectureName": "주제연구",
+                                    "alias": "주제연구",
+                                    "Professor": "진은진",
+                                    "days":["화","목"],
+                                    "timeStart":"13:30",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "주제연구",
+                                    "alias": "주제연구",
+                                    "Professor": "진은진",
+                                    "days":["화","목"],
+                                    "timeStart":"15:00",
+                                    "timeEnd": "16:15"
+                                },
+                                {
+                                    "lectureName": "빅데이터와스포츠산업",
+                                    "alias": "빅스",
+                                    "Professor": "이재문",
+                                    "days":"금",
+                                    "timeStart":"09:00",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "신입생워크숍2:스타트업",
+                                    "alias": "신입생워크숍",
+                                    "Professor": "여승주",
+                                    "days":"화",
+                                    "timeStart":"16:30",
+                                    "timeEnd": "18:20"
+                                },
+                                {
+                                    "lectureName": "신입생워크숍2:스타트업",
+                                    "alias": "신입생워크숍",
+                                    "Professor": "김영진",
+                                    "days":"수",
+                                    "timeStart":"16:30",
+                                    "timeEnd": "18:20"
+                                },
+                                {
+                                    "lectureName": "신입생워크숍2:스타트업",
+                                    "alias": "신입생워크숍",
+                                    "Professor": "진은진",
+                                    "days":"목",
+                                    "timeStart":"16:30",
+                                    "timeEnd": "18:20"
+                                }
+                            ]
+                        },
+                        {
+                            "roomNumber": "206",
+                            "classes": [
+                                {
+                                    "lectureName": "성찰과표현",
+                                    "alias": "성표",
+                                    "Professor": "박지용",
+                                    "days":["월","수"],
+                                    "timeStart":"09:00",
+                                    "timeEnd": "10:15"
+                                },
+                                {
+                                    "lectureName": "성찰과표현",
+                                    "alias": "성표",
+                                    "Professor": "백지윤",
+                                    "days":["월","수"],
+                                    "timeStart":"10:30",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "성찰과표현",
+                                    "alias": "성표",
+                                    "Professor": "이우현",
+                                    "days":["월","수"],
+                                    "timeStart":"12:00",
+                                    "timeEnd": "13:15"
+                                },
+                                {
+                                    "lectureName": "성찰과표현",
+                                    "alias": "성표",
+                                    "Professor": "이우현",
+                                    "days":["월","수"],
+                                    "timeStart":"13:30",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "성공과표현",
+                                    "alias": "성표",
+                                    "Professor": "조명숙",
+                                    "days":["화","목"],
+                                    "timeStart":"09:00",
+                                    "timeEnd": "10:15"
+                                },
+                                {
+                                    "lectureName": "성공과표현",
+                                    "alias": "성표",
+                                    "Professor": "조명숙",
+                                    "days":["화","목"],
+                                    "timeStart":"10:30",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "성공과표현",
+                                    "alias": "성표",
+                                    "Professor": "장성희",
+                                    "days":["화","목"],
+                                    "timeStart":"12:00",
+                                    "timeEnd": "13:15"
+                                },
+                                {
+                                    "lectureName": "성찰과표현",
+                                    "alias": "성표",
+                                    "Professor": "고유림",
+                                    "days":"금",
+                                    "timeStart":"09:00",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "On Justice",
+                                    "alias": "온저",
+                                    "Professor": "홍기준",
+                                    "days":"수",
+                                    "timeStart":"15:00",
+                                    "timeEnd": "17:25"
+                                }
+                            ]
+                        },
+                        {
+                            "roomNumber": "207",
+                            "classes": [
+                                {
+                                    "lectureName": "취,창업스쿨(자아탐색을통한진로설정)",
+                                    "alias": "창업스쿨",
+                                    "Professor": "김연희",
+                                    "days":"화",
+                                    "timeStart":"16:00",
+                                    "timeEnd": "17:50"
+                                },
+                                {
+                                    "lectureName": "빅뱅에서문명까지",
+                                    "alias": "빅문",
+                                    "Professor": "나고운",
+                                    "days":["월","수"],
+                                    "timeStart":"13:30",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "빅뱅에서문명까지",
+                                    "alias": "빅문",
+                                    "Professor": "김성",
+                                    "days":["화","목"],
+                                    "timeStart":"10:30",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "빅뱅에서문명까지",
+                                    "alias": "빅문",
+                                    "Professor": "선종호",
+                                    "days":"금",
+                                    "timeStart":"12:00",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "빅뱅에서문명까지",
+                                    "alias": "빅문",
+                                    "Professor": "선종호",
+                                    "days":"금",
+                                    "timeStart":"15:00",
+                                    "timeEnd": "17:45"
+                                },
+                                {
+                                    "lectureName": "커뮤니케이션과디자인",
+                                    "alias": "커디",
+                                    "Professor": "윤민희",
+                                    "days":["월","수"],
+                                    "timeStart":"15:00",
+                                    "timeEnd": "16:15"
+                                },
+                                {
+                                    "lectureName": "기초중국어",
+                                    "alias": "기초중국",
+                                    "Professor": "이영월",
+                                    "days":["월","수"],
+                                    "timeStart":"12:00",
+                                    "timeEnd": "13:15"
+                                },
+                                {
+                                    "lectureName": "하천문화의이해와르네상스",
+                                    "alias": "하천문화",
+                                    "Professor": "김정수",
+                                    "days":["월","수"],
+                                    "timeStart":"10:30",
+                                    "timeEnd": "11:45"
+                                }
+                            ]
+                        },
+                        {
+                            "roomNumber": "208",
+                            "classes": [
+                                {
+                                    "lectureName": "취,창업스쿨(국제기구,NGO분야)",
+                                    "alias": "창업스쿨",
+                                    "Professor": "서은석",
+                                    "days":"금",
+                                    "timeStart":"10:00",
+                                    "timeEnd": "11:50"
+                                },
+                                {
+                                    "lectureName": "성찰과표현",
+                                    "alias": "성표",
+                                    "Professor": "최승희",
+                                    "days":["월","수"],
+                                    "timeStart":"09:00",
+                                    "timeEnd": "10:15"
+                                },
+                                {
+                                    "lectureName": "성찰과표현",
+                                    "alias": "성표",
+                                    "Professor": "최승희",
+                                    "days":["월","수"],
+                                    "timeStart":"10:30",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "성찰과표현",
+                                    "alias": "성표",
+                                    "Professor": "홍비연",
+                                    "days":["월","수"],
+                                    "timeStart":"12:00",
+                                    "timeEnd": "13:15"
+                                },
+                                {
+                                    "lectureName": "성찰과표현",
+                                    "alias": "성표",
+                                    "Professor": "홍비연",
+                                    "days":["월","수"],
+                                    "timeStart":"13:30",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "성찰과표현",
+                                    "alias": "성표",
+                                    "Professor": "조은영",
+                                    "days":["화","목"],
+                                    "timeStart":"13:30",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "성찰과표현",
+                                    "alias": "성표",
+                                    "Professor": "조은영",
+                                    "days":["화","목"],
+                                    "timeStart":"15:00",
+                                    "timeEnd": "16:15"
+                                },
+                                {
+                                    "lectureName": "성찰과표현",
+                                    "alias": "성표",
+                                    "Professor": "이은봉",
+                                    "days":"금",
+                                    "timeStart":"12:00",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "21세기금융세계화와불평등",
+                                    "alias": "금세불",
+                                    "Professor": "윤종희",
+                                    "days":["월","수"],
+                                    "timeStart":"15:00",
+                                    "timeEnd": "16:15"
+                                },
+                                {
+                                    "lectureName": "국화와칼:만들어진일본의전통",
+                                    "alias": "국화칼",
+                                    "Professor": "김석희",
+                                    "days":["화","목"],
+                                    "timeStart":"12:00",
+                                    "timeEnd": "13:15"
+                                },
+                                {
+                                    "lectureName": "신입생워크숍2:스타트업",
+                                    "alias": "신입생워크숍",
+                                    "Professor": "유재명",
+                                    "days":"화",
+                                    "timeStart":"16:30",
+                                    "timeEnd": "18:20"
+                                },
+                                {
+                                    "lectureName": "그리스신화와철학",
+                                    "alias": "그리스신화",
+                                    "Professor": "김태경",
+                                    "days":["화","목"],
+                                    "timeStart":"10:30",
+                                    "timeEnd": "11:45"
+                                }
+                            ]
+                        },
                         "209",
-                        "210"
+                        {
+                            "roomNumber": "210",
+                            "classes": [
+                                {
+                                    "lectureName": "글로벌라틴아메리카",
+                                    "alias": "글아",
+                                    "Professor": "송영복",
+                                    "days":["화","목"],
+                                    "timeStart":"12:00",
+                                    "timeEnd": "13:15"
+                                },
+                                {
+                                    "lectureName": "고양이의물리학:자연계의숨은법칙",
+                                    "alias": "고물",
+                                    "Professor": "김성",
+                                    "days":["월","수"],
+                                    "timeStart":"10:30",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "두얼굴의인류사:전쟁과평화",
+                                    "alias": "두얼굴",
+                                    "Professor": "유재명",
+                                    "days":["월","수"],
+                                    "timeStart":"13:30",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "근대의시선과공간:뮤지엄과엑스포",
+                                    "alias": "근시공",
+                                    "Professor": "최석영",
+                                    "days":["월","수"],
+                                    "timeStart":"15:00",
+                                    "timeEnd": "16:15"
+                                },
+                                {
+                                    "lectureName": "매체와메시지:미디어의이해",
+                                    "alias": "매체메시지",
+                                    "Professor": "최은진",
+                                    "days":["화","목"],
+                                    "timeStart":"13:30",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "작곡의밑그림:화성학",
+                                    "alias": "작밑",
+                                    "Professor": "전은진",
+                                    "days":"금",
+                                    "timeStart":"12:00",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "스마트식생활과건강",
+                                    "alias": "스식건",
+                                    "Professor": "조윤희",
+                                    "days":["화","목"],
+                                    "timeStart":"10:30",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "소프트웨어적사유",
+                                    "alias": "소웨사",
+                                    "Professor": "이성근",
+                                    "days":"목",
+                                    "timeStart":"18:00",
+                                    "timeEnd": "20:25"
+                                }
+                            ]
+                        }
                     ]
                 },
                 {
                     "floor": "3",
                     "rooms": [
-                        "301",
-                        "302",
+                        {
+                            "roomNumber": "301",
+                            "classes": [
+                                {
+                                    "lectureName": "인간의가치탐색",
+                                    "alias": "인가탐",
+                                    "Professor": "윤원근",
+                                    "days":"금",
+                                    "timeStart":"09:00",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "인간의가치탐색",
+                                    "alias": "인가탐",
+                                    "Professor": "윤원근",
+                                    "days":"금",
+                                    "timeStart":"12:00",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "인간의가치탐색",
+                                    "alias": "인가탐",
+                                    "Professor": "김영진",
+                                    "days":["월","수"],
+                                    "timeStart":"09:00",
+                                    "timeEnd": "10:15"
+                                },
+                                {
+                                    "lectureName": "인간의가치탐색",
+                                    "alias": "인가탐",
+                                    "Professor": "김영진",
+                                    "days":["월","수"],
+                                    "timeStart":"10:30",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "인간의가치탐색",
+                                    "alias": "인가탐",
+                                    "Professor": "김영진",
+                                    "days":["월","수"],
+                                    "timeStart":"12:00",
+                                    "timeEnd": "13:15"
+                                },
+                                {
+                                    "lectureName": "인간의가치탐색",
+                                    "alias": "인가탐",
+                                    "Professor": "김영진",
+                                    "days":["월","수"],
+                                    "timeStart":"13:30",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "인간의가치탐색",
+                                    "alias": "인가탐",
+                                    "Professor": "박성진",
+                                    "days":["월","수"],
+                                    "timeStart":"15:00",
+                                    "timeEnd": "16:15"
+                                },
+                                {
+                                    "lectureName": "인간의가치탐색",
+                                    "alias": "인가탐",
+                                    "Professor": "민현주",
+                                    "days":["월","수"],
+                                    "timeStart":"16:30",
+                                    "timeEnd": "17:45"
+                                },
+                                {
+                                    "lectureName": "인간의가치탐색",
+                                    "alias": "인가탐",
+                                    "Professor": "김연숙",
+                                    "days":["화","목"],
+                                    "timeStart":"09:00",
+                                    "timeEnd": "10:15"
+                                },
+                                {
+                                    "lectureName": "인간의가치탐색",
+                                    "alias": "인가탐",
+                                    "Professor": "김연숙",
+                                    "days":["화","목"],
+                                    "timeStart":"10:30",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "인간의가치탐색",
+                                    "alias": "인가탐",
+                                    "Professor": "정순국",
+                                    "days":["화","목"],
+                                    "timeStart":"12:00",
+                                    "timeEnd": "13:15"
+                                },
+                                {
+                                    "lectureName": "인간의가치탐색",
+                                    "alias": "인가탐",
+                                    "Professor": "이은정",
+                                    "days":["화","목"],
+                                    "timeStart":"13:30",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "인간의가치탐색",
+                                    "alias": "인가탐",
+                                    "Professor": "이삼출",
+                                    "days":["화","목"],
+                                    "timeStart":"15:00",
+                                    "timeEnd": "16:15"
+                                },
+                                {
+                                    "lectureName": "인간의가치탐색",
+                                    "alias": "인가탐",
+                                    "Professor": "이삼출",
+                                    "days":["화","목"],
+                                    "timeStart":"16:30",
+                                    "timeEnd": "17:45"
+                                }
+                            ]
+                        },
+                        {
+                            "roomNumber": "302",
+                            "classes": [
+                                {
+                                    "lectureName": "빅뱅에서문명까지",
+                                    "alias": "빅문",
+                                    "Professor": "김갑성",
+                                    "days":["월","수"],
+                                    "timeStart":"09:00",
+                                    "timeEnd": "10:15"
+                                },
+                                {
+                                    "lectureName": "빅뱅에서문명까지",
+                                    "alias": "빅문",
+                                    "Professor": ["이상원","이영식"],
+                                    "days":["월","수"],
+                                    "timeStart":"10:30",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "빅뱅에서문명까지",
+                                    "alias": "빅문",
+                                    "Professor": "황은주",
+                                    "days":["월","수"],
+                                    "timeStart":"12:00",
+                                    "timeEnd": "13:15"
+                                },
+                                {
+                                    "lectureName": "빅뱅에서문명까지",
+                                    "alias": "빅문",
+                                    "Professor": "최석호",
+                                    "days":["월","수"],
+                                    "timeStart":"15:00",
+                                    "timeEnd": "16:15"
+                                },
+                                {
+                                    "lectureName": "빅뱅에서문명까지",
+                                    "alias": "빅문",
+                                    "Professor": "Tetsuya Magara",
+                                    "days":["월","수"],
+                                    "timeStart":"16:30",
+                                    "timeEnd": "17:45"
+                                },
+                                {
+                                    "lectureName": "빅뱅에서문명까지",
+                                    "alias": "빅문",
+                                    "Professor": "강희",
+                                    "days":["화","목"],
+                                    "timeStart":"10:30",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "빅뱅에서문명까지",
+                                    "alias": "빅문",
+                                    "Professor": "김성",
+                                    "days":["화","목"],
+                                    "timeStart":"12:00",
+                                    "timeEnd": "13:15"
+                                },
+                                {
+                                    "lectureName": "빅뱅에서문명까지",
+                                    "alias": "빅문",
+                                    "Professor": "박명진",
+                                    "days":["화","목"],
+                                    "timeStart":"12:00",
+                                    "timeEnd": "13:15"
+                                },
+                                {
+                                    "lectureName": "빅뱅에서문명까지",
+                                    "alias": "빅문",
+                                    "Professor": ["박지호","김성"],
+                                    "days":["화","목"],
+                                    "timeStart":"15:00",
+                                    "timeEnd": "16:15"
+                                },
+                                {
+                                    "lectureName": "현대사회와과학",
+                                    "alias": "현사과",
+                                    "Professor": "이영식",
+                                    "days":["화","목"],
+                                    "timeStart":"13:30",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "인체와생명",
+                                    "alias": "인생",
+                                    "Professor": "강희",
+                                    "days":["화","목"],
+                                    "timeStart":"09:00",
+                                    "timeEnd": "10:15"
+                                },
+                                {
+                                    "lectureName": "폭력의진화:통섭적관점",
+                                    "alias": "폭진",
+                                    "Professor": "우상권",
+                                    "days":"금",
+                                    "timeStart":"09:00",
+                                    "timeEnd": "11:45"
+                                }
+                            ]
+                        },
                         "303",
-                        "304",
-                        "305",
+                        {
+                            "roomNumber": "304",
+                            "classes": [
+                                {
+                                    "lectureName": "물리학2",
+                                    "alias": "물2",
+                                    "Professor": "임대영",
+                                    "days":["월","수"],
+                                    "timeStart":"13:30",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "물리학2",
+                                    "alias": "물2",
+                                    "Professor": "이남영",
+                                    "days":["화","목"],
+                                    "timeStart":"12:00",
+                                    "timeEnd": "13:15"
+                                },
+                                {
+                                    "lectureName": "물리학2",
+                                    "alias": "물2",
+                                    "Professor": "이남영",
+                                    "days":["화","목"],
+                                    "timeStart":"13:30",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "물리학2",
+                                    "alias": "물2",
+                                    "Professor": "김영훈",
+                                    "days":["화","목"],
+                                    "timeStart":"15:00",
+                                    "timeEnd": "16:15"
+                                },
+                                {
+                                    "lectureName": "물리학2",
+                                    "alias": "물2",
+                                    "Professor": "김영훈",
+                                    "days":["화","목"],
+                                    "timeStart":"16:30",
+                                    "timeEnd": "17:45"
+                                },
+                                {
+                                    "lectureName": "일반물리",
+                                    "alias": "일물",
+                                    "Professor": "최홍",
+                                    "days":["월","수"],
+                                    "timeStart":"09:00",
+                                    "timeEnd": "10:15"
+                                },
+                                {
+                                    "lectureName": "일반물리",
+                                    "alias": "일물",
+                                    "Professor": "최홍",
+                                    "days":["월","수"],
+                                    "timeStart":"10:30",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "일반물리",
+                                    "alias": "일물",
+                                    "Professor": "이나영",
+                                    "days":["월","수"],
+                                    "timeStart":"15:00",
+                                    "timeEnd": "16:15"
+                                },
+                                {
+                                    "lectureName": "일반물리",
+                                    "alias": "일물",
+                                    "Professor": "이나영",
+                                    "days":["월","수"],
+                                    "timeStart":"16:30",
+                                    "timeEnd": "17:45"
+                                },
+                                {
+                                    "lectureName": "화학2",
+                                    "alias": "화2",
+                                    "Professor": "박성훈",
+                                    "days":"금",
+                                    "timeStart":"09:00",
+                                    "timeEnd": "11:45"
+                                }
+                            ]
+                        },
+                        {
+                            "roomNumber": "305",
+                            "classes": [
+                                {
+                                    "lectureName": "생물학및실험2",
+                                    "alias": "생실2",
+                                    "Professor": "장광현",
+                                    "days":"금",
+                                    "timeStart":"09:00",
+                                    "timeEnd": "10:50"
+                                }
+                            ]
+                        },
                         "306",
                         "307",
                         "308",
-                        "309",
-                        "310",
-                        "311",
-                        "312"
+                        {
+                            "roomNumber": "309",
+                            "classes": [
+                                {
+                                    "lectureName": "화학및실험2",
+                                    "alias": "화실2",
+                                    "Professor": "강경태",
+                                    "days":"화",
+                                    "timeStart":"10:30",
+                                    "timeEnd": "12:20"
+                                },
+                                {
+                                    "lectureName": "화학및실험2",
+                                    "alias": "화실2",
+                                    "Professor": "안광현",
+                                    "days":"수",
+                                    "timeStart":"13:00",
+                                    "timeEnd": "14:50"
+                                },
+                                {
+                                    "lectureName": "화학및실험2",
+                                    "alias": "화실2",
+                                    "Professor": "김학원",
+                                    "days":"화",
+                                    "timeStart":"13:00",
+                                    "timeEnd": "14:50"
+                                }
+                            ]
+                        },
+                        {
+                            "roomNumber": "310",
+                            "classes": [
+                                {
+                                    "lectureName": "유기화학실험",
+                                    "alias": "유화실",
+                                    "Professor": "김학원",
+                                    "days":"목",
+                                    "timeStart":"15:00",
+                                    "timeEnd": "18:50"
+                                },
+                                {
+                                    "lectureName": "유기화학실험",
+                                    "alias": "유화실",
+                                    "Professor": "유은정",
+                                    "days":"금",
+                                    "timeStart":"09:00",
+                                    "timeEnd": "12:50"
+                                },
+                                {
+                                    "lectureName": "유기화학실험",
+                                    "alias": "유화실",
+                                    "Professor": "유은정",
+                                    "days":"금",
+                                    "timeStart":"13:30",
+                                    "timeEnd": "17:20"
+                                },
+                                {
+                                    "lectureName": "화학및실험2",
+                                    "alias": "화실2",
+                                    "Professor": "강경태",
+                                    "days":"화",
+                                    "timeStart":"10:30",
+                                    "timeEnd": "12:20"
+                                },
+                                {
+                                    "lectureName": "화학및실험2",
+                                    "alias": "화실2",
+                                    "Professor": "안광현",
+                                    "days":"수",
+                                    "timeStart":"13:00",
+                                    "timeEnd": "14:50"
+                                },
+                                {
+                                    "lectureName": "화학및실험2",
+                                    "alias": "화실2",
+                                    "Professor": "김학원",
+                                    "days":"목",
+                                    "timeStart":"13:00",
+                                    "timeEnd": "14:50"
+                                }
+                            ]
+                        },
+                        {
+                            "roomNumber": "311",
+                            "classes": [
+                                {
+                                    "lectureName": "일반화학",
+                                    "alias": "일화",
+                                    "Professor": "이병노",
+                                    "days":["월","수"],
+                                    "timeStart":"15:00",
+                                    "timeEnd": "16:15"
+                                },
+                                {
+                                    "lectureName": "일반화학",
+                                    "alias": "일화",
+                                    "Professor": "이병노",
+                                    "days":["월","수"],
+                                    "timeStart":"16:30",
+                                    "timeEnd": "17:45"
+                                },
+                                {
+                                    "lectureName": "화학및실험2",
+                                    "alias": "화실2",
+                                    "Professor": "강경태",
+                                    "days":"목",
+                                    "timeStart":"10:30",
+                                    "timeEnd": "12:20"
+                                },
+                                {
+                                    "lectureName": "화학및실험2",
+                                    "alias": "화실2",
+                                    "Professor": "안광현",
+                                    "days":"월",
+                                    "timeStart":"13:00",
+                                    "timeEnd": "14:50"
+                                },
+                                {
+                                    "lectureName": "화학및실험2",
+                                    "alias": "화실2",
+                                    "Professor": "김학원",
+                                    "days":"목",
+                                    "timeStart":"13:00",
+                                    "timeEnd": "14:50"
+                                },
+                                {
+                                    "lectureName": "생물학및실험2",
+                                    "alias": "생실2",
+                                    "Professor": "장광현",
+                                    "days":"수",
+                                    "timeStart":"11:00",
+                                    "timeEnd": "12:50"
+                                },
+                                {
+                                    "lectureName": "일반화학",
+                                    "alias": "일반화학",
+                                    "Professor": "최혁준",
+                                    "days":"금",
+                                    "timeStart":"09:00",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "일반화학",
+                                    "alias": "일반화학",
+                                    "Professor": "최혁준",
+                                    "days":"금",
+                                    "timeStart":"12:30",
+                                    "timeEnd": "15:15"
+                                }
+                            ]
+                        },
+                        {
+                            "roomNumber": "312",
+                            "classes": [
+                                {
+                                    "lectureName": "화학2",
+                                    "alias": "화2",
+                                    "Professor": "심지혜",
+                                    "days":["화","목"],
+                                    "timeStart":"10:30",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "시민생활과법",
+                                    "alias": "시생법",
+                                    "Professor": "김명수",
+                                    "days":"금",
+                                    "timeStart":"15:00",
+                                    "timeEnd": "17:45"
+                                },
+                                {
+                                    "lectureName": "고양이의물리학:자연계의숨은법칙",
+                                    "alias": "고물",
+                                    "Professor": "손종역",
+                                    "days":["화","목"],
+                                    "timeStart":"13:30",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "기술혁신과전략의융합",
+                                    "alias": "기혁전",
+                                    "Professor": "김명섭",
+                                    "days":["화","목"],
+                                    "timeStart":"12:00",
+                                    "timeEnd": "13:15"
+                                },
+                                {
+                                    "lectureName": "법,질서,국가",
+                                    "alias": "법질국",
+                                    "Professor": "김명수",
+                                    "days":"금",
+                                    "timeStart":"12:00",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "설탕과소금:사소한것들의역사",
+                                    "alias": "설탕소금",
+                                    "Professor": "홍영미",
+                                    "days":"수",
+                                    "timeStart":"15:00",
+                                    "timeEnd": "17:45"
+                                },
+                                {
+                                    "lectureName": "영토의경계와흔적:이민,이주,이동",
+                                    "alias": "영경",
+                                    "Professor": "김현철",
+                                    "days":"금",
+                                    "timeStart":"09:00",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "예술치료의원리와실제",
+                                    "alias": "예술치료",
+                                    "Professor": "박진희",
+                                    "days":"수",
+                                    "timeStart":"09:00",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "대학생을위한실용금융",
+                                    "alias": "대학금융",
+                                    "Professor": "윤병조",
+                                    "days":"목",
+                                    "timeStart":"15:00",
+                                    "timeEnd": "17:45"
+                                }
+                            ]
+                        }
                     ]
                 },
                 {
                     "floor": "4",
                     "rooms": [
                         "401",
-                        "402",
-                        "403",
-                        "404",
-                        "405",
-                        "406",
-                        "407",
-                        "408",
-                        "409",
-                        "410",
-                        "411"
+                        {
+                            "roomNumber": "402",
+                            "classes": [
+                                {
+                                    "lectureName": "교육방법및교육공학",
+                                    "alias": "교육방법공학",
+                                    "Professor": "임병노",
+                                    "days":"화",
+                                    "timeStart":"11:00",
+                                    "timeEnd": "12:50"
+                                },
+                                {
+                                    "lectureName": "교육사회학",
+                                    "alias": "교육사회",
+                                    "Professor": "남기석",
+                                    "days":"화",
+                                    "timeStart":"13:30",
+                                    "timeEnd": "15:20"
+                                },
+                                {
+                                    "lectureName": "교육사회학",
+                                    "alias": "교육사회",
+                                    "Professor": "남기석",
+                                    "days":"화",
+                                    "timeStart":"15:30",
+                                    "timeEnd": "17:20"
+                                },
+                                {
+                                    "lectureName": "교육심리학",
+                                    "alias": "교육심리",
+                                    "Professor": "박미연",
+                                    "days":"목",
+                                    "timeStart":"09:00",
+                                    "timeEnd": "10:50"
+                                },
+                                {
+                                    "lectureName": "교육심리학",
+                                    "alias": "교육심리",
+                                    "Professor": "한지수",
+                                    "days":"목",
+                                    "timeStart":"11:00",
+                                    "timeEnd": "12:50"
+                                },
+                                {
+                                    "lectureName": "교육평가",
+                                    "alias": "교육평가",
+                                    "Professor": "김소연",
+                                    "days":"목",
+                                    "timeStart":"13:30",
+                                    "timeEnd": "15:20"
+                                },
+                                {
+                                    "lectureName": "교육학개론",
+                                    "alias": "교육학",
+                                    "Professor": "임병노",
+                                    "days":"월",
+                                    "timeStart":"11:00",
+                                    "timeEnd": "12:50"
+                                },
+                                {
+                                    "lectureName": "교육행정및교육경영",
+                                    "alias": "교육행정경영",
+                                    "Professor": "김병찬",
+                                    "days":"월",
+                                    "timeStart":"13:30",
+                                    "timeEnd": "15:20"
+                                },
+                                {
+                                    "lectureName": "교육행정및교육경영",
+                                    "alias": "교육행정경영",
+                                    "Professor": "김병찬",
+                                    "days":"월",
+                                    "timeStart":"15:30",
+                                    "timeEnd": "17:20"
+                                },
+                                {
+                                    "lectureName": "교직실무",
+                                    "alias": "교직실무",
+                                    "Professor": "이미숙",
+                                    "days":"금",
+                                    "timeStart":"13:30",
+                                    "timeEnd": "15:20"
+                                },
+                                {
+                                    "lectureName": "특수교육학개론",
+                                    "alias": "특수교육",
+                                    "Professor": "윤송하",
+                                    "days":"금",
+                                    "timeStart":"11:00",
+                                    "timeEnd": "12:50"
+                                }
+                            ]
+                        },
+                        {
+                            "roomNumber": "403",
+                            "classes": [
+                                {
+                                    "lectureName": "물리학및실험2",
+                                    "alias": "물및실2",
+                                    "Professor": "이은모",
+                                    "days":"월",
+                                    "timeStart":"09:00",
+                                    "timeEnd": "10:50"
+                                },
+                                {
+                                    "lectureName": "물리학및실험2",
+                                    "alias": "물및실2",
+                                    "Professor": "김영민",
+                                    "days":"수",
+                                    "timeStart":"14:00",
+                                    "timeEnd": "15:50"
+                                },
+                                {
+                                    "lectureName": "물리학및실험2",
+                                    "alias": "물및실2",
+                                    "Professor": "송현욱",
+                                    "days":"수",
+                                    "timeStart":"11:00",
+                                    "timeEnd": "12:50"
+                                }
+                            ]
+                        },
+                        {
+                            "roomNumber": "404",
+                            "classes": [
+                                {
+                                    "lectureName": "물리학및실험2",
+                                    "alias": "물및실2",
+                                    "Professor": "이은모",
+                                    "days":"월",
+                                    "timeStart":"09:00",
+                                    "timeEnd": "10:50"
+                                },
+                                {
+                                    "lectureName": "물리학및실험2",
+                                    "alias": "물및실2",
+                                    "Professor": "김영민",
+                                    "days":"수",
+                                    "timeStart":"14:00",
+                                    "timeEnd": "15:50"
+                                }
+                            ]
+                        },
+                        {
+                            "roomNumber": "405",
+                            "classes": [
+                                {
+                                    "lectureName": "물리학실험2",
+                                    "alias": "물실2",
+                                    "Professor": "송현욱",
+                                    "days":"목",
+                                    "timeStart":"11:00",
+                                    "timeEnd": "12:50"
+                                },
+                                {
+                                    "lectureName": "물리학및실험2",
+                                    "alias": "물및실2",
+                                    "Professor": "노태호",
+                                    "days":"화",
+                                    "timeStart":"14:00",
+                                    "timeEnd": "15:50"
+                                },
+                                {
+                                    "lectureName": "물리학및실험2",
+                                    "alias": "물및실2",
+                                    "Professor": "이민철",
+                                    "days":"월",
+                                    "timeStart":"11:00",
+                                    "timeEnd": "12:50"
+                                }
+                            ]
+                        },
+                        {
+                            "roomNumber": "406",
+                            "classes": [
+                                {
+                                    "lectureName": "물리학실험2",
+                                    "alias": "물실2",
+                                    "Professor": "손종역",
+                                    "days":"수",
+                                    "timeStart":"09:00",
+                                    "timeEnd": "10:50"
+                                },
+                                {
+                                    "lectureName": "물리학실험2",
+                                    "alias": "물실2",
+                                    "Professor": "손종역",
+                                    "days":"수",
+                                    "timeStart":"11:00",
+                                    "timeEnd": "12:50"
+                                },
+                                {
+                                    "lectureName": "물리학및실험2",
+                                    "alias": "물및실2",
+                                    "Professor": "노태호",
+                                    "days":"화",
+                                    "timeStart":"14:00",
+                                    "timeEnd": "15:50"
+                                },
+                                {
+                                    "lectureName": "물리학및실험2",
+                                    "alias": "물및실2",
+                                    "Professor": "이민철",
+                                    "days":"월",
+                                    "timeStart":"11:00",
+                                    "timeEnd": "12:50"
+                                }
+                            ]
+                        },
+                        {
+                            "roomNumber": "407",
+                            "classes": [
+                                {
+                                    "lectureName": "물리학2",
+                                    "alias": "물2",
+                                    "Professor": "최정우",
+                                    "days":["화","목"],
+                                    "timeStart":"10:30",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "물리학및실험2",
+                                    "alias": "물및실2",
+                                    "Professor": "이은모",
+                                    "days":"수",
+                                    "timeStart":"09:00",
+                                    "timeEnd": "10:50"
+                                },
+                                {
+                                    "lectureName": "물리학및실험2",
+                                    "alias": "물및실2",
+                                    "Professor": "김영민",
+                                    "days":"월",
+                                    "timeStart":"14:00",
+                                    "timeEnd": "15:50"
+                                },
+                                {
+                                    "lectureName": "물리학및실험2",
+                                    "alias": "물및실2",
+                                    "Professor": "송현욱",
+                                    "days":"월",
+                                    "timeStart":"11:00",
+                                    "timeEnd": "12:50"
+                                },
+                                {
+                                    "lectureName": "물리학및실험2",
+                                    "alias": "물및실2",
+                                    "Professor": "노태호",
+                                    "days":"목",
+                                    "timeStart":"14:00",
+                                    "timeEnd": "15:50"
+                                },
+                                {
+                                    "lectureName": "일반물리",
+                                    "alias": "일물",
+                                    "Professor": "최정우",
+                                    "days":["화","목"],
+                                    "timeStart":"12:00",
+                                    "timeEnd": "13:15"
+                                },
+                                {
+                                    "lectureName": "인간의가치탐색",
+                                    "alias": "인가탐",
+                                    "Professor": "민승기",
+                                    "days":"금",
+                                    "timeStart":"12:00",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "인간의가치탐색",
+                                    "alias": "인가탐",
+                                    "Professor": "김현철",
+                                    "days":"금",
+                                    "timeStart":"15:00",
+                                    "timeEnd": "17:45"
+                                },
+                                {
+                                    "lectureName": "고전읽기:프로이트",
+                                    "alias": "고전",
+                                    "Professor": "민승기",
+                                    "days":"금",
+                                    "timeStart":"09:00",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "물리학및실험2",
+                                    "alias": "물및실2",
+                                    "Professor": "이민철",
+                                    "days":"수",
+                                    "timeStart":"11:00",
+                                    "timeEnd": "12:50"
+                                }
+                            ]
+                        },
+                        {
+                            "roomNumber": "408",
+                            "classes": [
+                                {
+                                    "lectureName": "고급미분적분학",
+                                    "alias": "고미적",
+                                    "Professor": "남윤",
+                                    "days":["월","수"],
+                                    "timeStart":"09:00",
+                                    "timeEnd": "10:15"
+                                },
+                                {
+                                    "lectureName": "기초일본어",
+                                    "alias": "기초일본",
+                                    "Professor": "SATO YOKO",
+                                    "days":["화","목"],
+                                    "timeStart":"10:30",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "기초일본어",
+                                    "alias": "기초일본",
+                                    "Professor": "SATO YOKO",
+                                    "days":["화","목"],
+                                    "timeStart":"13:30",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "기초프랑스어",
+                                    "alias": "기초프랑스",
+                                    "Professor": "유광주",
+                                    "days":["월","수"],
+                                    "timeStart":"10:30",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "기초프랑스어",
+                                    "alias": "기초프랑스",
+                                    "Professor": "유광주",
+                                    "days":["월","수"],
+                                    "timeStart":"13:30",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "한국어의이해3",
+                                    "alias": "한국어이해3",
+                                    "Professor": "오현주",
+                                    "days":["월","수"],
+                                    "timeStart":"15:00",
+                                    "timeEnd": "16:15"
+                                },
+                                {
+                                    "lectureName": "한국어의이해4",
+                                    "alias": "한국어이해4",
+                                    "Professor": "오현주",
+                                    "days":["월","수"],
+                                    "timeStart":"16:30",
+                                    "timeEnd": "17:45"
+                                }
+                            ]
+                        },
+                        {
+                            "roomNumber": "409",
+                            "classes": [
+                                {
+                                    "lectureName": "인간의가치탐색",
+                                    "alias": "인가탐",
+                                    "Professor": "문영희",
+                                    "days":"금",
+                                    "timeStart":"12:00",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "인간의가치탐색",
+                                    "alias": "인가탐",
+                                    "Professor": "문영희",
+                                    "days":"금",
+                                    "timeStart":"15:00",
+                                    "timeEnd": "17:45"
+                                },
+                                {
+                                    "lectureName": "인간의가치탐색",
+                                    "alias": "인가탐",
+                                    "Professor": "김활란",
+                                    "days":["월","수"],
+                                    "timeStart":"09:00",
+                                    "timeEnd": "10:15"
+                                },
+                                {
+                                    "lectureName": "인간의가치탐색",
+                                    "alias": "인가탐",
+                                    "Professor": "전호근",
+                                    "days":["월","수"],
+                                    "timeStart":"12:00",
+                                    "timeEnd": "13:15"
+                                },
+                                {
+                                    "lectureName": "인간의가치탐색",
+                                    "alias": "인가탐",
+                                    "Professor": "김활란",
+                                    "days":["월","수"],
+                                    "timeStart":"13:30",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "인간의가치탐색",
+                                    "alias": "인가탐",
+                                    "Professor": "김활란",
+                                    "days":["월","수"],
+                                    "timeStart":"15:00",
+                                    "timeEnd": "16:15"
+                                },
+                                {
+                                    "lectureName": "인간의가치탐색",
+                                    "alias": "인가탐",
+                                    "Professor": "김종인",
+                                    "days":["화","목"],
+                                    "timeStart":"09:00",
+                                    "timeEnd": "10:15"
+                                },
+                                {
+                                    "lectureName": "인간의가치탐색",
+                                    "alias": "인가탐",
+                                    "Professor": "김종인",
+                                    "days":["화","목"],
+                                    "timeStart":"10:30",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "인간의가치탐색",
+                                    "alias": "인가탐",
+                                    "Professor": "이경석",
+                                    "days":["화","목"],
+                                    "timeStart":"12:00",
+                                    "timeEnd": "13:15"
+                                },
+                                {
+                                    "lectureName": "인간의가치탐색",
+                                    "alias": "인가탐",
+                                    "Professor": "이경석",
+                                    "days":["화","목"],
+                                    "timeStart":"13:30",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "인간의가치탐색",
+                                    "alias": "인가탐",
+                                    "Professor": "조현준",
+                                    "days":["화","목"],
+                                    "timeStart":"15:00",
+                                    "timeEnd": "16:15"
+                                }
+                            ]
+                        },
+                        {
+                            "roomNumber": "410",
+                            "classes": [
+                                {
+                                    "lectureName": "성찰과표현",
+                                    "alias": "성표",
+                                    "Professor": "최수진",
+                                    "days":["화","목"],
+                                    "timeStart":"15:00",
+                                    "timeEnd": "16:15"
+                                },
+                                {
+                                    "lectureName": "성찰과표현",
+                                    "alias": "성표",
+                                    "Professor": "최수진",
+                                    "days":["화","목"],
+                                    "timeStart":"16:30",
+                                    "timeEnd": "17:45"
+                                },
+                                {
+                                    "lectureName": "인간의가치탐색",
+                                    "alias": "인가탐",
+                                    "Professor": "신충식",
+                                    "days":["월","수"],
+                                    "timeStart":"09:00",
+                                    "timeEnd": "10:15"
+                                },
+                                {
+                                    "lectureName": "인간의가치탐색",
+                                    "alias": "인가탐",
+                                    "Professor": "신충식",
+                                    "days":["월","수"],
+                                    "timeStart":"10:30",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "인간의가치탐색",
+                                    "alias": "인가탐",
+                                    "Professor": "김병진",
+                                    "days":["월","수"],
+                                    "timeStart":"12:00",
+                                    "timeEnd": "13:15"
+                                },
+                                {
+                                    "lectureName": "인간의가치탐색",
+                                    "alias": "인가탐",
+                                    "Professor": "김병진",
+                                    "days":["월","수"],
+                                    "timeStart":"13:30",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "인간의가치탐색",
+                                    "alias": "인가탐",
+                                    "Professor": "유병래",
+                                    "days":["월","수"],
+                                    "timeStart":"15:00",
+                                    "timeEnd": "16:15"
+                                },
+                                {
+                                    "lectureName": "인간의가치탐색",
+                                    "alias": "인가탐",
+                                    "Professor": "유병래",
+                                    "days":["월","수"],
+                                    "timeStart":"16:30",
+                                    "timeEnd": "17:45"
+                                },
+                                {
+                                    "lectureName": "인간의가치탐색",
+                                    "alias": "인가탐",
+                                    "Professor": "이유진",
+                                    "days":["화","목"],
+                                    "timeStart":"09:00",
+                                    "timeEnd": "10:15"
+                                },
+                                {
+                                    "lectureName": "인간의가치탐색",
+                                    "alias": "인가탐",
+                                    "Professor": "조현준",
+                                    "days":["화","목"],
+                                    "timeStart":"10:30",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "인간의가치탐색",
+                                    "alias": "인가탐",
+                                    "Professor": "최인자",
+                                    "days":["화","목"],
+                                    "timeStart":"12:00",
+                                    "timeEnd": "13:15"
+                                }
+                            ]
+                        },
+                        {
+                            "roomNumber": "411",
+                            "classes": [
+                                {
+                                    "lectureName": "화학2",
+                                    "alias": "화2",
+                                    "Professor": "심지혜",
+                                    "days":["화","목"],
+                                    "timeStart":"12:00",
+                                    "timeEnd": "13:15"
+                                },
+                                {
+                                    "lectureName": "클래식음악산책",
+                                    "alias": "클산",
+                                    "Professor": "추상희",
+                                    "days":"금",
+                                    "timeStart":"12:00",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "패션디자인의세계",
+                                    "alias": "패디세",
+                                    "Professor": ["이정은","이하은"],
+                                    "days":"목",
+                                    "timeStart":"15:00",
+                                    "timeEnd": "17:45"
+                                },
+                                {
+                                    "lectureName": "영화로읽는도시인문학:환동해도시와문화지리",
+                                    "alias": "영도",
+                                    "Professor": "신진숙",
+                                    "days":["월","수"],
+                                    "timeStart":"16:30",
+                                    "timeEnd": "17:45"
+                                },
+                                {
+                                    "lectureName": "인간행동의이해:심리학",
+                                    "alias": "인행심",
+                                    "Professor": "김시현",
+                                    "days":"금",
+                                    "timeStart":"15:00",
+                                    "timeEnd": "17:45"
+                                },
+                                {
+                                    "lectureName": "세계속한국의생존과파워",
+                                    "alias": "세한파",
+                                    "Professor": "주재우",
+                                    "days":["월","수"],
+                                    "timeStart":"09:00",
+                                    "timeEnd": "10:15"
+                                },
+                                {
+                                    "lectureName": "한국사회의정치적이슈들",
+                                    "alias": "한사정",
+                                    "Professor": "김민전",
+                                    "days":["화","목"],
+                                    "timeStart":"13:30",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "Exploring Industry, Ideology, and Identity Through the Marvel Cinematic Universe",
+                                    "alias": "마블",
+                                    "Professor": "Brian Daniel Arundel",
+                                    "days":["화","목"],
+                                    "timeStart":"10:30",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "의미의탄생:언어",
+                                    "alias": "의탄",
+                                    "Professor": "이혜란",
+                                    "days":["월","수"],
+                                    "timeStart":"13:30",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "통계의진실과오류",
+                                    "alias": "통계진실",
+                                    "Professor": "홍아름",
+                                    "days":"금",
+                                    "timeStart":"09:00",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "만성질병과건강관리",
+                                    "alias": "망성건강",
+                                    "Professor": "김지혜",
+                                    "days":["월","수"],
+                                    "timeStart":"10:30",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "인류역사를바꾼첨단재료",
+                                    "alias": "인역첨",
+                                    "Professor": "송기국",
+                                    "days":["월","수"],
+                                    "timeStart":"15:00",
+                                    "timeEnd": "16:15"
+                                },
+                                {
+                                    "lectureName": "현대생활과체육",
+                                    "alias": "현생체",
+                                    "Professor": "채진석",
+                                    "days":"화",
+                                    "timeStart":"15:00",
+                                    "timeEnd": "17:45"
+                                }
+                            ]
+                        }
                     ]
                 },
                 {
@@ -794,38 +3023,1254 @@
                         "509",
                         "510",
                         "511",
-                        "512",
-                        "513"
+                        {
+                            "roomNumber": "512",
+                            "classes": [
+                                {
+                                    "lectureName": "만화로세상보기",
+                                    "alias": "만세",
+                                    "Professor": "김종옥",
+                                    "days":"월",
+                                    "timeStart":"12:00",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "SF영화의상상력:미래의평화와윤리",
+                                    "alias": "SF",
+                                    "Professor": "Roger Thompson",
+                                    "days":"금",
+                                    "timeStart":"09:00",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "십자가와초승달:기독교와이슬람",
+                                    "alias": "십초",
+                                    "Professor": "신은희",
+                                    "days":"금",
+                                    "timeStart":"13:30",
+                                    "timeEnd": "16:15"
+                                },
+                                {
+                                    "lectureName": "질병의진화적이해:우리는왜안픈걸까",
+                                    "alias": "질병진화",
+                                    "Professor": "박경모",
+                                    "days":["월","수"],
+                                    "timeStart":"15:00",
+                                    "timeEnd": "16:15"
+                                },
+                                {
+                                    "lectureName": "지식재산창업",
+                                    "alias": "지식재산",
+                                    "Professor": "정치화",
+                                    "days":"수",
+                                    "timeStart":"12:00",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "그림속의인문학",
+                                    "alias": "그림속",
+                                    "Professor": "김소희",
+                                    "days":"화",
+                                    "timeStart":"12:00",
+                                    "timeEnd": "14:45"
+                                }
+                            ]
+                        },
+                        {
+                            "roomNumber": "513",
+                            "classes": [
+                                {
+                                    "lectureName": "현대사회키워드로스포츠읽기",
+                                    "alias": "현사스",
+                                    "Professor": "김기섭",
+                                    "days":"금",
+                                    "timeStart":"09:00",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "생명과학의미래",
+                                    "alias": "생미",
+                                    "Professor": "정인식",
+                                    "days":["화","목"],
+                                    "timeStart":"15:00",
+                                    "timeEnd": "16:15"
+                                },
+                                {
+                                    "lectureName": "프로그래밍입문",
+                                    "alias": "프밍",
+                                    "Professor": "이승관",
+                                    "days":["화","목"],
+                                    "timeStart":"13:30",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "예술을통한공동체만들기",
+                                    "alias": "예공만",
+                                    "Professor": "김동언",
+                                    "days":["월","수"],
+                                    "timeStart":"13:30",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "삼국지인문학",
+                                    "alias": "삼국지",
+                                    "Professor": "민관동",
+                                    "days":["화","목"],
+                                    "timeStart":"10:30",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "우주탐사:당면한미래",
+                                    "alias": "영탐",
+                                    "Professor": "김성수",
+                                    "days":["월","수"],
+                                    "timeStart":"10:30",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "현대생활과체육",
+                                    "alias": "현생체",
+                                    "Professor": "채진석",
+                                    "days":"금",
+                                    "timeStart":"15:00",
+                                    "timeEnd": "17:45"
+                                },
+                                {
+                                    "lectureName": "프로그래밍을통한논리적사유연습",
+                                    "alias": "프밍논리",
+                                    "Professor": "이승관",
+                                    "days":"월",
+                                    "timeStart":"18:00",
+                                    "timeEnd": "20:45"
+                                }
+                            ]
+                        }
                     ]
                 },
                 {
                     "floor": "6",
                     "rooms": [
                         "601",
-                        "602",
-                        "603",
-                        "604",
+                        {
+                            "roomNumber": "602",
+                            "classes": [
+                                {
+                                    "lectureName": "고전읽기:그리스비극",
+                                    "alias": "고전",
+                                    "Professor": "최재구",
+                                    "days":["월","수"],
+                                    "timeStart":"13:30",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "기초일본어",
+                                    "alias": "기초일본",
+                                    "Professor": "최유경",
+                                    "days":["월","수"],
+                                    "timeStart":"12:00",
+                                    "timeEnd": "13:15"
+                                },
+                                {
+                                    "lectureName": "마녀사냥:그광기의역사",
+                                    "alias": "마녀사냥",
+                                    "Professor": "김영진",
+                                    "days":"금",
+                                    "timeStart":"12:00",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "초급일본어",
+                                    "alias": "초급일본",
+                                    "Professor": "최유경",
+                                    "days":["월","수"],
+                                    "timeStart":"10:30",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "문명감염그리고진화",
+                                    "alias": "문감진",
+                                    "Professor": "김영진",
+                                    "days":"금",
+                                    "timeStart":"09:00",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "문명패러다임의혁명:서구근대화과정의현대적이해",
+                                    "alias": "문패혁",
+                                    "Professor": "이은정",
+                                    "days":["화","목"],
+                                    "timeStart":"16:30",
+                                    "timeEnd": "17:45"
+                                },
+                                {
+                                    "lectureName": "새로운생명체:인공지능",
+                                    "alias": "새생",
+                                    "Professor": "안상혁",
+                                    "days":["화","목"],
+                                    "timeStart":"15:00",
+                                    "timeEnd": "16:15"
+                                }
+                            ]
+                        },
+                        {
+                            "roomNumber": "603",
+                            "classes": [
+                                {
+                                    "lectureName": "세계와시민",
+                                    "alias": "세시",
+                                    "Professor": "김정현",
+                                    "days":"월",
+                                    "timeStart":"12:00",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "세계와시민",
+                                    "alias": "세시",
+                                    "Professor": "김정현",
+                                    "days":"월",
+                                    "timeStart":"15:00",
+                                    "timeEnd": "17:45"
+                                },
+                                {
+                                    "lectureName": "세계와시민",
+                                    "alias": "세시",
+                                    "Professor": "신충식",
+                                    "days":"화",
+                                    "timeStart":"09:00",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "세계와시민",
+                                    "alias": "세시",
+                                    "Professor": "임형진",
+                                    "days":"화",
+                                    "timeStart":"12:00",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "세계와시민",
+                                    "alias": "세시",
+                                    "Professor": "임형진",
+                                    "days":"화",
+                                    "timeStart":"15:00",
+                                    "timeEnd": "17:45"
+                                },
+                                {
+                                    "lectureName": "세계와시민",
+                                    "alias": "세시",
+                                    "Professor": "고정근",
+                                    "days":"수",
+                                    "timeStart":"09:00",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "세계와시민",
+                                    "alias": "세시",
+                                    "Professor": "김영걸",
+                                    "days":"수",
+                                    "timeStart":"12:00",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "세계와시민",
+                                    "alias": "세시",
+                                    "Professor": "김영걸",
+                                    "days":"수",
+                                    "timeStart":"15:00",
+                                    "timeEnd": "17:45"
+                                },
+                                {
+                                    "lectureName": "세계와시민",
+                                    "alias": "세시",
+                                    "Professor": "김연철",
+                                    "days":"목",
+                                    "timeStart":"09:00",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "세계와시민",
+                                    "alias": "세시",
+                                    "Professor": "김연철",
+                                    "days":"목",
+                                    "timeStart":"12:00",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "세계와시민",
+                                    "alias": "세시",
+                                    "Professor": "이광훈",
+                                    "days":"금",
+                                    "timeStart":"09:00",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "주제연구",
+                                    "alias": "주제연구",
+                                    "Professor": "오태호",
+                                    "days":"금",
+                                    "timeStart":"12:00",
+                                    "timeEnd": "14:45"
+                                }
+                            ]
+                        },
+                        {
+                            "roomNumber": "604",
+                            "classes": [
+                                {
+                                    "lectureName": "세계와시민",
+                                    "alias": "세시",
+                                    "Professor": "이광훈",
+                                    "days":"월",
+                                    "timeStart":"09:00",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "세계와시민",
+                                    "alias": "세시",
+                                    "Professor": "윤종희",
+                                    "days":"월",
+                                    "timeStart":"12:00",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "세계와시민",
+                                    "alias": "세시",
+                                    "Professor": "박숙경",
+                                    "days":"월",
+                                    "timeStart":"15:00",
+                                    "timeEnd": "17:45"
+                                },
+                                {
+                                    "lectureName": "세계와시민",
+                                    "alias": "세시",
+                                    "Professor": "송종서",
+                                    "days":"화",
+                                    "timeStart":"09:00",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "세계와시민",
+                                    "alias": "세시",
+                                    "Professor": "정현경",
+                                    "days":"화",
+                                    "timeStart":"12:00",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "세계와시민",
+                                    "alias": "세시",
+                                    "Professor": "송종서",
+                                    "days":"화",
+                                    "timeStart":"15:00",
+                                    "timeEnd": "17:45"
+                                },
+                                {
+                                    "lectureName": "세계와시민",
+                                    "alias": "세시",
+                                    "Professor": "이영순",
+                                    "days":"수",
+                                    "timeStart":"09:00",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "세계와시민",
+                                    "alias": "세시",
+                                    "Professor": "곽봉재",
+                                    "days":"수",
+                                    "timeStart":"12:00",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "세계와시민",
+                                    "alias": "세시",
+                                    "Professor": "이영순",
+                                    "days":"수",
+                                    "timeStart":"15:00",
+                                    "timeEnd": "17:45"
+                                },
+                                {
+                                    "lectureName": "세계와시민",
+                                    "alias": "세시",
+                                    "Professor": "정재원",
+                                    "days":"목",
+                                    "timeStart":"09:00",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "세계와시민",
+                                    "alias": "세시",
+                                    "Professor": "정재원",
+                                    "days":"목",
+                                    "timeStart":"12:00",
+                                    "timeEnd": "14:45"
+                                }
+                            ]
+                        },
                         "605-1",
                         "605-2",
                         "606-1",
                         "606-2",
-                        "607",
-                        "608",
-                        "609",
-                        "610",
-                        "611",
-                        "612"
+                        {
+                            "roomNumber": "607",
+                            "classes": [
+                                {
+                                    "lectureName": "고급미분적분학",
+                                    "alias": "고미적",
+                                    "Professor": "남윤",
+                                    "days":["월","수"],
+                                    "timeStart":"10:30",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "대학영어",
+                                    "alias": "대영",
+                                    "Professor": "이지혜",
+                                    "days":["화","목"],
+                                    "timeStart":"09:00",
+                                    "timeEnd": "10:15"
+                                },
+                                {
+                                    "lectureName": "대학영어",
+                                    "alias": "대영",
+                                    "Professor": "이지혜",
+                                    "days":["화","목"],
+                                    "timeStart":"10:30",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "대학영어",
+                                    "alias": "대영",
+                                    "Professor": "공지은",
+                                    "days":"금",
+                                    "timeStart":"09:00",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "대학영어",
+                                    "alias": "대영",
+                                    "Professor": "공지은",
+                                    "days":"금",
+                                    "timeStart":"12:00",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "대학영어",
+                                    "alias": "대영",
+                                    "Professor": "Andrew James Stewart",
+                                    "days":["화","목"],
+                                    "timeStart":"13:30",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "대학영어",
+                                    "alias": "대영",
+                                    "Professor": "Roger Thompson",
+                                    "days":["월","수"],
+                                    "timeStart":"16:30",
+                                    "timeEnd": "17:45"
+                                },
+                                {
+                                    "lectureName": "대학영어",
+                                    "alias": "대영",
+                                    "Professor": "박현주",
+                                    "days":["월","수"],
+                                    "timeStart":"09:00",
+                                    "timeEnd": "10:15"
+                                },
+                                {
+                                    "lectureName": "대학영어",
+                                    "alias": "대영",
+                                    "Professor": "박현주",
+                                    "days":["월","수"],
+                                    "timeStart":"12:00",
+                                    "timeEnd": "13:15"
+                                },
+                                {
+                                    "lectureName": "대학영어",
+                                    "alias": "대영",
+                                    "Professor": "Andrew James Stewart",
+                                    "days":["월","수"],
+                                    "timeStart":"13:30",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "대학영어",
+                                    "alias": "대영",
+                                    "Professor": "Roger Thompson",
+                                    "days":["월","수"],
+                                    "timeStart":"15:00",
+                                    "timeEnd": "16:15"
+                                },
+                                {
+                                    "lectureName": "대학영어",
+                                    "alias": "대영",
+                                    "Professor": "Andrew James Stewart",
+                                    "days":["화","목"],
+                                    "timeStart":"15:00",
+                                    "timeEnd": "16:15"
+                                },
+                                {
+                                    "lectureName": "대학영어",
+                                    "alias": "대영",
+                                    "Professor": "Andrew James Stewart",
+                                    "days":["화","목"],
+                                    "timeStart":"16:30",
+                                    "timeEnd": "17:45"
+                                }
+                            ]
+                        },
+                        {
+                            "roomNumber": "608",
+                            "classes": [
+                                {
+                                    "lectureName": "대학영어",
+                                    "alias": "대영",
+                                    "Professor": "여승주",
+                                    "days":["월","수"],
+                                    "timeStart":"10:30",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "대학영어",
+                                    "alias": "대영",
+                                    "Professor": "신혜정",
+                                    "days":["화","목"],
+                                    "timeStart":"10:30",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "대학영어",
+                                    "alias": "대영",
+                                    "Professor": "신혜정",
+                                    "days":["화","목"],
+                                    "timeStart":"12:00",
+                                    "timeEnd": "13:15"
+                                },
+                                {
+                                    "lectureName": "대학영어",
+                                    "alias": "대영",
+                                    "Professor": "여승주",
+                                    "days":["월","수"],
+                                    "timeStart":"13:30",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "대학영어",
+                                    "alias": "대영",
+                                    "Professor": "여승주",
+                                    "days":["월","수"],
+                                    "timeStart":"15:00",
+                                    "timeEnd": "16:15"
+                                },
+                                {
+                                    "lectureName": "대학영어",
+                                    "alias": "대영",
+                                    "Professor": "신혜정",
+                                    "days":["화","목"],
+                                    "timeStart":"15:00",
+                                    "timeEnd": "16:15"
+                                },
+                                {
+                                    "lectureName": "대학영어",
+                                    "alias": "대영",
+                                    "Professor": "Roger Thompson",
+                                    "days":["화","목"],
+                                    "timeStart":"16:30",
+                                    "timeEnd": "17:45"
+                                },
+                                {
+                                    "lectureName": "대학영어",
+                                    "alias": "대영",
+                                    "Professor": "정지수",
+                                    "days":"금",
+                                    "timeStart":"09:00",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "대학영어",
+                                    "alias": "대영",
+                                    "Professor": "정지수",
+                                    "days":"금",
+                                    "timeStart":"12:00",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "대학영어",
+                                    "alias": "대영",
+                                    "Professor": "Roger Thompson",
+                                    "days":["화","목"],
+                                    "timeStart":"13:30",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "대학영어",
+                                    "alias": "대영",
+                                    "Professor": "여승주",
+                                    "days":"월",
+                                    "timeStart":"18:00",
+                                    "timeEnd": "20:25"
+                                },
+                                {
+                                    "lectureName": "일상의딜레마:윤리적해법",
+                                    "alias": "일딜",
+                                    "Professor": "예철해",
+                                    "days":["월","수"],
+                                    "timeStart":"12:00",
+                                    "timeEnd": "13:15"
+                                },
+                                {
+                                    "lectureName": "대학영어",
+                                    "alias": "대영",
+                                    "Professor": "Roger Thompson",
+                                    "days":["화","목"],
+                                    "timeStart":"09:00",
+                                    "timeEnd": "10:15"
+                                }
+                            ]
+                        },
+                        {
+                            "roomNumber": "609",
+                            "classes": [
+                                {
+                                    "lectureName": "인간의가치탐색",
+                                    "alias": "인가탐",
+                                    "Professor": "전호근",
+                                    "days":"금",
+                                    "timeStart":"12:00",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "인간의가치탐색",
+                                    "alias": "인가탐",
+                                    "Professor": "이진오",
+                                    "days":["월","수"],
+                                    "timeStart":"10:30",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "인간의가치탐색",
+                                    "alias": "인가탐",
+                                    "Professor": "임형진",
+                                    "days":["월","수"],
+                                    "timeStart":"12:00",
+                                    "timeEnd": "13:15"
+                                },
+                                {
+                                    "lectureName": "인간의가치탐색",
+                                    "alias": "인가탐",
+                                    "Professor": "이진오",
+                                    "days":["월","수"],
+                                    "timeStart":"13:30",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "인간의가치탐색",
+                                    "alias": "인가탐",
+                                    "Professor": "장성빈",
+                                    "days":["월","수"],
+                                    "timeStart":"15:00",
+                                    "timeEnd": "16:15"
+                                },
+                                {
+                                    "lectureName": "인간의가치탐색",
+                                    "alias": "인가탐",
+                                    "Professor": "이은정",
+                                    "days":["화","목"],
+                                    "timeStart":"09:00",
+                                    "timeEnd": "10:15"
+                                },
+                                {
+                                    "lectureName": "인간의가치탐색",
+                                    "alias": "인가탐",
+                                    "Professor": "최인자",
+                                    "days":["화","목"],
+                                    "timeStart":"13:30",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "인간의가치탐색",
+                                    "alias": "인가탐",
+                                    "Professor": "최인자",
+                                    "days":["화","목"],
+                                    "timeStart":"15:00",
+                                    "timeEnd": "16:15"
+                                },
+                                {
+                                    "lectureName": "파이썬과데이터마이닝",
+                                    "alias": "파이썬",
+                                    "Professor": "허림",
+                                    "days":"금",
+                                    "timeStart":"09:00",
+                                    "timeEnd": "11:45"
+                                }
+                            ]
+                        },
+                        {
+                            "roomNumber": "610",
+                            "classes": [
+                                {
+                                    "lectureName": "세계와시민",
+                                    "alias": "세시",
+                                    "Professor": "권순대",
+                                    "days":"월",
+                                    "timeStart":"09:00",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "세계와시민",
+                                    "alias": "세시",
+                                    "Professor": "권순대",
+                                    "days":"월",
+                                    "timeStart":"15:00",
+                                    "timeEnd": "17:45"
+                                },
+                                {
+                                    "lectureName": "세계와시민",
+                                    "alias": "세시",
+                                    "Professor": "박숙경",
+                                    "days":"화",
+                                    "timeStart":"09:00",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "세계와시민",
+                                    "alias": "세시",
+                                    "Professor": "윤종희",
+                                    "days":"화",
+                                    "timeStart":"12:00",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "세계와시민",
+                                    "alias": "세시",
+                                    "Professor": "정재원",
+                                    "days":"수",
+                                    "timeStart":"09:00",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "세계와시민",
+                                    "alias": "세시",
+                                    "Professor": "권순대",
+                                    "days":"수",
+                                    "timeStart":"12:00",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "세계와시민",
+                                    "alias": "세시",
+                                    "Professor": "정현경",
+                                    "days":"수",
+                                    "timeStart":"15:00",
+                                    "timeEnd": "17:45"
+                                },
+                                {
+                                    "lectureName": "세계와시민",
+                                    "alias": "세시",
+                                    "Professor": "김민전",
+                                    "days":"목",
+                                    "timeStart":"09:00",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "세계와시민",
+                                    "alias": "세시",
+                                    "Professor": "유해정",
+                                    "days":"목",
+                                    "timeStart":"12:00",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "세계와시민",
+                                    "alias": "세시",
+                                    "Professor": "유해정",
+                                    "days":"목",
+                                    "timeStart":"15:00",
+                                    "timeEnd": "17:45"
+                                },
+                                {
+                                    "lectureName": "세계와시민",
+                                    "alias": "세시",
+                                    "Professor": "이규호",
+                                    "days":"금",
+                                    "timeStart":"09:00",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "세계와시민",
+                                    "alias": "세시",
+                                    "Professor": "이규호",
+                                    "days":"금",
+                                    "timeStart":"12:00",
+                                    "timeEnd": "14:45"
+                                }
+                            ]
+                        },
+                        {
+                            "roomNumber": "611",
+                            "classes": [
+                                {
+                                    "lectureName": "세계와시민",
+                                    "alias": "세시",
+                                    "Professor": "곽봉재",
+                                    "days":"월",
+                                    "timeStart":"12:00",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "세계와시민",
+                                    "alias": "세시",
+                                    "Professor": "김종원",
+                                    "days":"월",
+                                    "timeStart":"15:00",
+                                    "timeEnd": "17:45"
+                                },
+                                {
+                                    "lectureName": "세계와시민",
+                                    "alias": "세시",
+                                    "Professor": "김민전",
+                                    "days":"화",
+                                    "timeStart":"09:00",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "세계와시민",
+                                    "alias": "세시",
+                                    "Professor": "권순대",
+                                    "days":"화",
+                                    "timeStart":"12:00",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "세계와시민",
+                                    "alias": "세시",
+                                    "Professor": "박숙경",
+                                    "days":"화",
+                                    "timeStart":"15:00",
+                                    "timeEnd": "17:45"
+                                },
+                                {
+                                    "lectureName": "세계와시민",
+                                    "alias": "세시",
+                                    "Professor": "윤종희",
+                                    "days":"수",
+                                    "timeStart":"12:00",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "세계와시민",
+                                    "alias": "세시",
+                                    "Professor": "고정근",
+                                    "days":"수",
+                                    "timeStart":"15:00",
+                                    "timeEnd": "17:45"
+                                },
+                                {
+                                    "lectureName": "세계와시민",
+                                    "alias": "세시",
+                                    "Professor": "정현경",
+                                    "days":"목",
+                                    "timeStart":"12:00",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "세계와시민",
+                                    "alias": "세시",
+                                    "Professor": "이진오",
+                                    "days":"목",
+                                    "timeStart":"12:00",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "세계와시민",
+                                    "alias": "세시",
+                                    "Professor": "차은정",
+                                    "days":"금",
+                                    "timeStart":"12:00",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "인간의가치탐색",
+                                    "alias": "인가탐",
+                                    "Professor": "최재구",
+                                    "days":["월","수"],
+                                    "timeStart":"10:30",
+                                    "timeEnd": "11:45"
+                                }
+                            ]
+                        },
+                        {
+                            "roomNumber": "612",
+                            "classes": [
+                                {
+                                    "lectureName": "법,질서,국가",
+                                    "alias": "법질국",
+                                    "Professor": "Brian Daniel Arundel",
+                                    "days":["화","목"],
+                                    "timeStart":"15:00",
+                                    "timeEnd": "16:15"
+                                },
+                                {
+                                    "lectureName": "여행을통한인간의삶의가치증진",
+                                    "alias": "여행",
+                                    "Professor": "윤병국",
+                                    "days":"수",
+                                    "timeStart":"15:00",
+                                    "timeEnd": "17:45"
+                                },
+                                {
+                                    "lectureName": "프로그래밍을통한논리적사유연습",
+                                    "alias": "프밍논",
+                                    "Professor": "정태충",
+                                    "days":["월","수"],
+                                    "timeStart":"13:30",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "몸과생명",
+                                    "alias": "몸생",
+                                    "Professor": "홍정우",
+                                    "days":["월","수"],
+                                    "timeStart":"10:30",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "공공미술과사회:공공미술프로젝트",
+                                    "alias": "공공미술",
+                                    "Professor": "신문영",
+                                    "days":"화",
+                                    "timeStart":"12:00",
+                                    "timeEnd": "14:45"
+                                }
+                            ]
+                        }
                     ]
                 },
                 {
                     "floor": "7",
                     "rooms": [
                         "701",
-                        "702",
-                        "703",
-                        "704",
-                        "705",
-                        "705-1",
+                        {
+                            "roomNumber": "702",
+                            "classes": [
+                                {
+                                    "lectureName": "성공과표현",
+                                    "alias": "성표",
+                                    "Professor": "유재명",
+                                    "days":["화","목"],
+                                    "timeStart":"10:30",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "한국어의이해1",
+                                    "alias": "한국어이해1",
+                                    "Professor": "김유리",
+                                    "days":["월","수"],
+                                    "timeStart":"09:00",
+                                    "timeEnd": "10:15"
+                                },
+                                {
+                                    "lectureName": "한국어의이해2",
+                                    "alias": "한국어이해2",
+                                    "Professor": "김유리",
+                                    "days":["월","수"],
+                                    "timeStart":"10:30",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "한국어의이해3",
+                                    "alias": "한국어이해3",
+                                    "Professor": "최은영",
+                                    "days":["월","수"],
+                                    "timeStart":"13:30",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "한국어의이해4",
+                                    "alias": "한국어이해4",
+                                    "Professor": "최은영",
+                                    "days":["월","수"],
+                                    "timeStart":"15:00",
+                                    "timeEnd": "16:15"
+                                }
+                            ]
+                        },
+                        {
+                            "roomNumber": "703",
+                            "classes": [
+                                {
+                                    "lectureName": "후마니타스세미나",
+                                    "alias": "후세",
+                                    "Professor": "임형진",
+                                    "days":"월",
+                                    "timeStart":"15:00",
+                                    "timeEnd": "15:50"
+                                },
+                                {
+                                    "lectureName": "후마니타스세미나",
+                                    "alias": "후세",
+                                    "Professor": "윤종희",
+                                    "days":"화",
+                                    "timeStart":"15:00",
+                                    "timeEnd": "15:50"
+                                },
+                                {
+                                    "lectureName": "한국어1(교양)",
+                                    "alias": "한국어",
+                                    "Professor": "장문정",
+                                    "days":["월","수"],
+                                    "timeStart":"12:00",
+                                    "timeEnd": "13:15"
+                                },
+                                {
+                                    "lectureName": "한국어의이해1",
+                                    "alias": "한국어이해1",
+                                    "Professor": "설현욱",
+                                    "days":["화","목"],
+                                    "timeStart":"10:30",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "한국어의이해2",
+                                    "alias": "한국어이해2",
+                                    "Professor": "설현욱",
+                                    "days":["화","목"],
+                                    "timeStart":"12:00",
+                                    "timeEnd": "13:15"
+                                }
+                            ]
+                        },
+                        {
+                            "roomNumber": "704",
+                            "classes": [
+                                {
+                                    "lectureName": "기초스페인어",
+                                    "alias": "기초스페인",
+                                    "Professor": "박정원",
+                                    "days":["화","목"],
+                                    "timeStart":"09:00",
+                                    "timeEnd": "10:15"
+                                },
+                                {
+                                    "lectureName": "기초스페인어",
+                                    "alias": "기초스페인",
+                                    "Professor": "황미선",
+                                    "days":["월","수"],
+                                    "timeStart":"10:30",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "기초스페인어",
+                                    "alias": "기초스페인",
+                                    "Professor": "황미선",
+                                    "days":["월","수"],
+                                    "timeStart":"12:00",
+                                    "timeEnd": "13:15"
+                                },
+                                {
+                                    "lectureName": "수사학과영작문",
+                                    "alias": "수영문",
+                                    "Professor": "박현주",
+                                    "days":["화","목"],
+                                    "timeStart":"12:00",
+                                    "timeEnd": "13:15"
+                                },
+                                {
+                                    "lectureName": "수학과세상",
+                                    "alias": "수세",
+                                    "Professor": "최진혁",
+                                    "days":["월","수"],
+                                    "timeStart":"15:00",
+                                    "timeEnd": "16:15"
+                                },
+                                {
+                                    "lectureName": "행복이란무엇인가",
+                                    "alias": "행무",
+                                    "Professor": "박대진",
+                                    "days":"금",
+                                    "timeStart":"12:00",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "앱인벤터로배우는코딩세상",
+                                    "alias": "앱코세",
+                                    "Professor": "김범석",
+                                    "days":["화","목"],
+                                    "timeStart":"13:30",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "앱인벤터로배우는코딩세상",
+                                    "alias": "앱코세",
+                                    "Professor": "김범석",
+                                    "days":["화","목"],
+                                    "timeStart":"15:00",
+                                    "timeEnd": "16:15"
+                                },
+                                {
+                                    "lectureName": "용인학",
+                                    "alias": "용인학",
+                                    "Professor": "김영진",
+                                    "days":"금",
+                                    "timeStart":"15:00",
+                                    "timeEnd": "16:50"
+                                }
+                            ]
+                        },
+                        {
+                            "roomNumber": "705",
+                            "classes": [
+                                {
+                                    "lectureName": "성공과표현",
+                                    "alias": "성표",
+                                    "Professor": "오태호",
+                                    "days":["화","목"],
+                                    "timeStart":"09:00",
+                                    "timeEnd": "10:15"
+                                },
+                                {
+                                    "lectureName": "성공과표현",
+                                    "alias": "성표",
+                                    "Professor": "오태호",
+                                    "days":["화","목"],
+                                    "timeStart":"10:30",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "후마니타스세미나",
+                                    "alias": "후세",
+                                    "Professor": "여승주",
+                                    "days":"화",
+                                    "timeStart":"15:00",
+                                    "timeEnd": "15:50"
+                                },
+                                {
+                                    "lectureName": "후마니타스세미나",
+                                    "alias": "후세",
+                                    "Professor": "진은진",
+                                    "days":"수",
+                                    "timeStart":"15:00",
+                                    "timeEnd": "15:50"
+                                },
+                                {
+                                    "lectureName": "후마니타스세미나",
+                                    "alias": "후세",
+                                    "Professor": "배재형",
+                                    "days":"수",
+                                    "timeStart":"10:30",
+                                    "timeEnd": "11:20"
+                                },
+                                {
+                                    "lectureName": "후마니타스세미나",
+                                    "alias": "후세",
+                                    "Professor": "유재명",
+                                    "days":"목",
+                                    "timeStart":"13:30",
+                                    "timeEnd": "14:20"
+                                },
+                                {
+                                    "lectureName": "후마니타스세미나",
+                                    "alias": "후세",
+                                    "Professor": "정재원",
+                                    "days":"금",
+                                    "timeStart":"09:00",
+                                    "timeEnd": "09:50"
+                                },
+                                {
+                                    "lectureName": "교육철학및교육사",
+                                    "alias": "교육철학",
+                                    "Professor": "예철해",
+                                    "days":"월",
+                                    "timeStart":"15:30",
+                                    "timeEnd": "17:20"
+                                },
+                                {
+                                    "lectureName": "학교폭력 예방 및 학생의 이해",
+                                    "alias": "학폭",
+                                    "Professor": "예철해",
+                                    "days":"월",
+                                    "timeStart":"13:30",
+                                    "timeEnd": "15:20"
+                                }
+                            ]
+                        },
+                        {
+                            "roomNumber": "705-1",
+                            "classes": [
+                                {
+                                    "lectureName": "대학영어",
+                                    "alias": "대영",
+                                    "Professor": "이미선",
+                                    "days":["화","목"],
+                                    "timeStart":"09:00",
+                                    "timeEnd": "10:15"
+                                },
+                                {
+                                    "lectureName": "대학영어",
+                                    "alias": "대영",
+                                    "Professor": "Cynthia SohYoung Yoo",
+                                    "days":["월","수"],
+                                    "timeStart":"10:30",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "대학영어",
+                                    "alias": "대영",
+                                    "Professor": "이미선",
+                                    "days":["화","목"],
+                                    "timeStart":"10:30",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "대학영어",
+                                    "alias": "대영",
+                                    "Professor": "Brian Daniel Arundel",
+                                    "days":["화","목"],
+                                    "timeStart":"12:00",
+                                    "timeEnd": "13:15"
+                                },
+                                {
+                                    "lectureName": "대학영어",
+                                    "alias": "대영",
+                                    "Professor": "Cynthia SohYoung Yoo",
+                                    "days":["월","수"],
+                                    "timeStart":"16:30",
+                                    "timeEnd": "17:45"
+                                },
+                                {
+                                    "lectureName": "대학영어",
+                                    "alias": "대영",
+                                    "Professor": "Cynthia SohYoung Yoo",
+                                    "days":["월","수"],
+                                    "timeStart":"12:00",
+                                    "timeEnd": "13:15"
+                                },
+                                {
+                                    "lectureName": "대학영어",
+                                    "alias": "대영",
+                                    "Professor": "Brian Daniel Arundel",
+                                    "days":["화","목"],
+                                    "timeStart":"13:30",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "대학영어",
+                                    "alias": "대영",
+                                    "Professor": "Cynthia SohYoung Yoo",
+                                    "days":"월",
+                                    "timeStart":"18:00",
+                                    "timeEnd": "20:25"
+                                },
+                                {
+                                    "lectureName": "후마니타스세미나",
+                                    "alias": "후세",
+                                    "Professor": "김영진",
+                                    "days":"월",
+                                    "timeStart":"15:00",
+                                    "timeEnd": "15:50"
+                                }
+                            ]
+                        },
                         "707",
                         "708",
                         "709",
@@ -844,7 +4289,19 @@
                         "802",
                         "803",
                         "804",
-                        "805",
+                        {
+                            "roomNumber": "805",
+                            "classes": [
+                                {
+                                    "lectureName": "공학도를위한소프트스킬",
+                                    "alias": "공소스",
+                                    "Professor": "박수정",
+                                    "days":["월","수"],
+                                    "timeStart":"10:30",
+                                    "timeEnd": "11:45"
+                                }
+                            ]
+                        },
                         "806",
                         "807",
                         "808",
@@ -864,7 +4321,91 @@
                         "823",
                         "824",
                         "825",
-                        "826"
+                        {
+                            "roomNumber": "826",
+                            "classes": [
+                                {
+                                    "lectureName": "고전명작과예술의문명사",
+                                    "alias": "고예문",
+                                    "Professor": "이병수",
+                                    "days":["월","수"],
+                                    "timeStart":"15:00",
+                                    "timeEnd": "16:15"
+                                },
+                                {
+                                    "lectureName": "청춘을위한영화예찬",
+                                    "alias": "쳥영",
+                                    "Professor": "이대범",
+                                    "days":"화",
+                                    "timeStart":"09:00",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "국가폭력과트라우마",
+                                    "alias": "국트",
+                                    "Professor": "임형진",
+                                    "days":["월","수"],
+                                    "timeStart":"09:00",
+                                    "timeEnd": "10:15"
+                                },
+                                {
+                                    "lectureName": "특허와지적재산권",
+                                    "alias": "특지",
+                                    "Professor": "공경식",
+                                    "days":["화","목"],
+                                    "timeStart":"15:00",
+                                    "timeEnd": "16:15"
+                                },
+                                {
+                                    "lectureName": "경제학적사유의원리",
+                                    "alias": "경사원",
+                                    "Professor": "함선미",
+                                    "days":"화",
+                                    "timeStart":"12:00",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "도덕의과학",
+                                    "alias": "도과",
+                                    "Professor": "전중환",
+                                    "days":"금",
+                                    "timeStart":"12:00",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "정치학적사유의원리",
+                                    "alias": "정사원",
+                                    "Professor": "임형진",
+                                    "days":["월","수"],
+                                    "timeStart":"10:30",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "사농공상:역사의주연과조연",
+                                    "alias": "사공",
+                                    "Professor": "김승래",
+                                    "days":"금",
+                                    "timeStart":"15:00",
+                                    "timeEnd": "17:45"
+                                },
+                                {
+                                    "lectureName": "운동과체중관리",
+                                    "alias": "운체관",
+                                    "Professor": "이만균",
+                                    "days":"금",
+                                    "timeStart":"09:00",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "특허와지적재산권",
+                                    "alias": "특허",
+                                    "Professor": "공경식",
+                                    "days":["화","목"],
+                                    "timeStart":"16:30",
+                                    "timeEnd": "17:45"
+                                }
+                            ]
+                        }
                     ]
                 },
                 {

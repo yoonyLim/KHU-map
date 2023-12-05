@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1368.24 768">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        font-family: AdobeMyungjoStd-Medium-KSCpc-EUC-H, 'Adobe Myungjo Std';
+        font-size: 18px;
+        font-weight: 500;
+      }
+    </style>
+  </defs>
+  <g id="_레이어_2" data-name="레이어 2">
+    <polyline class="cls-1" points="358.5 335.33 762.51 335.33 762.51 268.5 769.63 268.5 769.63 241.18 910.46 241.18 910.46 268.5 910.46 335.5"/>
+    <line class="cls-1" x1="1005.41" y1="268.5" x2="910.46" y2="268.5"/>
+    <polyline class="cls-1" points="71.5 445.31 48.5 445.31 48.5 268.5 86.02 268.5"/>
+    <polyline class="cls-1" points="1283.12 284.96 1320.31 284.96 1320.31 441.62 1295.5 441.62"/>
+    <text class="cls-2" transform="translate(49.42 288.47)"><tspan x="0" y="0">계단</tspan></text>
+    <text class="cls-2" transform="translate(939.62 309.14)"><tspan x="0" y="0">계단</tspan></text>
+    <text class="cls-2" transform="translate(1282.62 302.14)"><tspan x="0" y="0">계단</tspan></text>
+    <text class="cls-2" transform="translate(310.99 298.14)"><tspan x="0" y="0">남자</tspan><tspan x="-9" y="21.6">화장실</tspan></text>
+    <text class="cls-2" transform="translate(791.99 268.14)"><tspan x="0" y="0">엘레베이터</tspan></text>
+    <text class="cls-2" transform="translate(1017.79 298.21)"><tspan x="0" y="0">여자</tspan><tspan x="-9" y="21.6">화장실</tspan></text>
+    <text class="cls-2" transform="translate(103.79 283.21)"><tspan x="0" y="0">928</tspan></text>
+    <text class="cls-2" transform="translate(174.79 283.21)"><tspan x="0" y="0">929</tspan></text>
+    <text class="cls-2" transform="translate(245.79 283.23)"><tspan x="0" y="0">930</tspan></text>
+    <text class="cls-2" transform="translate(1071.79 309.23)"><tspan x="0" y="0">901</tspan></text>
+    <text class="cls-2" transform="translate(1112.99 309.21)"><tspan x="0" y="0">902</tspan></text>
+    <text class="cls-2" transform="translate(1157.99 309.21)"><tspan x="0" y="0">903</tspan></text>
+    <text class="cls-2" transform="translate(1199.99 309.21)"><tspan x="0" y="0">904</tspan></text>
+    <text class="cls-2" transform="translate(1243.99 309.21)"><tspan x="0" y="0">905</tspan></text>
+    <text class="cls-2" transform="translate(1256.99 489.21)"><tspan x="0" y="0">906</tspan></text>
+    <text class="cls-2" transform="translate(1214.99 489.21)"><tspan x="0" y="0">907</tspan></text>
+    <text class="cls-2" transform="translate(1172.99 489.21)"><tspan x="0" y="0">908</tspan></text>
+    <text class="cls-2" transform="translate(1133.99 489.21)"><tspan x="0" y="0">909</tspan></text>
+    <text class="cls-2" transform="translate(1091.99 489.21)"><tspan x="0" y="0">910</tspan></text>
+    <text class="cls-2" transform="translate(1051.99 489.21)"><tspan x="0" y="0">911</tspan></text>
+    <text class="cls-2" transform="translate(1008.99 489.21)"><tspan x="0" y="0">912</tspan></text>
+    <text class="cls-2" transform="translate(940.99 489.21)"><tspan x="0" y="0">913</tspan></text>
+    <text class="cls-2" transform="translate(820.99 489.21)"><tspan x="0" y="0">914</tspan></text>
+    <text class="cls-2" transform="translate(720.71 489.65)"><tspan x="0" y="0">915</tspan></text>
+    <text class="cls-2" transform="translate(665.71 489.65)"><tspan x="0" y="0">916</tspan></text>
+    <text class="cls-2" transform="translate(610.54 489.63)"><tspan x="0" y="0">917</tspan></text>
+    <text class="cls-2" transform="translate(557.54 489.63)"><tspan x="0" y="0">918</tspan></text>
+    <text class="cls-2" transform="translate(503.54 489.63)"><tspan x="0" y="0">919</tspan></text>
+    <text class="cls-2" transform="translate(449.54 489.63)"><tspan x="0" y="0">920</tspan></text>
+    <text class="cls-2" transform="translate(396.54 489.63)"><tspan x="0" y="0">921</tspan></text>
+    <text class="cls-2" transform="translate(341.54 489.63)"><tspan x="0" y="0">922</tspan></text>
+    <text class="cls-2" transform="translate(289.54 489.63)"><tspan x="0" y="0">923</tspan></text>
+    <text class="cls-2" transform="translate(236.54 489.63)"><tspan x="0" y="0">924</tspan></text>
+    <text class="cls-2" transform="translate(184.54 489.63)"><tspan x="0" y="0">925</tspan></text>
+    <text class="cls-2" transform="translate(131.54 489.63)"><tspan x="0" y="0">926</tspan></text>
+    <text class="cls-2" transform="translate(82.54 489.63)"><tspan x="0" y="0">927</tspan></text>
+  </g>
+  <g id="_927" data-name="927">
+    <polygon class="cls-1" points="124 524.5 71.5 524.5 71.5 446 71.5 445.31 71.5 441.62 124 441.62 124 524.5"/>
+  </g>
+  <g id="_926" data-name="926">
+    <rect class="cls-1" x="124" y="441.62" width="51.69" height="82.88"/>
+  </g>
+  <g id="_925" data-name="925">
+    <rect class="cls-1" x="175.69" y="441.62" width="51.69" height="82.88"/>
+  </g>
+  <g id="_924" data-name="924">
+    <rect class="cls-1" x="227.38" y="441.62" width="51.16" height="82.88"/>
+  </g>
+  <g id="_923" data-name="923">
+    <rect class="cls-1" x="278.55" y="441.62" width="52.75" height="82.88"/>
+  </g>
+  <g id="_922" data-name="922">
+    <rect class="cls-1" x="331.3" y="441.62" width="54.33" height="82.88"/>
+  </g>
+  <g id="_921" data-name="921">
+    <rect class="cls-1" x="385.63" y="441.62" width="54.86" height="82.88"/>
+  </g>
+  <g id="_920" data-name="920">
+    <rect class="cls-1" x="440.48" y="441.62" width="53.27" height="82.88"/>
+  </g>
+  <g id="_919" data-name="919">
+    <rect class="cls-1" x="493.76" y="441.62" width="53.27" height="82.88"/>
+  </g>
+  <g id="_918" data-name="918">
+    <rect class="cls-1" x="547.03" y="441.62" width="55.38" height="82.88"/>
+  </g>
+  <g id="_917" data-name="917">
+    <rect class="cls-1" x="602.42" y="441.62" width="53.8" height="82.88"/>
+  </g>
+  <g id="_916" data-name="916">
+    <rect class="cls-1" x="656.22" y="441.62" width="54.86" height="82.88"/>
+  </g>
+  <g id="_915" data-name="915">
+    <rect class="cls-1" x="711.08" y="441.62" width="55.91" height="82.88"/>
+  </g>
+  <g id="_914" data-name="914">
+    <rect class="cls-1" x="766.99" y="441.62" width="143.47" height="82.88"/>
+  </g>
+  <g id="_913" data-name="913">
+    <rect class="cls-1" x="910.46" y="441.62" width="94.95" height="82.88"/>
+  </g>
+  <g id="_912" data-name="912">
+    <rect class="cls-1" x="1005.41" y="441.62" width="41.67" height="82.88"/>
+  </g>
+  <g id="_911" data-name="911">
+    <rect class="cls-1" x="1047.08" y="441.62" width="41.67" height="82.88"/>
+  </g>
+  <g id="_910" data-name="910">
+    <rect class="cls-1" x="1088.75" y="441.62" width="41.14" height="82.88"/>
+  </g>
+  <g id="_909" data-name="909">
+    <rect class="cls-1" x="1129.89" y="441.62" width="41.14" height="82.88"/>
+  </g>
+  <g id="_908" data-name="908">
+    <rect class="cls-1" x="1171.03" y="441.62" width="41.14" height="82.88"/>
+  </g>
+  <g id="_907" data-name="907">
+    <rect class="cls-1" x="1212.18" y="441.62" width="40.62" height="82.88"/>
+  </g>
+  <g id="_906" data-name="906">
+    <rect class="cls-1" x="1252.79" y="441.62" width="42.71" height="82.88"/>
+  </g>
+  <g id="_905" data-name="905">
+    <rect class="cls-1" x="1238.55" y="268.5" width="44.57" height="67"/>
+  </g>
+  <g id="_904" data-name="904">
+    <rect class="cls-1" x="1194.77" y="268.5" width="43.78" height="67"/>
+  </g>
+  <g id="_903" data-name="903">
+    <rect class="cls-1" x="1152.04" y="268.5" width="42.73" height="67"/>
+  </g>
+  <g id="_902" data-name="902">
+    <rect class="cls-1" x="1108.79" y="268.5" width="43.25" height="67"/>
+  </g>
+  <g id="_901" data-name="901">
+    <rect class="cls-1" x="1066.07" y="268.5" width="42.73" height="67"/>
+  </g>
+  <g id="_여자화장실" data-name="여자화장실">
+    <rect class="cls-1" x="1005.41" y="268.5" width="60.66" height="67"/>
+  </g>
+  <g id="_남자화장실" data-name="남자화장실">
+    <rect class="cls-1" x="298.86" y="268.5" width="59.64" height="66.83"/>
+  </g>
+  <g id="_930" data-name="930">
+    <rect class="cls-1" x="227.38" y="227.5" width="71.47" height="107.83"/>
+  </g>
+  <g id="_929" data-name="929">
+    <rect class="cls-1" x="156.7" y="227.5" width="70.68" height="107.83"/>
+  </g>
+  <g id="_928" data-name="928">
+    <polygon class="cls-1" points="86.02 227.5 156.7 227.5 156.7 335.33 86.02 335.33 86.02 268.5 86.02 227.5"/>
+  </g>
+</svg>

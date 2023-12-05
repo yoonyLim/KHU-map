@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1302.4 780.54">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: AdobeMyungjoStd-Medium-KSCpc-EUC-H, 'Adobe Myungjo Std';
+        font-size: 36px;
+        font-weight: 500;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #000;
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <g id="_레이어_2" data-name="레이어 2">
+    <path class="cls-2" d="m965.04,205.95V31.5"/>
+    <path class="cls-2" d="m63.57,420c-.02,1.01-.02,2.02-.02,3.03,0,27.4,5.7,53.99,16.41,79.35"/>
+    <path class="cls-2" d="m374.26,132.46c-5.56,1.5-11.07,3.05-16.52,4.66"/>
+    <path class="cls-2" d="m847.13,31.5v117.14c-77.07-27.42-166.73-43.13-262.42-43.13-56.17,0-110.26,5.41-160.94,15.43"/>
+    <line class="cls-2" x1="467.93" y1="113.51" x2="467.93" y2="131"/>
+    <line class="cls-2" x1="827.29" y1="166.19" x2="840.26" y2="146.24"/>
+    <line class="cls-2" x1="467.93" y1="186" x2="467.93" y2="156"/>
+    <polyline class="cls-2" points="816 183.55 804 202 804 212"/>
+    <line class="cls-2" x1="640.5" y1="185.5" x2="640.5" y2="107.31"/>
+    <line class="cls-2" x1="486" y1="502.5" x2="568.5" y2="502.5"/>
+    <line class="cls-2" x1="134" y1="484.28" x2="134" y2="503"/>
+    <line class="cls-2" x1="134" y1="435" x2="134" y2="420"/>
+    <text class="cls-1" transform="translate(179 565)"><tspan x="0" y="0">146</tspan></text>
+    <text class="cls-1" transform="translate(144 473)"><tspan x="0" y="0">입구</tspan></text>
+    <text class="cls-1" transform="translate(381 162)"><tspan x="0" y="0">입구</tspan></text>
+    <text class="cls-1" transform="translate(870 84)"><tspan x="0" y="0">계단</tspan></text>
+    <text class="cls-1" transform="translate(348 622)"><tspan x="0" y="0">131</tspan></text>
+    <text class="cls-1" transform="translate(544 660)"><tspan x="0" y="0">132</tspan></text>
+    <text class="cls-1" transform="translate(579 549)"><tspan x="0" y="0">134</tspan></text>
+    <text class="cls-1" transform="translate(760 652)"><tspan x="0" y="0">133</tspan></text>
+    <text class="cls-1" transform="translate(918 580)"><tspan x="0" y="0">145</tspan></text>
+    <text class="cls-1" transform="translate(986 490)"><tspan x="0" y="0">144</tspan></text>
+    <text class="cls-1" transform="translate(982 395)"><tspan x="0" y="0">143</tspan></text>
+    <text class="cls-1" transform="translate(946 295)"><tspan x="0" y="0">142</tspan></text>
+    <text class="cls-1" transform="translate(681 262)"><tspan x="0" y="0">141</tspan></text>
+    <text class="cls-1" transform="translate(523 262)"><tspan x="0" y="0">138</tspan></text>
+    <text class="cls-1" transform="translate(523 379)"><tspan x="0" y="0">139</tspan></text>
+    <text class="cls-1" transform="translate(686 379)"><tspan x="0" y="0">140</tspan></text>
+    <text class="cls-1" transform="translate(277 218)"><tspan x="0" y="0">137</tspan></text>
+    <text class="cls-1" transform="translate(171 292)"><tspan x="0" y="0">136</tspan></text>
+    <text class="cls-1" transform="translate(126 383)"><tspan x="0" y="0">135</tspan></text>
+  </g>
+  <g id="_146" data-name="146">
+    <path class="cls-2" d="m205.92,641.12c-59.62-38.43-103.66-85.92-125.96-138.73l.05.11h222.99v66l-97.08,72.62Z"/>
+  </g>
+  <g id="_131" data-name="131">
+    <path class="cls-2" d="m486,734.87c-109.35-12.77-206.56-46.37-280.08-93.75h0s97.07-72.62,97.07-72.62v-66h183v232.37Z"/>
+  </g>
+  <g id="_134" data-name="134">
+    <polyline class="cls-2" points="568.5 502.5 568.5 568.5 670 568.5 670 502.5 568.5 502.5"/>
+  </g>
+  <g id="_132" data-name="132">
+    <path class="cls-2" d="m670,568.5h-184v25.5s0,140.87,0,140.87c31.96,3.73,64.96,5.69,98.71,5.69,35.72,0,70.6-2.19,104.29-6.36v-165.7h-19Z"/>
+  </g>
+  <g id="_133" data-name="133">
+    <path class="cls-2" d="m816,502.5h-135s-11,0-11,0v17s0,49,0,49h19v165.7h0c107.08-13.25,202.23-46.5,274.5-93.08l-147.5-80.12v-58.5Z"/>
+  </g>
+  <g id="_145" data-name="145">
+    <path class="cls-2" d="m1063.55,548.57c-24.34,34.42-58.39,65.7-100.05,92.55,0,0-147.5-80.12-147.5-80.12v-58.5s47,0,47,0h21.5l15,.5,164.05,45.57Z"/>
+  </g>
+  <g id="_144" data-name="144">
+    <path class="cls-2" d="m1105.86,429h-206.36s0,44,0,44v30l164.05,45.57h0c26.01-36.78,40.94-77.16,42.22-119.57"/>
+  </g>
+  <g id="_143" data-name="143">
+    <path class="cls-2" d="m899.5,362v67h206.36-.09c.06-1.99.09-3.97.09-5.97,0-39.45-11.81-77.22-33.39-112.07l-172.97,51.04Z"/>
+  </g>
+  <g id="_142" data-name="142">
+    <path class="cls-2" d="m1072.47,310.96l-172.97,51.04v-112.5l65.54-43.55c46.3,30.1,83.09,65.7,107.44,105.02"/>
+  </g>
+  <g id="_141" data-name="141">
+    <path class="cls-2" d="m804,212c-54.5-19.17-109-28-163.5-26.5v121.5h163.5v-95"/>
+  </g>
+  <g id="_140" data-name="140">
+    <polyline class="cls-2" points="804 429 804 419 804 395 804 307 640.5 307 640.5 429 804 429"/>
+  </g>
+  <g id="_139" data-name="139">
+    <polyline class="cls-2" points="640.5 307 467.93 307 467.93 319 467.93 337 467.93 429 640.5 429 640.5 307"/>
+  </g>
+  <g id="_138" data-name="138">
+    <polyline class="cls-2" points="640.5 307 467.93 307 467.93 295 467.93 281 467.93 186 640.5 185.5 640.5 307.17"/>
+  </g>
+  <g id="_137" data-name="137">
+    <path class="cls-2" d="m338.21,287.31c4.04-2.69,7.54-4.75,10.22-6.31,8.23-4.8,14.94-7.85,19.46-9.89,8.51-3.83,16.08-6.63,22.11-8.64v-60.96l-32.26-64.39h0c-54.86,16.19-104.35,38.08-146.41,64.39l126.88,85.79Z"/>
+  </g>
+  <g id="_136" data-name="136">
+    <path class="cls-2" d="m286.36,350.76c3.89-10.15,7.99-17.26,9.94-20.47,1.43-2.37,4.03-6.47,7.7-11.29,1.74-2.28,6.82-8.77,14.79-16.28,7.03-6.63,13.76-11.63,19.42-15.4l.02.03-126.91-85.83h0c-44.89,28.08-81.32,61.22-106.78,97.87l181.81,51.38Z"/>
+  </g>
+  <g id="_135" data-name="135">
+    <path class="cls-2" d="m286.33,350.75s-181.78-51.37-181.78-51.37c-25.79,37.13-40.31,77.86-40.97,120.62h-.02s70.45,0,70.45,0h143c-1.2-17.28.24-31.33,1.87-41.18,1.49-8.97,3.28-15.3,3.72-16.82,1.17-4.07,2.46-7.82,3.76-11.24"/>
+  </g>
+</svg>
