@@ -1,7 +1,7 @@
 <script setup>
     import { computed, onMounted, onUnmounted, ref, toRefs, watch } from "vue";
     import { useRouter } from "vue-router";
-    import { Mesh, MeshBasicMaterial, PerspectiveCamera, Scene, WebGLRenderer, DirectionalLight, AxesHelper, BoxGeometry, Color, AmbientLight, Vector2, Raycaster, Group, Box3, Vector3 } from "three"
+    import { Mesh, MeshBasicMaterial, PerspectiveCamera, Scene, WebGLRenderer, DirectionalLight, BoxGeometry, Color, AmbientLight, Vector2, Raycaster, Group, Box3, Vector3 } from "three"
     import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
     import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
     import { CSS2DRenderer, CSS2DObject } from 'three/addons/renderers/CSS2DRenderer.js';
@@ -16,7 +16,6 @@
     const query = toRefs(props).query;
     
     watch(query, () => {
-        console.log(query.value)
         for (var bldgMesh of group.children) {
             if (bldgMesh.name == query.value) {
                 moveCamera(bldgMesh);
@@ -64,9 +63,9 @@
     scene.add(ambLight);
 
     // axes for positioning
-    const axesHelper = new AxesHelper( 5 );
-    axesHelper.layers.enableAll();
-    scene.add(axesHelper);
+    // const axesHelper = new AxesHelper( 5 );
+    // axesHelper.layers.enableAll();
+    // scene.add(axesHelper);
 
     // ground
     const ground = new Mesh(
@@ -227,7 +226,7 @@
     const router = useRouter();
 
     function pushPath(bldgName) {
-        router.push({ path: "/map/" + bldgName });
+        router.push({ name: "bldg-map-bldg", params: { bldg: bldgName }});
     }
 
     const loop = () => {

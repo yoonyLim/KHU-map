@@ -143,6 +143,7 @@
                   <span>{{ (bldg.bldgName + " > " + roomNumber).substring((bldg.bldgName + " > " + roomNumber).indexOf(query) + query.length) }}</span>
                 </div>
               </div>
+              <!--오브젝트일 경우-->
               <div 
               v-if="typeof roomNumber == 'object' && isQryMatched(roomNumber.roomNumber) && query != ''" 
               @click="searchQuery(bldg.bldgName)"

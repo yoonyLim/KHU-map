@@ -1,24 +1,75 @@
 <script setup>
-    import { onMounted } from 'vue';
+    import { onMounted, ref, defineAsyncComponent, computed } from 'vue';
     import { useRoute, useRouter } from 'vue-router';
+    import bldgList from '@/assets/bldgList.json';
 
     const route = useRoute();
     const router = useRouter();
-
+    
     const bldgName = route.params.bldg;
+    const curFloor = ref("");
+    const selectedClass = ref("");
+    
+    const bldgInfo = ref(null);
+
+    if (route.params.floor) {
+        curFloor.value = route.params.floor;
+        if (route.params.class) {
+            selectedClass.value = route.params.class;
+        }
+    } else {
+        curFloor.value = "1";
+    }
+
+    const comp = computed(() => {
+        if (bldgName == "멀티미디어관-글로벌관") {
+            if (curFloor.value == "1") {
+                return defineAsyncComponent(() => import("@/components/SVGs/멀티미디어관-글로벌관/1F.vue"));
+            } else if (curFloor.value == "2") {
+                return defineAsyncComponent(() => import("@/components/SVGs/멀티미디어관-글로벌관/2F.vue"));
+            }
+        }
+        return null;
+    });
+
+    function changeFloor(val) {
+        curFloor.value = val;
+    }
 
     onMounted(() => {
         if (localStorage.getItem('reloaded')) {
-        localStorage.removeItem('reloaded');
-    } else {
-        localStorage.setItem('reloaded', '1');
-        router.go(0);
-    }
+            localStorage.removeItem('reloaded');
+        } else {
+            localStorage.setItem('reloaded', '1');
+            router.go(0);
+        }
+
+        for (var bldg of bldgList.bldgs) {
+            if (bldg.bldgName == bldgName) {
+                bldgInfo.value = bldg;
+            }
+        }
     });
 </script>
 
 <template>
-    <div class="w-full flex-col">
-        <div>This is {{ bldgName }} page</div>
+    <div class="max-w-screen-xl px-8 w-full flex-col py-8">
+        <div class="w-full flex flex-col">
+            <span class="font-bold text-3xl">{{ bldgName }}</span>
+            <span class="mt-4 font-bold text-3xl text-gray-400">{{ curFloor }}F</span>
+        </div>
+        <div v-if="bldgInfo" class="w-full flex mt-4 py-4 border-b">
+            <div v-for="floor in bldgInfo.floors" :key="floor.id">
+                <button 
+                @click="changeFloor(floor.floor)"
+                :class="curFloor == floor.floor ? 'text-white bg-red-300' : 'bg-gray-300'"
+                class="px-4 py-2 mr-4 hover:bg-red-300 transition-bg-colors duration-300 ease-in-out">
+                    <span>{{ floor.floor }}</span>
+                </button>
+            </div>
+        </div>
+        <div class="w-full h-full">
+            <component :query="selectedClass" :is="comp"></component>
+        </div>
     </div>
 </template>

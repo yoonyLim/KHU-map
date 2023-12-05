@@ -11,7 +11,12 @@ const router = createRouter({
     },
     {
       path: '/map/:bldg',
-      name: 'bldg-map',
+      name: 'bldg-map-bldg',
+      component: () => import("@/views/BldgMap.vue")
+    },
+    {
+      path: '/map/:bldg/:floor',
+      name: 'bldg-map-floor',
       component: () => import("@/views/BldgMap.vue")
     }
   ]
