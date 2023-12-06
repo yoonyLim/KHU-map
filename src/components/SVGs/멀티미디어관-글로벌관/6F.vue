@@ -8,7 +8,7 @@
     import { onBeforeUnmount, onMounted, ref, toRefs, watch } from 'vue';
     import bldgList from '@/assets/bldgList.json';
 
-    const curFloor = ref("1");
+    const curFloor = ref("6");
     const floorInfo = ref(null);
     const selectedClass = ref("");
 
@@ -134,74 +134,80 @@
         </div>
     </div>
 </div>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1364.4 768">
-  <g class="select-none" id="_글자" data-name="글자">
-    <text class="cls-3" transform="translate(48.17 289.62)"><tspan x="0" y="0">계단</tspan></text>
-    <text class="cls-3" transform="translate(936.61 310.49)"><tspan x="0" y="0">계단</tspan></text>
-    <text class="cls-3" transform="translate(1278.61 303.49)"><tspan x="0" y="0">계단</tspan></text>
-    <text class="cls-2" transform="translate(173.74 159.49)"><tspan class="cls-6"><tspan x="0" y="0">112</tspan></tspan><tspan class="cls-4"><tspan x="-35.62" y="25.2">계단강의실</tspan></tspan></text>
-    <text class="cls-3" transform="translate(310.61 302.49)"><tspan x="0" y="0">남자</tspan><tspan x="-9" y="21.6">화장실</tspan></text>
-    <text class="cls-3" transform="translate(788.61 271.49)"><tspan x="0" y="0">엘레베이터</tspan></text>
-    <text class="cls-3" transform="translate(1015.61 302.49)"><tspan x="0" y="0">여자</tspan><tspan x="-9" y="21.6">화장실</tspan></text>
-    <text class="cls-3" transform="translate(1190.74 289.49)"><tspan x="0" y="0">102</tspan><tspan x="-55.12" y="21.6">후마니타스칼리지</tspan><tspan x="-10.12" y="43.2">라운지</tspan></text>
-    <text class="cls-3" transform="translate(1121.61 490.49)"><tspan x="0" y="0">도서관</tspan></text>
-    <text class="cls-3" transform="translate(934.75 481.49)"><tspan x="0" y="0">Cafe</tspan><tspan x="-18.74" y="21.6">KHUffee</tspan></text>
-    <text class="cls-3" transform="translate(97.74 310.49)"><tspan x="0" y="0">110</tspan></text>
-    <text class="cls-3" transform="translate(1082.74 310.49)"><tspan x="0" y="0">101</tspan></text>
-    <text class="cls-3" transform="translate(100.74 492.49)"><tspan x="0" y="0">109</tspan></text>
-    <text class="cls-3" transform="translate(194.74 492.49)"><tspan x="0" y="0">108</tspan></text>
-    <text class="cls-3" transform="translate(294.74 490.49)"><tspan x="0" y="0">107</tspan></text>
-    <text class="cls-1" transform="translate(830.61 557.49)"><tspan x="0" y="0">정문</tspan></text>
-    <text class="cls-1" transform="translate(1301.61 468.49)"><tspan x="0" y="0">쪽문</tspan></text>
-    <text class="cls-1" transform="translate(25.9 475.59)"><tspan x="0" y="0">쪽문</tspan></text>
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1366 767.79">
   <g id="_레이어_2" data-name="레이어 2">
-    <line class="cls-5" x1="357" y1="526" x2="907.09" y2="526"/>
-    <polyline class="cls-5" points="1293.2 442.14 1316.67 442.14 1316.67 286.5 1278.69 286.5"/>
-    <polyline class="cls-5" points="1003.62 271.24 906.5 271.24 906.5 336.12"/>
-    <polyline class="cls-5" points="906.5 271.24 906.5 242.23 766.52 242.23 766.52 271.24 760.71 271.24 760.71 336.5 357 336.5"/>
+    <polyline class="cls-1" points="355.5 335.5 761.19 335.5 761.19 268.5 766.46 268.5 766.46 241.18 908.35 241.18 908.35 269.13 908.35 335.5"/>
+    <line class="cls-1" x1="908.35" y1="269.5" x2="1003.3" y2="269.5"/>
+    <polyline class="cls-1" points="70.5 445.84 45.5 445.84 45.5 269.5 82.86 269.5"/>
+    <polyline class="cls-1" points="1280.5 284.69 1318.5 284.69 1318.5 441.5 1293.5 441.5"/>
+    <text class="cls-3" transform="translate(46.2 288.64)"><tspan x="0" y="0">계단</tspan></text>
+    <text class="cls-3" transform="translate(937.49 308.43)"><tspan x="0" y="0">계단</tspan></text>
+    <text class="cls-3" transform="translate(1281.49 304.43)"><tspan x="0" y="0">계단</tspan></text>
+    <text class="cls-3" transform="translate(308.03 298.37)"><tspan x="0" y="0">남자</tspan><tspan x="-9" y="21.6">화장실</tspan></text>
+    <text class="cls-3" transform="translate(791.03 268.37)"><tspan x="0" y="0">엘레베이터</tspan></text>
+    <text class="cls-3" transform="translate(1016.31 298.7)"><tspan x="0" y="0">여자</tspan><tspan x="-9" y="21.6">화장실</tspan></text>
+    <text class="cls-2" transform="translate(172.43 269.7)"><tspan class="cls-5"><tspan x="0" y="0">612</tspan></tspan><tspan class="cls-6"><tspan x="-35.62" y="25.2">계단강의실</tspan></tspan></text>
+    <text class="cls-3" transform="translate(109.19 489.28)"><tspan x="0" y="0">611</tspan></text>
+    <text class="cls-3" transform="translate(213.19 489.28)"><tspan x="0" y="0">610</tspan></text>
+    <text class="cls-3" transform="translate(345.19 489.28)"><tspan x="0" y="0">609</tspan></text>
+    <text class="cls-3" transform="translate(509.19 489.28)"><tspan x="0" y="0">608</tspan></text>
+    <text class="cls-3" transform="translate(674.54 489.39)"><tspan x="0" y="0">607</tspan></text>
+    <text class="cls-3" transform="translate(816.42 489.39)"><tspan x="0" y="0">606-2</tspan></text>
+    <text class="cls-3" transform="translate(963.42 489.39)"><tspan x="0" y="0">606-1</tspan></text>
+    <text class="cls-4" transform="translate(1122.28 492.63)"><tspan x="0" y="0">605-1</tspan></text>
+    <text class="cls-4" transform="translate(1068.28 492.63)"><tspan x="0" y="0">605-2</tspan></text>
+    <text class="cls-3" transform="translate(1190.74 489.63)"><tspan x="0" y="0">604</tspan></text>
+    <text class="cls-3" transform="translate(1251.74 489.63)"><tspan x="0" y="0">603</tspan></text>
+    <text class="cls-3" transform="translate(1210.74 309.63)"><tspan x="0" y="0">602</tspan></text>
+    <text class="cls-3" transform="translate(1102.74 309.63)"><tspan x="0" y="0">601</tspan></text>
   </g>
-  <g id="_레이어_4" data-name="레이어 4">
-    <polyline class="cls-5" points="46.5 270 46.5 445.5 72.36 445.5"/>
-    <line class="cls-5" x1="84.5" y1="270" x2="46.5" y2="270"/>
-    <line class="cls-5" x1="84.5" y1="227.46" x2="84.5" y2="270"/>
-    <line class="cls-5" x1="297.59" y1="269.66" x2="297.59" y2="227.46"/>
+  <g id="_611" data-name="611">
+    <polygon :class="selectedClass == '611' ? 'selected' : ''" class="cls-1" points="176.48 525.5 70.5 525.5 70.5 445.84 70.5 441.5 176.48 441.5 176.48 525.5"/>
   </g>
-  <g id="여자 화장실">
-    <rect class="cls-5" x="1003.62" y="271.24" width="58.81" height="64.88"/>
+  <g id="_610" data-name="610">
+    <rect :class="selectedClass == '610' ? 'selected' : ''" class="cls-1" x="176.48" y="441.5" width="105.49" height="84"/>
   </g>
-  <g id="남자 화장실">
-    <polyline class="cls-5" points="298.07 269.5 358 269.5 357 336.5 297.59 336.5 297.59 267.95"/>
+  <g id="_609" data-name="609">
+    <rect :class="selectedClass == '609' ? 'selected' : ''" class="cls-1" x="281.98" y="441.5" width="163.25" height="84"/>
   </g>
-  <g id="101">
-    <polygon :class="selectedClass == '101' ? 'selected' : ''" class="cls-5" points="1062.43 271.24 1062.43 336.12 1134.5 336.12 1134.16 271.24 1062.43 271.24"/>
+  <g id="_608" data-name="608">
+    <rect :class="selectedClass == '608' ? 'selected' : ''" class="cls-1" x="445.23" y="441.5" width="161.93" height="84"/>
   </g>
-  <g id="KHUfee 카페">
-    <rect :class="selectedClass == 'KHUfee 카페' ? 'selected' : ''" class="cls-5" x="907.09" y="442.14" width="96.53" height="83.86"/>
+  <g id="_607" data-name="607">
+    <rect :class="selectedClass == '607' ? 'selected' : ''" class="cls-1" x="607.16" y="441.5" width="165.63" height="84"/>
   </g>
-  <g id="102">
-    <polygon :class="selectedClass == '102' ? 'selected' : ''" class="cls-5" points="1278.69 286.5 1278.69 271.24 1134.16 271.24 1134.5 271.24 1134.5 336.5 1134.5 336.12 1278.69 336.12 1278.69 286.5"/>
+  <g id="_606-2" data-name="606-2">
+    <rect :class="selectedClass == '606-2' ? 'selected' : ''" class="cls-1" x="772.79" y="441.5" width="145.85" height="84"/>
   </g>
-  <g id="도서관">
-    <rect :class="selectedClass == '도서관' ? 'selected' : ''" class="cls-5" x="1003.62" y="442.14" width="289.58" height="83.86"/>
+  <g id="_606-1" data-name="606-1">
+    <rect :class="selectedClass == '606-1' ? 'selected' : ''" class="cls-1" x="918.64" y="441.5" width="146.64" height="84"/>
   </g>
-  <g id="unknown">
-    <polyline class="cls-5" points="297.59 269.66 297.59 336.5 236.41 336.5 236.41 269.66 297.07 269.66"/>
+  <g id="_605-2" data-name="605-2">
+    <rect :class="selectedClass == '605-2' ? 'selected' : ''" class="cls-1" x="1065.27" y="441.5" width="54.07" height="84"/>
   </g>
-  <g id="108">
-    <polygon :class="selectedClass == '108' ? 'selected' : ''" class="cls-5" points="262.85 526 262.85 445.5 166.91 445.5 167.11 526 262.85 526"/>
+  <g id="_605-1" data-name="605-1">
+    <rect :class="selectedClass == '605-1' ? 'selected' : ''" class="cls-1" x="1119.34" y="441.5" width="51.96" height="84"/>
   </g>
-  <g id="107">
-    <rect :class="selectedClass == '107' ? 'selected' : ''" class="cls-5" x="262.85" y="445.5" width="94.15" height="80.5"/>
+  <g id="_604" data-name="604">
+    <rect :class="selectedClass == '604' ? 'selected' : ''" class="cls-1" x="1171.3" y="441.5" width="69.89" height="84"/>
   </g>
-  <g id="110">
-    <rect :class="selectedClass == '110' ? 'selected' : ''" class="cls-5" x="84.5" y="270" width="60.5" height="68"/>
+  <g id="_603" data-name="603">
+    <rect :class="selectedClass == '603' ? 'selected' : ''" class="cls-1" x="1241.19" y="441.5" width="52.31" height="84"/>
   </g>
-  <g id="109">
-    <polyline :class="selectedClass == '109' ? 'selected' : ''" class="cls-5" points="167.11 445.5 167.11 526 72 526 72.36 445.5 166.91 445.5"/>
+  <g id="_602" data-name="602">
+    <rect :class="selectedClass == '602' ? 'selected' : ''" class="cls-1" x="1172.09" y="269.5" width="108.41" height="66"/>
   </g>
-  <g id="112">
-    <rect :class="selectedClass == '112' ? 'selected' : ''" class="cls-5" x="84.5" y="104.5" width="213.09" height="122.96"/>
+  <g id="_601" data-name="601">
+    <polygon :class="selectedClass == '601' ? 'selected' : ''" class="cls-1" points="1063.69 335.5 1172.09 335.5 1172.09 269.5 1063.96 269.5 1063.69 335.5"/>
+  </g>
+  <g id="_여자화장실" data-name="여자화장실">
+    <polyline class="cls-1" points="1063.69 269.5 1063.69 335.5 1003.3 335.5 1003.3 269.5 1063.96 269.5"/>
+  </g>
+  <g id="_남자화장실" data-name="남자화장실">
+    <rect class="cls-1" x="296.48" y="268.5" width="59.02" height="67"/>
+  </g>
+  <g id="_612" data-name="612">
+    <polygon :class="selectedClass == '612' ? 'selected' : ''" class="cls-1" points="296.48 227.99 296.48 269.66 296.48 335.5 83.38 335.5 82.86 269.5 82.86 227.99 296.48 227.99"/>
   </g>
 </svg>
 <!--강의실 정보-->
@@ -273,22 +279,26 @@
 </template>
 
 <style scoped>
-      .cls-1, .cls-4 {
-        font-size: 21px;
-      }
-
-      .cls-5 {
+      .cls-1 {
+        fill: none;
         stroke: #000;
         stroke-miterlimit: 10;
-        fill: none;
+      }
+
+      .cls-3, .cls-5 {
+        font-size: 18px;
+      }
+
+      .cls-4 {
+        font-size: 14px;
+      }
+
+      .cls-6 {
+        font-size: 21px;
       }
 
       .selected {
         fill: red;
         fill-opacity: 0.3;
-      }
-
-      .cls-3, .cls-6 {
-        font-size: 18px;
       }
 </style>

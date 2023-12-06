@@ -15,8 +15,8 @@ const router = createRouter({
       component: () => import("@/views/BldgMap.vue")
     },
     {
-      path: '/map/:bldg/:floor',
-      name: 'bldg-map-floor',
+      path: '/map/:bldg/:floor/:classroom',
+      name: 'bldg-map-classroom',
       component: () => import("@/views/BldgMap.vue")
     }
   ]
