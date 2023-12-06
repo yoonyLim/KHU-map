@@ -1,7 +1,7 @@
 <script setup>
     import { computed, onMounted, onUnmounted, ref, toRefs, watch } from "vue";
     import { useRouter } from "vue-router";
-    import { Mesh, MeshBasicMaterial, PerspectiveCamera, Scene, WebGLRenderer, DirectionalLight, BoxGeometry, Color, AmbientLight, Vector2, Raycaster, Group, Box3, Vector3 } from "three"
+    import { Mesh, MeshBasicMaterial, PerspectiveCamera, Scene, WebGLRenderer, DirectionalLight, BoxGeometry, Color, AmbientLight, Vector2, Raycaster, Group, Box3, Vector3, LoadingManager } from "three"
     import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
     import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
     import { CSS2DRenderer, CSS2DObject } from 'three/addons/renderers/CSS2DRenderer.js';
@@ -27,15 +27,15 @@
     const isBldgClicked = ref(false);
     const selectedBldg = ref(null);
 
-    const canvas = ref(null)
+    const canvas = ref(null);
 
     // declaration for universal usage
     let labelRenderer;
     let renderer;
     let camera;
     let controls;
-    const idleColor = 0xfee9da;
-    const selectedColor = 0xff964f;
+    const idleColor = 0xadd8e6;
+    const selectedColor = 0xff7f7f;
 
     // scene where everything takes place
     const scene = new Scene();
@@ -82,8 +82,25 @@
     // group to hold all the object meshes in glb model
     const group = new Group();
 
+    // map loading manager
+    const progressBar = ref(null);
+    const loadedPercent = ref(0);
+
+    const loadingManager = new LoadingManager();
+
+    loadingManager.onProgress = function(url, loaded, total) {
+        progressBar.value.value = (loaded / total) * 100;
+        loadedPercent.value = (loaded / total) * 100;
+    }
+
+    const isMapLoaded = ref(false);
+
+    loadingManager.onLoad = function() {
+        isMapLoaded.value = true;
+    }
+
     // add glb map to the scene
-    const gltfLoader = new GLTFLoader();
+    const gltfLoader = new GLTFLoader(loadingManager);
     gltfLoader.load("src/assets/models/KHU.glb", (model) => {
         // change material color and add label for each building
         for (var bldg of bldgList.bldgs) {
@@ -257,7 +274,7 @@
         controls.dampingFactor = 0.5;
         controls.rotateSpeed = 2;
         controls.panSpeed = 2;
-        controls.minDistance = 3;
+        controls.minDistance = 5;
         controls.maxDistance = 200;
         controls.maxPolarAngle = (Math.PI / 2) - 0.1;
 
@@ -291,6 +308,10 @@
 </script>
 
 <template>
+    <div v-if="!isMapLoaded" class="absolute flex flex-col justify-center items-center w-full h-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-gray-600 opacity-90">
+        <label class="text-white font-bold text-3xl mb-4">Loading...<span class="ml-4">{{ loadedPercent }}%</span></label>
+        <progress ref="progressBar" id="progress-bar" class="w-1/3 mt-2 h-4" value="0" max="100"></progress>
+    </div>
     <canvas ref="canvas" />
     <!--sidebar start-->
     <Transition>
@@ -307,7 +328,7 @@
                 </div>
                 <div class="text-2xl font-bold mt-8">{{ selectedBldg.name }}</div>
                 <div class="w-full mt-8">
-                    <button @click="pushPath(selectedBldg.name);" class="w-full bg-black text-white py-4">
+                    <button @click="pushPath(selectedBldg.name);" class="w-full bg-[#ff7f7f] hover:bg-[#a40f16] transition-bg-colors duration-300 ease-in-out text-white py-4 shadow-lg">
                         건물 내부 지도 확인
                     </button>
                 </div>

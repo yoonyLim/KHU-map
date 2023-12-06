@@ -8,6 +8,7 @@
     import { onBeforeUnmount, onMounted, ref, toRefs, watch } from 'vue';
     import bldgList from '@/assets/bldgList.json';
 
+    const curBldg = ref("멀티미디어관-글로벌관");
     const curFloor = ref("3");
     const floorInfo = ref(null);
     const selectedClass = ref("");
@@ -17,10 +18,7 @@
     })
 
     const propSelectedClass = toRefs(props).query;
-
-    if (propSelectedClass.value != "") {
-        selectedClass.value = propSelectedClass.value;
-    }
+    selectedClass.value = propSelectedClass.value;
 
     function changeClass(val) {
         selectedClass.value = val;
@@ -98,7 +96,7 @@
 
     onMounted(() => {
         for (var bldg of bldgList.bldgs) {
-            if (bldg.bldgName == "멀티미디어관-글로벌관") {
+            if (bldg.bldgName == curBldg.value) {
                 for (var floor of bldg.floors) {
                     if (floor.floor == curFloor.value) {
                         floorInfo.value = floor;
@@ -203,7 +201,7 @@
   </g>
 </svg>
 <!--강의실 정보-->
-<div v-if="selectedClass != ''">
+<div v-if="selectedClass != '' && floorInfo != null">
     <div v-for="room in floorInfo.rooms" :key="room.id">
         <div v-if="(typeof room != 'object') && room == selectedClass">
             <span class="font-bold text-xl">해당 교실의 강의 정보는 없습니다!</span>

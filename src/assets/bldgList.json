@@ -151,19 +151,506 @@
                             ]
                         },
                         "B05-1",
-                        "B06",
-                        "B07",
+                        {
+                            "roomNumber": "B06",
+                            "classes": [
+                                {
+                                    "lectureName": "마이크로서비스프로그래밍",
+                                    "Professor": "이성원",
+                                    "days": ["화", "목"],
+                                    "timeStart": "15:00",
+                                    "timeEnd": "16:50"
+                                },
+                                {
+                                    "lectureName": "메타버스데이터처리",
+                                    "Professor": "박광훈",
+                                    "days": ["월", "수"],
+                                    "timeStart": "15:30",
+                                    "timeEnd": "16:15"
+                                },
+                                {
+                                    "lectureName": "소프트웨어보안",
+                                    "Professor": "장대희",
+                                    "days": ["월", "수"],
+                                    "timeStart": "16:30",
+                                    "timeEnd": "17:45"
+                                },
+                                {
+                                    "lectureName": "인공지능프로그래밍",
+                                    "Professor": "박경운",
+                                    "days": ["화", "목"],
+                                    "timeStart": "12:00",
+                                    "timeEnd": "13:50"
+                                },
+                                {
+                                    "lectureName": "풀스택서비스프로그래밍",
+                                    "Professor": "이성원",
+                                    "days": ["월", "수"],
+                                    "timeStart": "10:00",
+                                    "timeEnd": "11:50"
+                                },
+                                {
+                                    "lectureName": "소프트웨어융합캡스톤디자인",
+                                    "Professor": "강형엽",
+                                    "days": ["금"],
+                                    "timeStart": "15:00",
+                                    "timeEnd": "17:45"
+                                },
+                                {
+                                    "lectureName": "소프트웨어융합캡스톤디자인",
+                                    "Professor": "강형엽",
+                                    "days": ["금"],
+                                    "timeStart": "18:00",
+                                    "timeEnd": "20:45"
+                                }
+                            ]
+                        },
+                        {
+                            "roomNumber": "B07",
+                            "classes": [
+                                {
+                                    "lectureName": "소프트웨어랩",
+                                    "Professor": "최기호",
+                                    "days": ["화"],
+                                    "timeStart": "9:00",
+                                    "timeEnd": "12:50"
+                                },
+                                {
+                                    "lectureName": "소프트웨어랩",
+                                    "Professor": "최기호",
+                                    "days": ["목"],
+                                    "timeStart": "9:00",
+                                    "timeEnd": "12:50"
+                                },
+                                {
+                                    "lectureName": "디자인적사고",
+                                    "alias": "디사",
+                                    "Professor": "박광훈",
+                                    "days": ["수"],
+                                    "timeStart": "9:00",
+                                    "timeEnd": "12:50"
+                                },
+                                {
+                                    "lectureName": "로봇프로그래밍",
+                                    "Professor": "황효석",
+                                    "days": ["월", "수"],
+                                    "timeStart": "13:30",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "연구연수활동2(컴퓨터공학)",
+                                    "Professor": "김휘용",
+                                    "days": ["수"],
+                                    "timeStart": "18:00",
+                                    "timeEnd": "19:50"
+                                },
+                                {
+                                    "lectureName": "소프트웨어융합캡스톤디자인",
+                                    "Professor": "이성원",
+                                    "days": ["금"],
+                                    "timeStart": "15:00",
+                                    "timeEnd": "17:45"
+                                },
+                                {
+                                    "lectureName": "게임콘텐츠캡스톤디자인",
+                                    "Professor": "강형엽",
+                                    "days": ["화"],
+                                    "timeStart": "17:00",
+                                    "timeEnd": "19:45"
+                                }
+                            ]
+                        },
                         "B08",
-                        "B09",
+                        {
+                            "roomNumber": "B09",
+                            "classes": [
+                                {
+                                    "lectureName": "컴퓨터구조",
+                                    "Professor": "박경운",
+                                    "days": ["화", "목"],
+                                    "timeStart": "16:30",
+                                    "timeEnd": "17:45"
+                                },
+                                {
+                                    "lectureName": "반도체공정",
+                                    "Professor": "이승현",
+                                    "days": ["수", "금"],
+                                    "timeStart": "13:30",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "객체지향프로그래밍",
+                                    "alias": "객프",
+                                    "Professor": "최진우",
+                                    "days": ["화", "목"],
+                                    "timeStart": "13:00",
+                                    "timeEnd": "14:50"
+                                },
+                                {
+                                    "lectureName": "데이터베이스",
+                                    "Professor": "김태연",
+                                    "days": ["화", "목"],
+                                    "timeStart": "15:00",
+                                    "timeEnd": "16:15"
+                                },
+                                {
+                                    "lectureName": "디자인적사고",
+                                    "alias": "디사",
+                                    "Professor": "이승규",
+                                    "days": ["금"],
+                                    "timeStart": "9:00",
+                                    "timeEnd": "12:50"
+                                },
+                                {
+                                    "lectureName": "디자인적사고",
+                                    "alias": "디사",
+                                    "Professor": "우탁",
+                                    "days": ["화"],
+                                    "timeStart": "9:00",
+                                    "timeEnd": "12:50"
+                                },
+                                {
+                                    "lectureName": "자료구조",
+                                    "Professor": "이상훈",
+                                    "days": ["수"],
+                                    "timeStart": "11:00",
+                                    "timeEnd": "12:50"
+                                },
+                                {
+                                    "lectureName": "캡스톤디자인",
+                                    "Professor": "조진성",
+                                    "days": ["화"],
+                                    "timeStart": "19:00",
+                                    "timeEnd": "21:45"
+                                },
+                                {
+                                    "lectureName": "리눅스시스템프로그래밍",
+                                    "Professor": "조진성",
+                                    "days": ["월", "수"],
+                                    "timeStart": "16:30",
+                                    "timeEnd": "18:20"
+                                },
+                                {
+                                    "lectureName": "졸업논문(소프트웨어융합)",
+                                    "Professor": "이원희",
+                                    "days": ["금"],
+                                    "timeStart": "8:00",
+                                    "timeEnd": "8:50"
+                                },
+                                {
+                                    "lectureName": "전공탐색및기업가정신세미나(소프트웨어융합학과)",
+                                    "alias": "전탐세",
+                                    "Professor": "이원희",
+                                    "days": ["화"],
+                                    "timeStart": "18:00",
+                                    "timeEnd": "18:50"
+                                },
+                                {
+                                    "lectureName": "반도체공학",
+                                    "Professor": "김대원",
+                                    "days": ["월", "수"],
+                                    "timeStart": "15:00",
+                                    "timeEnd": "16:15"
+                                }
+                            ]
+                        },
                         "휴게실"
                     ]
                 },
                 {
                     "floor": "1",
                     "rooms": [
-                        "101",
-                        "102",
-                        "103",
+                        {
+                            "roomNumber": "101",
+                            "classes": [
+                                {
+                                    "lectureName": "논리회로",
+                                    "Professor": "유재수",
+                                    "days": ["월", "수"],
+                                    "timeStart": "16:30",
+                                    "timeEnd": "17:45"
+                                },
+                                {
+                                    "lectureName": "수치해석및연습",
+                                    "Professor": "김혜현",
+                                    "days": ["월", "수"],
+                                    "timeStart": "15:00",
+                                    "timeEnd": "16:15"
+                                },
+                                {
+                                    "lectureName": "위상수학응용I",
+                                    "Professor": "김정호",
+                                    "days": ["화", "목"],
+                                    "timeStart": "9:00",
+                                    "timeEnd": "10:15"
+                                },
+                                {
+                                    "lectureName": "응용선형대수특강",
+                                    "Professor": "김혜현",
+                                    "days": ["월", "수"],
+                                    "timeStart": "13:30",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "수리적빅데이터개론",
+                                    "alias": "수빅개론",
+                                    "Professor": "박준표",
+                                    "days": ["월", "수"],
+                                    "timeStart": "9:00",
+                                    "timeEnd": "10:15"
+                                },
+                                {
+                                    "lectureName": "알고리즘과수학",
+                                    "Professor": "김경수",
+                                    "days": ["화", "목"],
+                                    "timeStart": "10:30",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "해석학II",
+                                    "Professor": "박준표",
+                                    "days": ["월", "수"],
+                                    "timeStart": "10:30",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "천체물리학II",
+                                    "Professor": "박종호",
+                                    "days": ["화", "목"],
+                                    "timeStart": "12:00",
+                                    "timeEnd": "13:15"
+                                },
+                                {
+                                    "lectureName": "기초천문학",
+                                    "Professor": "박수종",
+                                    "days": ["화", "목"],
+                                    "timeStart": "15:00",
+                                    "timeEnd": "16:15"
+                                },
+                                {
+                                    "lectureName": "고급미분적분학",
+                                    "Professor": "차준심",
+                                    "days": ["금"],
+                                    "timeStart": "9:00",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "고급미분적분학",
+                                    "Professor": "차준심",
+                                    "days": ["금"],
+                                    "timeStart": "13:30",
+                                    "timeEnd": "16:15"
+                                },
+                                {
+                                    "lectureName": "전공탐색및기업가정신세미나",
+                                    "alias": "전탐세",
+                                    "Professor": "김정산",
+                                    "days": ["화"],
+                                    "timeStart": "18:00",
+                                    "timeEnd": "18:50"
+                                },
+                                {
+                                    "lectureName": "응용수학캡스톤디자인2(응용수학과)",
+                                    "Professor": "박준표",
+                                    "days": ["월", "수"],
+                                    "timeStart": "12:00",
+                                    "timeEnd": "13:15"
+                                }
+                            ]
+                        },
+                        {
+                            "roomNumber": "102",
+                            "classes": [
+                                {
+                                    "lectureName": "확률통계및응용",
+                                    "Professor": "전준기",
+                                    "days": ["월", "수"],
+                                    "timeStart": "9:00",
+                                    "timeEnd": "10:15"
+                                },
+                                {
+                                    "lectureName": "금융수학",
+                                    "Professor": "전준기",
+                                    "days": ["월", "수"],
+                                    "timeStart": "10:30",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "응집물질물리II",
+                                    "Professor": "이성훈",
+                                    "days": ["월", "수"],
+                                    "timeStart": "13:30",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "고급미분적분학",
+                                    "Professor": "박정주",
+                                    "days": ["화", "목"],
+                                    "timeStart": "15:00",
+                                    "timeEnd": "16:15"
+                                },
+                                {
+                                    "lectureName": "고급미분적분학",
+                                    "Professor": "박정주",
+                                    "days": ["화", "목"],
+                                    "timeStart": "16:30",
+                                    "timeEnd": "17:45"
+                                },
+                                {
+                                    "lectureName": "미분방정식",
+                                    "alias": "미방",
+                                    "Professor": "최용빈",
+                                    "days": ["월", "수"],
+                                    "timeStart": "15:00",
+                                    "timeEnd": "16:15"
+                                },
+                                {
+                                    "lectureName": "미분방정식",
+                                    "alias": "미방",
+                                    "Professor": "최용빈",
+                                    "days": ["월", "수"],
+                                    "timeStart": "16:30",
+                                    "timeEnd": "17:45"
+                                },
+                                {
+                                    "lectureName": "미분방정식",
+                                    "alias": "미방",
+                                    "Professor": "박지연",
+                                    "days": ["화", "목"],
+                                    "timeStart": "9:00",
+                                    "timeEnd": "10:15"
+                                },
+                                {
+                                    "lectureName": "미분방정식",
+                                    "alias": "미방",
+                                    "Professor": "박지연",
+                                    "days": ["화", "목"],
+                                    "timeStart": "10:30",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "미분방정식",
+                                    "alias": "미방",
+                                    "Professor": "남궁윤미",
+                                    "days": ["화", "목"],
+                                    "timeStart": "12:00",
+                                    "timeEnd": "13:15"
+                                },
+                                {
+                                    "lectureName": "미분방정식",
+                                    "alias": "미방",
+                                    "Professor": "남궁윤미",
+                                    "days": ["화", "목"],
+                                    "timeStart": "13:30",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "미분방정식",
+                                    "alias": "미방",
+                                    "Professor": "김수현",
+                                    "days": ["금"],
+                                    "timeStart": "9:00",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "미분방정식",
+                                    "alias": "미방",
+                                    "Professor": "김수현",
+                                    "days": ["금"],
+                                    "timeStart": "13:30",
+                                    "timeEnd": "16:15"
+                                }
+                            ]
+                        },
+                        {
+                            "roomNumber": "103",
+                            "classes": [
+                                {
+                                    "lectureName": "창의적종합설계(생체의공학)",
+                                    "Professor": "박기주",
+                                    "days": ["목"],
+                                    "timeStart": "20:00",
+                                    "timeEnd": "22:45"
+                                },
+                                {
+                                    "lectureName": "창의적종합설계(생체의공학)",
+                                    "Professor": "이상민",
+                                    "days": ["목"],
+                                    "timeStart": "20:00",
+                                    "timeEnd": "22:45"
+                                },
+                                {
+                                    "lectureName": "의공해석프로그래밍",
+                                    "Professor": "이진석",
+                                    "days": ["화", "목"],
+                                    "timeStart": "9:00",
+                                    "timeEnd": "10:15"
+                                },
+                                {
+                                    "lectureName": "회로이론",
+                                    "Professor": "최승규",
+                                    "days": ["월", "수"],
+                                    "timeStart": "10:30",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "디지털신호처리",
+                                    "Professor": "김원하",
+                                    "days": ["화", "목"],
+                                    "timeStart": "13:30",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "객체지향프로그래밍및실습",
+                                    "Professor": "서덕영",
+                                    "days": ["월", "수"],
+                                    "timeStart": "13:00",
+                                    "timeEnd": "14:50"
+                                },
+                                {
+                                    "lectureName": "취·창업스쿨(전자정보분야)",
+                                    "Professor": "박종명",
+                                    "days": ["금"],
+                                    "timeStart": "10:00",
+                                    "timeEnd": "11:50"
+                                },
+                                {
+                                    "lectureName": "기계학습",
+                                    "Professor": "이원희",
+                                    "days": ["화", "목"],
+                                    "timeStart": "10:30",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "기계학습",
+                                    "Professor": "김휘용",
+                                    "days": ["화", "목"],
+                                    "timeStart": "15:00",
+                                    "timeEnd": "16:15"
+                                },
+                                {
+                                    "lectureName": "풀스택서비스네트워킹",
+                                    "Professor": "이성원",
+                                    "days": ["화", "목"],
+                                    "timeStart": "12:00",
+                                    "timeEnd": "13:15"
+                                },
+                                {
+                                    "lectureName": "독립심화학습1(생체의공학과)",
+                                    "Professor": "이상민",
+                                    "days": ["토"],
+                                    "timeStart": "9:00",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "창의적종합설계(생체의공학)",
+                                    "Professor": "이상민",
+                                    "days": ["목"],
+                                    "timeStart": "20:00",
+                                    "timeEnd": "22:45"
+                                }
+                            ]
+                        },
                         "104",
                         "105",
                         "106",
@@ -190,7 +677,81 @@
                         "131",
                         "133",
                         "135",
-                        "136",
+                        {
+                            "roomNumber": "136",
+                            "classes": [
+                                {
+                                    "lectureName": "컴퓨터네트워크",
+                                    "Professor": "이성원",
+                                    "days": ["월", "수"],
+                                    "timeStart": "16:30",
+                                    "timeEnd": "17:45"
+                                },
+                                {
+                                    "lectureName": "컴퓨터네트워크",
+                                    "Professor": "김영안",
+                                    "days": ["금"],
+                                    "timeStart": "9:00",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "창의적종합설계(생체의공학)",
+                                    "Professor": "한승무",
+                                    "days": ["월"],
+                                    "timeStart": "20:00",
+                                    "timeEnd": "22:45"
+                                },
+                                {
+                                    "lectureName": "회로이론",
+                                    "Professor": "임영현",
+                                    "days": ["화", "목"],
+                                    "timeStart": "15:00",
+                                    "timeEnd": "16:15"
+                                },
+                                {
+                                    "lectureName": "운영체제",
+                                    "Professor": "허선영",
+                                    "days": ["월", "수"],
+                                    "timeStart": "13:30",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "운영체제",
+                                    "Professor": "김범석",
+                                    "days": ["화", "목"],
+                                    "timeStart": "16:30",
+                                    "timeEnd": "17:45"
+                                },
+                                {
+                                    "lectureName": "가상/증강현실이론및실습",
+                                    "Professor": "전석희 / 김형석",
+                                    "days": ["금"],
+                                    "timeStart": "12:00",
+                                    "timeEnd": "15:50"
+                                },
+                                {
+                                    "lectureName": "프로그래밍언어론",
+                                    "Professor": "박성배",
+                                    "days": ["화", "목"],
+                                    "timeStart": "13:30",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "이산구조",
+                                    "Professor": "정태충",
+                                    "days": ["월", "수"],
+                                    "timeStart": "10:30",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "인공지능수학",
+                                    "Professor": "김성태",
+                                    "days": ["화", "목"],
+                                    "timeStart": "10:30",
+                                    "timeEnd": "11:45"
+                                }
+                            ]
+                        },
                         "138",
                         "139",
                         "140"
@@ -212,16 +773,390 @@
                         "203-2",
                         "203-3",
                         "204",
-                        "205",
+                        {
+                            "roomNumber": "205",
+                            "classes": [
+                                {
+                                    "lectureName": "컴퓨터구조",
+                                    "Professor": "김성태",
+                                    "days": ["화", "목"],
+                                    "timeStart": "15:00",
+                                    "timeEnd": "16:15"
+                                },
+                                {
+                                    "lectureName": "웹/파이선프로그래밍",
+                                    "Professor": "이성원",
+                                    "days": ["월", "수"],
+                                    "timeStart": "13:00",
+                                    "timeEnd": "14:50"
+                                },
+                                {
+                                    "lectureName": "웹/파이선프로그래밍",
+                                    "Professor": "박상근",
+                                    "days": ["화", "목"],
+                                    "timeStart": "13:00",
+                                    "timeEnd": "14:50"
+                                },
+                                {
+                                    "lectureName": "객체지향프로그래밍",
+                                    "alias": "객프",
+                                    "Professor": "이대호",
+                                    "days": ["월", "수"],
+                                    "timeStart": "16:00",
+                                    "timeEnd": "17:50"
+                                },
+                                {
+                                    "lectureName": "소프트웨어공학",
+                                    "alias": "소웨공",
+                                    "Professor": "김정옥",
+                                    "days": ["화", "목"],
+                                    "timeStart": "16:30",
+                                    "timeEnd": "17:45"
+                                },
+                                {
+                                    "lectureName": "오픈소스SW개발방법및도구",
+                                    "Professor": "이성원",
+                                    "days": ["화", "목"],
+                                    "timeStart": "9:00",
+                                    "timeEnd": "10:15"
+                                },
+                                {
+                                    "lectureName": "최신기술콜로키움2",
+                                    "Professor": "진성욱",
+                                    "days": ["금"],
+                                    "timeStart": "10:00",
+                                    "timeEnd": "11:50"
+                                },
+                                {
+                                    "lectureName": "전공탐색및기업가정신세미나(전자공학과)",
+                                    "Professor": "김동한",
+                                    "days": ["월"],
+                                    "timeStart": "18:00",
+                                    "timeEnd": "18:50"
+                                },
+                                {
+                                    "lectureName": "전공탐색및기업가정신세미나(컴퓨터공학과/인공지능학과)",
+                                    "Professor": "김정욱",
+                                    "days": ["월"],
+                                    "timeStart": "18:00",
+                                    "timeEnd": "18:50"
+                                },
+                                {
+                                    "lectureName": "종합설계(전자공학)",
+                                    "Professor": "김동한",
+                                    "days": ["수"],
+                                    "timeStart": "18:00",
+                                    "timeEnd": "21:45"
+                                },
+                                {
+                                    "lectureName": "종합설계(전자공학)",
+                                    "Professor": "김상혁",
+                                    "days": ["수"],
+                                    "timeStart": "18:00",
+                                    "timeEnd": "21:45"
+                                },
+                                {
+                                    "lectureName": "종합설계(전자공학)",
+                                    "Professor": "송주빈",
+                                    "days": ["수"],
+                                    "timeStart": "18:00",
+                                    "timeEnd": "21:45"
+                                },
+                                {
+                                    "lectureName": "종합설계(전자공학)",
+                                    "Professor": "유재수",
+                                    "days": ["수"],
+                                    "timeStart": "18:00",
+                                    "timeEnd": "21:45"
+                                },
+                                {
+                                    "lectureName": "종합설계(전자공학)",
+                                    "Professor": "윤상웅",
+                                    "days": ["수"],
+                                    "timeStart": "18:00",
+                                    "timeEnd": "21:45"
+                                },
+                                {
+                                    "lectureName": "종합설계(전자공학)",
+                                    "Professor": "고한얼",
+                                    "days": ["수"],
+                                    "timeStart": "18:00",
+                                    "timeEnd": "21:45"
+                                },
+                                {
+                                    "lectureName": "종합설계(전자공학)",
+                                    "Professor": "이응규",
+                                    "days": ["수"],
+                                    "timeStart": "18:00",
+                                    "timeEnd": "21:45"
+                                },
+                                {
+                                    "lectureName": "종합설계(전자공학)",
+                                    "Professor": "최민석",
+                                    "days": ["수"],
+                                    "timeStart": "18:00",
+                                    "timeEnd": "21:45"
+                                },
+                                {
+                                    "lectureName": "종합설계(전자공학)",
+                                    "Professor": "최승규",
+                                    "days": ["수"],
+                                    "timeStart": "18:00",
+                                    "timeEnd": "21:45"
+                                },
+                                {
+                                    "lectureName": "종합설계(전자공학)",
+                                    "Professor": "홍상훈",
+                                    "days": ["수"],
+                                    "timeStart": "18:00",
+                                    "timeEnd": "21:45"
+                                },
+                                {
+                                    "lectureName": "종합설계(전자공학)",
+                                    "Professor": "이계산",
+                                    "days": ["수"],
+                                    "timeStart": "18:00",
+                                    "timeEnd": "21:45"
+                                },
+                                {
+                                    "lectureName": "종합설계(전자공학)",
+                                    "Professor": "김대원",
+                                    "days": ["수"],
+                                    "timeStart": "18:00",
+                                    "timeEnd": "21:45"
+                                },
+                                {
+                                    "lectureName": "졸업프로젝트",
+                                    "Professor": "김휘용",
+                                    "days": ["금"],
+                                    "timeStart": "15:00",
+                                    "timeEnd": "17:45"
+                                }
+                            ]
+                        },
                         "206",
                         "207",
-                        "208",
+                        {
+                            "roomNumber": "208",
+                            "classes": [
+                                {
+                                    "lectureName": "기초회로실험",
+                                    "Professor": "윤상웅",
+                                    "days": ["금"],
+                                    "timeStart": "9:00",
+                                    "timeEnd": "12:50"
+                                },
+                                {
+                                    "lectureName": "기초회로실험",
+                                    "Professor": "윤상웅",
+                                    "days": ["금"],
+                                    "timeStart": "13:30",
+                                    "timeEnd": "17:20"
+                                },
+                                {
+                                    "lectureName": "기초회로실험",
+                                    "Professor": "이승현",
+                                    "days": ["월"],
+                                    "timeStart": "9:00",
+                                    "timeEnd": "12:50"
+                                },
+                                {
+                                    "lectureName": "전자회로실험",
+                                    "Professor": "김창우",
+                                    "days": ["수"],
+                                    "timeStart": "9:00",
+                                    "timeEnd": "12:50"
+                                },
+                                {
+                                    "lectureName": "전자회로실험",
+                                    "Professor": "김창우",
+                                    "days": ["수"],
+                                    "timeStart": "13:30",
+                                    "timeEnd": "17:20"
+                                }
+                            ]
+                        },
                         "209",
                         "213",
                         "215",
-                        "217",
-                        "218",
-                        "219",
+                        {
+                            "roomNumber": "217",
+                            "classes": [
+                                {
+                                    "lectureName": "우주전자응용및실험",
+                                    "Professor": "진호",
+                                    "days": ["화"],
+                                    "timeStart": "9:00",
+                                    "timeEnd": "10:50"
+                                },
+                                {
+                                    "lectureName": "우주환경II",
+                                    "Professor": "이동훈",
+                                    "days": ["월", "수"],
+                                    "timeStart": "15:00",
+                                    "timeEnd": "16:15"
+                                },
+                                {
+                                    "lectureName": "천문학개론및실습2",
+                                    "Professor": "최윤영",
+                                    "days": ["화"],
+                                    "timeStart": "12:30",
+                                    "timeEnd": "14:20"
+                                },
+                                {
+                                    "lectureName": "천체역학",
+                                    "Professor": "선종호",
+                                    "days": ["화", "목"],
+                                    "timeStart": "11:00",
+                                    "timeEnd": "12:15"
+                                },
+                                {
+                                    "lectureName": "고등수학II",
+                                    "Professor": "이동훈",
+                                    "days": ["월", "수"],
+                                    "timeStart": "13:30",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "전기역학개론",
+                                    "Professor": "최광선",
+                                    "days": ["월", "수"],
+                                    "timeStart": "16:30",
+                                    "timeEnd": "17:45"
+                                },
+                                {
+                                    "lectureName": "전산모의실험",
+                                    "Professor": "Tetsuya Magara",
+                                    "days": ["월", "수"],
+                                    "timeStart": "12:00",
+                                    "timeEnd": "13:15"
+                                },
+                                {
+                                    "lectureName": "미분방정식",
+                                    "alias": "미방",
+                                    "Professor": "홍범일",
+                                    "days": ["월", "수"],
+                                    "timeStart": "10:30",
+                                    "timeEnd": "11:45"
+                                }
+                            ]
+                        },
+                        {
+                            "roomNumber": "218",
+                            "classes": [
+                                {
+                                    "lectureName": "현대우주론",
+                                    "Professor": "최윤영",
+                                    "days": ["월", "수"],
+                                    "timeStart": "13:30",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "물리학2",
+                                    "Professor": "김선경",
+                                    "days": ["월", "수"],
+                                    "timeStart": "10:30",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "물리학2",
+                                    "Professor": "이은상",
+                                    "days": ["월", "수"],
+                                    "timeStart": "16:30",
+                                    "timeEnd": "18:00"
+                                },
+                                {
+                                    "lectureName": "디자인적사고",
+                                    "alias": "디사",
+                                    "Professor": "조명아",
+                                    "days": ["목"],
+                                    "timeStart": "9:00",
+                                    "timeEnd": "12:50"
+                                }
+                            ]
+                        },
+                        {
+                            "roomNumber": "219",
+                            "classes": [
+                                {
+                                    "lectureName": "양자역학II",
+                                    "Professor": "이호선",
+                                    "days": ["화", "목"],
+                                    "timeStart": "12:00",
+                                    "timeEnd": "13:15"
+                                },
+                                {
+                                    "lectureName": "열및통계물리",
+                                    "Professor": "김민수",
+                                    "days": ["화", "목"],
+                                    "timeStart": "9:00",
+                                    "timeEnd": "10:15"
+                                },
+                                {
+                                    "lectureName": "전자기학Ⅰ",
+                                    "Professor": "임대영",
+                                    "days": ["화", "목"],
+                                    "timeStart": "13:30",
+                                    "timeEnd": "14:45"
+                                },
+                                {
+                                    "lectureName": "광기술개론",
+                                    "Professor": "이광조",
+                                    "days": ["월", "수"],
+                                    "timeStart": "12:00",
+                                    "timeEnd": "13:15"
+                                },
+                                {
+                                    "lectureName": "반도체소자",
+                                    "Professor": "송현욱",
+                                    "days": ["월", "수"],
+                                    "timeStart": "15:00",
+                                    "timeEnd": "16:15"
+                                },
+                                {
+                                    "lectureName": "수리물리II",
+                                    "Professor": "이민철",
+                                    "days": ["화", "목"],
+                                    "timeStart": "10:30",
+                                    "timeEnd": "11:45"
+                                },
+                                {
+                                    "lectureName": "응용물리연구 II",
+                                    "Professor": "이광조",
+                                    "days": ["금"],
+                                    "timeStart": "18:00",
+                                    "timeEnd": "19:50"
+                                },
+                                {
+                                    "lectureName": "진공및플라즈마",
+                                    "Professor": "최석호",
+                                    "days": ["월", "수"],
+                                    "timeStart": "10:00",
+                                    "timeEnd": "11:15"
+                                },
+                                {
+                                    "lectureName": "교과교수법(물리)",
+                                    "Professor": "송현욱",
+                                    "days": ["화", "목"],
+                                    "timeStart": "18:00",
+                                    "timeEnd": "19:15"
+                                },
+                                {
+                                    "lectureName": "교과교재연구및지도법(물리)",
+                                    "Professor": "송현욱",
+                                    "days": ["화", "목"],
+                                    "timeStart": "16:00",
+                                    "timeEnd": "17:15"
+                                },
+                                {
+                                    "lectureName": "전공탐색및기업가정신세미나(응용물리학과)",
+                                    "Professor": "이광조",
+                                    "days": ["월"],
+                                    "timeStart": "18:00",
+                                    "timeEnd": "18:50"
+                                }
+                            ]
+                        },
                         "220",
                         "221",
                         "223",

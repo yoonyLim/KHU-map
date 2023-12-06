@@ -8,6 +8,7 @@
     import { onBeforeUnmount, onMounted, ref, toRefs, watch } from 'vue';
     import bldgList from '@/assets/bldgList.json';
 
+    const curBldg = ref("멀티미디어관-글로벌관");
     const curFloor = ref("1");
     const floorInfo = ref(null);
     const selectedClass = ref("");
@@ -17,10 +18,7 @@
     })
 
     const propSelectedClass = toRefs(props).query;
-
-    if (propSelectedClass.value != "") {
-        selectedClass.value = propSelectedClass.value;
-    }
+    selectedClass.value = propSelectedClass.value;
 
     function changeClass(val) {
         selectedClass.value = val;
@@ -98,7 +96,7 @@
 
     onMounted(() => {
         for (var bldg of bldgList.bldgs) {
-            if (bldg.bldgName == "멀티미디어관-글로벌관") {
+            if (bldg.bldgName == curBldg.value) {
                 for (var floor of bldg.floors) {
                     if (floor.floor == curFloor.value) {
                         floorInfo.value = floor;
@@ -144,7 +142,8 @@
     <text class="cls-3" transform="translate(788.61 271.49)"><tspan x="0" y="0">엘레베이터</tspan></text>
     <text class="cls-3" transform="translate(1015.61 302.49)"><tspan x="0" y="0">여자</tspan><tspan x="-9" y="21.6">화장실</tspan></text>
     <text class="cls-3" transform="translate(1190.74 289.49)"><tspan x="0" y="0">102</tspan><tspan x="-55.12" y="21.6">후마니타스칼리지</tspan><tspan x="-10.12" y="43.2">라운지</tspan></text>
-    <text class="cls-3" transform="translate(1121.61 490.49)"><tspan x="0" y="0">도서관</tspan></text>
+    <text class="cls-3" transform="translate(1080.61 490.49)"><tspan x="0" y="0">도서관</tspan></text>
+    <text class="cls-3" transform="translate(1230.61 490.49)"><tspan x="0" y="0">103</tspan></text>
     <text class="cls-3" transform="translate(934.75 481.49)"><tspan x="0" y="0">Cafe</tspan><tspan x="-18.74" y="21.6">KHUffee</tspan></text>
     <text class="cls-3" transform="translate(97.74 310.49)"><tspan x="0" y="0">110</tspan></text>
     <text class="cls-3" transform="translate(1082.74 310.49)"><tspan x="0" y="0">101</tspan></text>
@@ -183,7 +182,10 @@
     <polygon :class="selectedClass == '102' ? 'selected' : ''" class="cls-5" points="1278.69 286.5 1278.69 271.24 1134.16 271.24 1134.5 271.24 1134.5 336.5 1134.5 336.12 1278.69 336.12 1278.69 286.5"/>
   </g>
   <g id="도서관">
-    <rect :class="selectedClass == '도서관' ? 'selected' : ''" class="cls-5" x="1003.62" y="442.14" width="289.58" height="83.86"/>
+    <rect :class="selectedClass == '도서관' ? 'selected' : ''" class="cls-5" x="1003.62" y="442.14" width="193.05" height="83.86"/>
+  </g>
+  <g id="도서관">
+    <rect :class="selectedClass == '103' ? 'selected' : ''" class="cls-5" x="1196.67" y="442.14" width="96.53" height="83.86"/>
   </g>
   <g id="unknown">
     <polyline class="cls-5" points="297.59 269.66 297.59 336.5 236.41 336.5 236.41 269.66 297.07 269.66"/>
@@ -205,7 +207,7 @@
   </g>
 </svg>
 <!--강의실 정보-->
-<div v-if="selectedClass != ''">
+<div v-if="selectedClass != '' && floorInfo != null">
     <div v-for="room in floorInfo.rooms" :key="room.id">
         <div v-if="(typeof room != 'object') && room == selectedClass">
             <span class="font-bold text-xl">해당 교실의 강의 정보는 없습니다!</span>

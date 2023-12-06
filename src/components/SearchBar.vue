@@ -1,5 +1,6 @@
 <script setup>
   import { ref, watch } from 'vue';
+  import { useRouter } from "vue-router";
   import bldgList from '../assets/bldgList.json';
 
   const query = ref("");
@@ -52,6 +53,12 @@
       }
     }
   }
+
+  const router = useRouter();
+
+  function goToClassroom(bldgName, floor, classroom) {
+      router.push({ name: "bldg-map-classroom", params: { bldg: bldgName, floor: floor, classroom: classroom }});
+    }
 
   function isQryMatched(name) {
     if (name.search(query.value) != -1) {
@@ -135,7 +142,7 @@
             <div v-for="roomNumber in floor.rooms" :key="roomNumber.id">
               <div 
               v-if="typeof roomNumber != 'object' && isQryMatched(roomNumber) && query != ''" 
-              @click="searchQuery(bldg.bldgName)"
+              @click="goToClassroom(bldg.bldgName, floor.floor, roomNumber);"
               class="py-1 hover:bg-gray-100 cursor-pointer">
                 <div class="py-1 pl-2 border-l-2 border-l-[#0d326f]">
                   <span>{{ (bldg.bldgName + " > " + roomNumber).substring(0, (bldg.bldgName + " > " + roomNumber).indexOf(query)) }}</span>
@@ -146,7 +153,7 @@
               <!--오브젝트일 경우-->
               <div 
               v-if="typeof roomNumber == 'object' && isQryMatched(roomNumber.roomNumber) && query != ''" 
-              @click="searchQuery(bldg.bldgName)"
+              @click="goToClassroom(bldg.bldgName, floor.floor, roomNumber.roomNumber);"
               class="py-1 hover:bg-gray-100 cursor-pointer">
                 <div class="py-1 pl-2 border-l-2 border-l-[#0d326f]">
                   <span>{{ (bldg.bldgName + " > " + roomNumber.roomNumber).substring(0, (bldg.bldgName + " > " + roomNumber.roomNumber).indexOf(query)) }}</span>

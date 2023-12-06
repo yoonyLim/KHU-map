@@ -14,14 +14,18 @@
 
     if (route.params.floor) {
         curFloor.value = route.params.floor;
-        selectedClass.value = route.params.class;
+        selectedClass.value = route.params.classroom;
     } else {
         curFloor.value = "1";
     }
 
     const comp = computed(() => {
         if (bldgName == "멀티미디어관-글로벌관") {
-            if (curFloor.value == "1") {
+            if (curFloor.value == "B2") {
+                return defineAsyncComponent(() => import("@/components/SVGs/멀티미디어관-글로벌관/B2F.vue"));
+            } else if (curFloor.value == "B1") {
+                return defineAsyncComponent(() => import("@/components/SVGs/멀티미디어관-글로벌관/B1F.vue"));
+            } else if (curFloor.value == "1") {
                 return defineAsyncComponent(() => import("@/components/SVGs/멀티미디어관-글로벌관/1F.vue"));
             } else if (curFloor.value == "2") {
                 return defineAsyncComponent(() => import("@/components/SVGs/멀티미디어관-글로벌관/2F.vue"));
@@ -33,6 +37,24 @@
                 return defineAsyncComponent(() => import("@/components/SVGs/멀티미디어관-글로벌관/5F.vue"));
             } else if (curFloor.value == "6") {
                 return defineAsyncComponent(() => import("@/components/SVGs/멀티미디어관-글로벌관/6F.vue"));
+            } else if (curFloor.value == "7") {
+                return defineAsyncComponent(() => import("@/components/SVGs/멀티미디어관-글로벌관/7F.vue"));
+            } else if (curFloor.value == "8") {
+                return defineAsyncComponent(() => import("@/components/SVGs/멀티미디어관-글로벌관/8F.vue"));
+            } else if (curFloor.value == "9") {
+                return defineAsyncComponent(() => import("@/components/SVGs/멀티미디어관-글로벌관/9F.vue"));
+            }
+        } else if (bldgName == "전자정보-응용과학대학관") {
+            if (curFloor.value == "B1") {
+                return defineAsyncComponent(() => import("@/components/SVGs/전자정보-응용과학대학관/B1F.vue"));
+            } else if (curFloor.value == "1") {
+                return defineAsyncComponent(() => import("@/components/SVGs/전자정보-응용과학대학관/1F.vue"));
+            } else if (curFloor.value == "1-1") {
+                return defineAsyncComponent(() => import("@/components/SVGs/전자정보-응용과학대학관/1-1F.vue"));
+            } else if (curFloor.value == "2") {
+                return defineAsyncComponent(() => import("@/components/SVGs/전자정보-응용과학대학관/2F.vue"));
+            } else if (curFloor.value == "2-1") {
+                return defineAsyncComponent(() => import("@/components/SVGs/전자정보-응용과학대학관/2-1F.vue"));
             }
         }
         return null;
