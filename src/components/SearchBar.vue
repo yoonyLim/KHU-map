@@ -97,10 +97,10 @@
     @focusin="isTyping = true"
     @keypress.enter.exact="searchQuery()"
     v-model="query"
-    class="w-full h-12 px-6 py-2 rounded-full border-2 hover:border-[#da9fa1] focus:border-[#a40f16] shadow-sm focus:outline-none" type="text" placeholder="장소를 검색하세요!"/>
+    class="w-full h-12 px-6 py-2 rounded-full border-2 hover:border-[#da9fa1] focus:border-[#a40f16] shadow-sm focus:outline-none" type="text" placeholder="건물이나 강의실을 검색하세요!"/>
     <!--검색 버튼-->
     <div class="ml-4">
-      <button @click="searchQuery()" class="flex w-12 h-12 justify-center items-center rounded-full border-2 bg-white hover:border-[#da9fa1] active:bg-[#da9fa1] shadow-sm">
+      <button @click="searchQuery()" class="flex w-12 h-12 justify-center items-center rounded-full bg-white border-2 hover:border-[#da9fa1] active:bg-[#da9fa1] shadow-md">
         <img src="src\assets\icons\search.svg" alt="search" />
       </button>
     </div>

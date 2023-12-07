@@ -1,7 +1,10 @@
 <script setup>
   import { ref } from 'vue';
+  import { useRouter } from 'vue-router';
   import MainMap from '@/components/MainMap.vue';
   import SearchBar from '@/components/SearchBar.vue';
+
+  const router = useRouter();
 
   const query = ref("");
   const shouldHideSearchbar = ref(false);
@@ -20,6 +23,11 @@
     <div class="overscroll-none flex justify-center">
       <div class="absolute mt-6 left-10">
         <img class="select-none pointer-events-none" width="100" src="../assets/KHU-wordmark.png" />
+      </div>
+      <div v-if="!shouldHideSearchbar" class="absolute top-0 max-w-xl w-3/4 md:w-1/2 lg:w-2/5 mt-24">
+        <button @click="router.push({ name: 'vacant-classroom'});" class="bg-white px-4 py-2 rounded-full hover:bg-red-200 active:bg-[#da9fa1] transition-bg-colors duration-300 ease-in-out shadow-md">
+          <span>빈 강의실 조회</span>
+        </button>
       </div>
       <Transition>
         <SearchBar v-if="!shouldHideSearchbar" @search-query="searchMap" class="absolute max-w-xl w-3/4 md:w-1/2 lg:w-2/5 mt-8" />

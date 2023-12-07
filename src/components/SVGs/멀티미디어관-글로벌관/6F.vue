@@ -81,7 +81,9 @@
         return false;
       } else if (parseInt(timeHMS.value[0]) - parseInt(timeStart.split(":")[0]) >= 0) {
         if (parseInt(timeHMS.value[0]) - parseInt(timeEnd.split(":")[0]) < 0) {
-          return true;
+          if (parseInt(timeHMS.value[1]) - parseInt(timeStart.split(":")[1]) >= 0) {
+            return true;
+          }
         } else if (parseInt(timeHMS.value[0]) - parseInt(timeEnd.split(":")[0]) == 0) {
           if (parseInt(timeHMS.value[1]) - parseInt(timeEnd.split(":")[1]) > 0) {
             return false;
@@ -104,11 +106,11 @@
                 }
             }
         }
-    })
+    });
 
     onBeforeUnmount(() => {
       clearInterval(updateTimeInterval);
-    })
+    });
 </script>
 
 <template>
