@@ -101,7 +101,7 @@
 
     // add glb map to the scene
     const gltfLoader = new GLTFLoader(loadingManager);
-    gltfLoader.load("src/assets/models/KHU.glb", (model) => {
+    gltfLoader.load("./src/assets/models/KHU.glb", (model) => {
         // change material color and add label for each building
         for (var bldg of bldgList.bldgs) {
             let bldgMesh = model.scene.getObjectByName(bldg.bldgName);
@@ -323,7 +323,7 @@
             <div class="felx-col justify-start">
                 <div class="w-full flex justify-end">
                     <button @click="isBldgClicked = false;" class="flex w-18 h-18 justify-center items-center">
-                        <img src="src\assets\icons\close.svg" alt="close" />
+                        <img src="\src\assets\icons\close.svg" alt="close" />
                     </button>
                 </div>
                 <div class="text-2xl font-bold mt-8">{{ selectedBldg.name }}</div>

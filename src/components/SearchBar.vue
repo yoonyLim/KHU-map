@@ -101,7 +101,7 @@
     <!--검색 버튼-->
     <div class="ml-4">
       <button @click="searchQuery()" class="flex w-12 h-12 justify-center items-center rounded-full bg-white border-2 hover:border-[#da9fa1] active:bg-[#da9fa1] shadow-md">
-        <img src="src\assets\icons\search.svg" alt="search" />
+        <img src="\src\assets\icons\search.svg" alt="search" />
       </button>
     </div>
     <!--검색 결과 오버레이-->
