@@ -10,7 +10,6 @@
 
   function searchQuery(value) {
     if (value) { // 오버레이에서 search 호출 시
-      console.log("enter pressed");
       emit("searchQuery", value);
       query.value = "";
       isTyping.value = false;
